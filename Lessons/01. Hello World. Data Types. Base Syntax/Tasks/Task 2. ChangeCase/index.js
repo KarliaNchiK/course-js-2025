@@ -6,12 +6,11 @@ const changeCase = (str) => {
         
         if (char >= 'a' && char <= 'z') {
             result += char.toUpperCase();
-        } else if (char >= 'A' && char <= 'Z') {
+        } else{
             result += char.toLowerCase();
-        } else {
-            result += char;
         }
     }
+    return result;
 };
 
 export default changeCase;
