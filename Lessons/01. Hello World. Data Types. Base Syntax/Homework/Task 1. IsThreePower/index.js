@@ -1,7 +1,8 @@
 const isThreePower = (num) => {
-    // Начало
-
-    // Конец
+    while(num>1){
+        num = num/3;
+    }
+    return num==1;
 };
 
 export default isThreePower;
