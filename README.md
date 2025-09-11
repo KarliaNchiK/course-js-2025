@@ -7,7 +7,6 @@
 - **Необходимые инструменты**
 - Nodejs - 22+. Можно использовать `24.1.0`
 - yarn
-
 - **Создаём свою ветку**
 - `git pull`
 - `git checkout -b <lastName> origin/main`
