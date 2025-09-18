@@ -2,6 +2,8 @@ import { watch } from 'vue';
 import { getTasksMap, getLessonsOptions } from './getSelectorOptions';
 
 import type { IAppState } from '../types';
+import { marked } from 'marked';
+import hljs from 'highlight.js';
 
 const entries = getLessonsOptions();
 const taskMap = getTasksMap(entries);
@@ -9,8 +11,41 @@ const taskMap = getTasksMap(entries);
 interface IElements {
     lessonSelector: HTMLSelectElement;
     taskSelector: HTMLSelectElement;
+    executeButton?: HTMLButtonElement;
     iframeElement?: HTMLIFrameElement;
 }
+
+let lastModule: any = null;
+const executeModuleJs = (module: any) => {
+    lastModule = module;
+    if (Object.hasOwn(module, 'default')) {
+        let payload;
+        const payloadEl = document.querySelector('.app__payload-input') as HTMLInputElement;
+        if (payloadEl.value.length > 0) {
+            try {
+                payload = JSON.parse(`[${ payloadEl.value }]`);
+                payloadEl.value = '';
+            } catch (err) {
+                console.error(err);
+                window.alert('Ошибка входных данных');
+            }
+        } else {
+            payload = module.payload ?? (window as any).payload ?? [];
+        }
+
+        const result = (
+            module.default.prototype
+            && module.default.prototype.constructor === module.default
+        )
+            ? new module.default(...payload)
+            : module.default(...payload);
+
+        if (result) {
+            console.log('Аргументы: ', payload);
+            console.log('Итог: ', result);
+        }
+    }
+};
 
 const initListeners = (state: IAppState, elements: IElements, url: URL) => {
     elements.lessonSelector.addEventListener('change', async () => {
@@ -37,6 +72,19 @@ const initListeners = (state: IAppState, elements: IElements, url: URL) => {
     elements.taskSelector.addEventListener('change', () => {
         state.activeTask = elements.taskSelector.value;
     });
+
+    elements.executeButton.addEventListener('click', () => {
+        if (lastModule !== null) {
+            executeModuleJs(lastModule);
+        }
+    });
+
+    const payloadEl = document.querySelector('.app__payload-input') as HTMLInputElement;
+    payloadEl.addEventListener('keyup', (event: KeyboardEvent) => {
+        if (event.key === 'Enter' && lastModule !== null) {
+            executeModuleJs(lastModule);
+        }
+    });
 };
 
 const initWatchers = (state: IAppState, elements: IElements, url: URL) => {
@@ -54,6 +102,11 @@ const initWatchers = (state: IAppState, elements: IElements, url: URL) => {
 
     watch(() => state.activeTask, async (newTaskId) => {
         elements.iframeElement.src = '';
+        elements.executeButton.style.display = 'none';
+        const taskCodeEl = document.querySelector('.app__task-code') as HTMLDivElement;
+        const taskTextEl = document.querySelector('.app__task-text') as HTMLDivElement;
+        taskCodeEl.style.display = 'none';
+        taskTextEl.style.display = 'none';
 
         if (newTaskId === null) {
             return;
@@ -70,21 +123,27 @@ const initWatchers = (state: IAppState, elements: IElements, url: URL) => {
 
         const module = await activeTaskData.loader();
 
-        if (activeTaskData.type === 'js') {
-            if (Object.hasOwn(module, 'default')) {
-                const payload = module.payload ?? [];
-                const result = (
-                    module.default.prototype
-                    && module.default.prototype.constructor === module.default
-                )
-                    ? new module.default(...payload)
-                    : module.default(...payload);
+        if (Object.hasOwn(activeTaskData, 'taskData')) {
+            activeTaskData.taskData.then(async (result) => {
+                taskTextEl.style.display = '';
+                taskTextEl.querySelector('.app__task-content').innerHTML = await marked.parse(result.default);
+                taskTextEl.querySelector('.app__task-content').querySelectorAll('code').forEach((el) => {
+                    el.classList.add('language-javascript');
+                    hljs.highlightElement(el);
+                });
+            });
+        }
 
-                if (result) {
-                    console.warn('Результат выполнения программы');
-                    console.warn('Аргументы: ', payload.join(', '));
-                    console.warn('Итог: ', result);
-                }
+        if (activeTaskData.type === 'js') {
+            elements.executeButton.style.display = '';
+            executeModuleJs(module);
+
+            if (Object.hasOwn(activeTaskData, 'codeData')) {
+                activeTaskData.codeData.then((result) => {
+                    taskCodeEl.style.display = '';
+                    taskCodeEl.querySelector('.app__code-data').innerHTML = `<pre><code class="language-javascript">${ result.default }</code></pre>`;
+                    hljs.highlightElement(taskCodeEl.querySelector('.app__code-data code'));
+                });
             }
 
             return;
@@ -103,7 +162,7 @@ const initWatchers = (state: IAppState, elements: IElements, url: URL) => {
         newTasks.forEach((taskData) => {
             const option = document.createElement('option');
             option.value = taskData.id;
-            option.textContent = `${ taskData.id } | ${ taskData.taskType } | ${ taskData.extension }`;
+            option.textContent = taskData.id;
             elements.taskSelector.appendChild(option);
         });
     });
@@ -113,6 +172,7 @@ interface IProps {
     iframeSelector: string;
     lessonSelector: string;
     tasksSelector: string;
+    executeSelector: string;
     appState: IAppState;
 }
 
@@ -120,6 +180,8 @@ export default function initLessonsSelector(payload: IProps) {
     const lessonSelector = document.querySelector(payload.lessonSelector) as HTMLSelectElement;
     const taskSelector = document.querySelector(payload.tasksSelector) as HTMLSelectElement;
     const iframeElement = document.querySelector(payload.iframeSelector) as HTMLIFrameElement;
+    const executeButton = document.querySelector(payload.executeSelector) as HTMLButtonElement;
+    executeButton.style.display = 'none';
 
     const url = new URL(window.location.href);
 
@@ -135,6 +197,7 @@ export default function initLessonsSelector(payload: IProps) {
         {
             lessonSelector,
             taskSelector,
+            executeButton,
         },
         url,
     );
@@ -145,6 +208,7 @@ export default function initLessonsSelector(payload: IProps) {
             lessonSelector,
             taskSelector,
             iframeElement,
+            executeButton,
         },
         url,
     );
