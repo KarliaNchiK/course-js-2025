@@ -1,7 +1,13 @@
 const isSequenceContinuous = (numbers) => {
-    // Начало
-
-    // Конец
+    if(numbers.length<=1){
+        return false;
+    }
+    for(let i=0;i<numbers.length-1;i++){
+        if (numbers.at(i)+1!==numbers.at(i+1)){
+            return false;
+        }
+    }
+    return true;
 };
 
 export default isSequenceContinuous;

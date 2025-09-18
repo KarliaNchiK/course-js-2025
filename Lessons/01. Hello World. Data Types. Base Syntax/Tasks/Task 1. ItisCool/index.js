@@ -1,5 +1,4 @@
 const itisCool = (begin, end) => {
-    ;
     for (let i = begin; i <= end; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
             console.log("ItisCool");
