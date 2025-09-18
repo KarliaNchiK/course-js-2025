@@ -2,7 +2,7 @@ import generateDifference from './index';
 
 describe('02.c.6 generateDifference', () => {
     const objectOne1 = { name: 'Ilon', surname: 'Mask', age: 50 };
-    const objectTwo1 = { name: 'Ilon-genius', surname: 'Mask', children: [ 'someInfo' ] };
+    const objectTwo1 = { name: 'Ilon-genius', surname: 'Mask', children: ['someInfo'] };
     const result1 = {
         name: 'changed',
         surname: 'unchanged',
@@ -10,7 +10,7 @@ describe('02.c.6 generateDifference', () => {
         children: 'added',
     };
 
-    const objectOne2 = { one: 'one', two: 'two', three: 'three', four: 'four' };
+    const objectOne2 = {one: 'one', two: 'two', three: 'three', four: 'four'};
     const objectTwo2 = { three: 'new three', four: 'four', five: 'five' };
     const result2 = {
         one: 'deleted',
