@@ -1,7 +1,8 @@
-const isThreePower = (num) => {
-    // Начало
+const isThreePower = (num) => 
+    {
+        let power = Math.log(num) / Math.log(3);
 
-    // Конец
-};
+        return power % 1 < 1e-10;
+    };
 
 export default isThreePower;

@@ -11,6 +11,7 @@
         "./Lessons/**/Examples/**"
     ],
     "compilerOptions": {
+        "outDir": "build",  
         // Разрешает обработку `.js` файлов
         "allowJs": true,
         // Версия стандарта ECMAScript
