@@ -8,24 +8,25 @@ const generateDifference = (objOne, objTwo) => {
 
     const obj = { ...objOne, ...objTwo };
 
-    for (let key in obj) {
-        if (key in objOne) {
-            if (key in objTwo) {
+    return Object.keys(obj).reduce((acc, key) => {
+        if (!Object.hasOwn(objOne, key)) {
+            acc[key] = 'added';
 
-                if (objOne[key] === objTwo[key]) {
-                    obj[key] = "unchanged";
-                } else {
-                    obj[key] = "changed";
-                }
-
-            } else {
-                obj[key] = "deleted";
-            }
-        } else {
-            obj[key] = "added"
+            return acc;
         }
-    }
-    return obj;
+
+        if (!Object.hasOwn(objTwo, key)) {
+            acc[key] = 'deleted';
+
+            return acc;
+        }
+
+        obj[key] = objOne[key] === objTwo[key]
+            ? 'unchanged'
+            : 'changed'
+
+        return acc;
+    }, {});
 };
 
 console.log(generateDifference(
