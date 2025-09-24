@@ -1,9 +1,14 @@
-import CarBrand from './carBrand';
+import carBrand from "./carBrand.js";
 
-class BugattiBrand extends CarBrand {
+class BugattiBrand extends carBrand {
     // Начало
-    constructor() {
-        super();
+    constructor(mark, power, timeToHundred, price) {
+        super('Bugatti ' + mark, power, timeToHundred);
+        this.price = price;
+    }
+
+    getIsExpensive() {
+        return this.price > 1;
     }
 
     // Конец
