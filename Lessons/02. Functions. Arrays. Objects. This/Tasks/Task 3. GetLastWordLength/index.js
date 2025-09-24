@@ -4,14 +4,14 @@ const getLastWordLength = (str) => {
         return 0;
     }
     let lastSpaceIndex = 0;
-    for(let i=0;i<=line.length;i++){
-        if (line.at(i)===' '){
+    for(let i= 0; i<= line.length; i++){
+        if (line.at(i) === ' '){
             lastSpaceIndex = i;
         }
     }
     if (lastSpaceIndex===0){
         return line.length;
-    }else{
+    } else {
         return line.length-lastSpaceIndex-1;
     }
 };

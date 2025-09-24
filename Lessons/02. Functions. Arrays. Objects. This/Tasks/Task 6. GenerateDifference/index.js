@@ -13,16 +13,22 @@ const generateDifference = (objOne, objTwo) => {
     allKeys.forEach(key =>{
         if (!Object.hasOwn(objOne,key)){
             changes[key] = 'added';
+
+            return;
         }
-        else if(!Object.hasOwn(objTwo,key)){
+        if(!Object.hasOwn(objTwo,key)){
             changes[key] = 'deleted';
+
+            return;
         }
-        else if(Object.hasOwn(objOne,key) && Object.hasOwn(objTwo,key) && objOne[key] == objTwo[key]){
+
+        if(Object.hasOwn(objOne,key) && Object.hasOwn(objTwo,key) && objOne[key] === objTwo[key]){
             changes[key] = 'unchanged';
+
+            return;
         }
-        else{
-            changes[key] = 'changed';
-        }
+
+        changes[key] = 'changed';
     })
     return changes;
 };
