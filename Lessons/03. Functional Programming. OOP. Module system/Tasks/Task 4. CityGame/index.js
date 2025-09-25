@@ -31,6 +31,7 @@ class CityGame {
         this.lastLetter = '';
         return 'The game has been restarted!';
     }
+
 }
 
 export default CityGame;

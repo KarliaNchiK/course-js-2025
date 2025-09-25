@@ -4,4 +4,5 @@ const reorderDigits = (type, ...numbers) => {
     else if (type === 'desc')
         return numbers.sort((a, b) => b - a);
 };
+
 export default reorderDigits;
