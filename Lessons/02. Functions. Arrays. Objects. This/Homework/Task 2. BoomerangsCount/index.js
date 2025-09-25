@@ -1,5 +1,8 @@
-const isBoomerang = (arr) =>
-    arr.length === 3 && arr[0] === arr[2] && arr[1] !== arr[0];
+const isBoomerang = (arr) => (
+    arr.length === 3
+    && arr[0] === arr[2]
+    && arr[1] !== arr[0]
+);
 
 const getBoomerangsCount = (numbers) => {
     let counter = 0;

@@ -1,7 +1,7 @@
 const CHECK_NUM = 42;
 
 const transformFortyTwo = (arr) => {
-    let newArray = [];
+    const newArray = [];
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] % CHECK_NUM === 0) {
             newArray.push("forty two!");

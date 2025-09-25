@@ -5,7 +5,9 @@ const sumSquareDifference = (num) => {
 };
 
 const sumSquareForNumNumbers = (num) => {
-    if (num === 1) return 1;
+    if (num === 1) {
+        return 1;
+    }
     return num ** 2 + sumSquareForNumNumbers(num - 1);
 };
 
