@@ -3,7 +3,6 @@ import initLessonsSelector from './utils/initLessonsSelector';
 
 import type { IAppState } from './types';
 import mountVueApp from './utils/vueApp';
-import 'highlight.js/styles/default.min.css';
 
 interface IProps {
     executeSelector: string;
