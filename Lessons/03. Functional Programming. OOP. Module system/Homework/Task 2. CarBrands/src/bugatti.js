@@ -1,12 +1,16 @@
 import CarBrand from './carBrand';
 
 class BugattiBrand extends CarBrand {
-    // Начало
-    constructor() {
-        super();
+    price = 0;
+
+    constructor(model, power, acceleration, price) {
+        super('Bugatti ' + model, power, acceleration);
+        this.price = price;
     }
 
-    // Конец
+    getIsExpensive() {
+        return this.price > 1;
+    }
 }
 
 export default BugattiBrand;
