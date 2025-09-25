@@ -16,17 +16,17 @@ const generateDifference = (objOne, objTwo) => {
     let result = {};
 
     for (let key of uniqueKeys) {
-        if (objOne.hasOwnProperty(key) && !objTwo.hasOwnProperty(key)) {
+        if (objOne.hasOwn(key) && !objTwo.hasOwn(key)) {
             result[key] = 'deleted';
-
-        } else if (objTwo.hasOwnProperty(key) && !objOne.hasOwnProperty(key)) {
+        } else if (!objOne.hasOwnProperty(key)) {
             result[key] = 'added';
         } else {
-            if (objOne[key] === objTwo[key]) {
-                result[key] = 'unchanged';
-            } else {
-                result[key] = 'changed';
-            }
+            // if (objOne[key] === objTwo[key]) {
+            //     result[key] = 'unchanged';
+            // } else {
+            //     result[key] = 'changed';
+            // }
+            result[key] = objOne[key] === objTwo[key]
         }
     }
     return result;

@@ -4,7 +4,7 @@ const getBudget = (people) => {
         result += i.budget;
     }
     return result;
-    // let temp = people.map((item) => {item.budget});
+    // let temp = people.map((item) => { return item.budget });
     // let result = 0;
     // for (let i = 0; i < temp.length; i++) {
     //     result += temp[i];

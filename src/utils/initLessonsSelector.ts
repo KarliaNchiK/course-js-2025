@@ -2,6 +2,8 @@ import { watch } from 'vue';
 import { getTasksMap, getLessonsOptions } from './getSelectorOptions';
 
 import type { IAppState } from '../types';
+import { marked } from 'marked';
+import hljs from 'highlight.js';
 
 const entries = getLessonsOptions();
 const taskMap = getTasksMap(entries);
@@ -17,7 +19,20 @@ let lastModule: any = null;
 const executeModuleJs = (module: any) => {
     lastModule = module;
     if (Object.hasOwn(module, 'default')) {
-        const payload = module.payload ?? (window as any).payload ?? [];
+        let payload;
+        const payloadEl = document.querySelector('.app__payload-input') as HTMLInputElement;
+        if (payloadEl.value.length > 0) {
+            try {
+                payload = JSON.parse(`[${ payloadEl.value }]`);
+                payloadEl.value = '';
+            } catch (err) {
+                console.error(err);
+                window.alert('Ошибка входных данных');
+            }
+        } else {
+            payload = module.payload ?? (window as any).payload ?? [];
+        }
+
         const result = (
             module.default.prototype
             && module.default.prototype.constructor === module.default
@@ -63,6 +78,13 @@ const initListeners = (state: IAppState, elements: IElements, url: URL) => {
             executeModuleJs(lastModule);
         }
     });
+
+    const payloadEl = document.querySelector('.app__payload-input') as HTMLInputElement;
+    payloadEl.addEventListener('keyup', (event: KeyboardEvent) => {
+        if (event.key === 'Enter' && lastModule !== null) {
+            executeModuleJs(lastModule);
+        }
+    });
 };
 
 const initWatchers = (state: IAppState, elements: IElements, url: URL) => {
@@ -102,9 +124,13 @@ const initWatchers = (state: IAppState, elements: IElements, url: URL) => {
         const module = await activeTaskData.loader();
 
         if (Object.hasOwn(activeTaskData, 'taskData')) {
-            activeTaskData.taskData.then((result) => {
+            activeTaskData.taskData.then(async (result) => {
                 taskTextEl.style.display = '';
-                taskTextEl.querySelector('.app__task-content').innerHTML = result.default;
+                taskTextEl.querySelector('.app__task-content').innerHTML = await marked.parse(result.default);
+                taskTextEl.querySelector('.app__task-content').querySelectorAll('code').forEach((el) => {
+                    el.classList.add('language-javascript');
+                    hljs.highlightElement(el);
+                });
             });
         }
 
@@ -115,7 +141,8 @@ const initWatchers = (state: IAppState, elements: IElements, url: URL) => {
             if (Object.hasOwn(activeTaskData, 'codeData')) {
                 activeTaskData.codeData.then((result) => {
                     taskCodeEl.style.display = '';
-                    taskCodeEl.querySelector('.app__code-data').innerHTML = result.default;
+                    taskCodeEl.querySelector('.app__code-data').innerHTML = `<pre><code class="language-javascript">${ result.default }</code></pre>`;
+                    hljs.highlightElement(taskCodeEl.querySelector('.app__code-data code'));
                 });
             }
 

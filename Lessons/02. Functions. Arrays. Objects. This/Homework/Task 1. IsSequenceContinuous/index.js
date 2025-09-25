@@ -5,7 +5,7 @@ const isSequenceContinuous = (numbers) => {
     let decreasingFlag = true;
     let ascendingFlag = true;
     for (let i = 0; i < numbers.length - 1; i++) {
-        if (numbers[i] - numbers[i + 1] != 1) {
+        if (numbers[i] - numbers[i + 1] !== 1) {
             decreasingFlag = false;
         }
         if (numbers[i] - numbers[i + 1] != -1) {
