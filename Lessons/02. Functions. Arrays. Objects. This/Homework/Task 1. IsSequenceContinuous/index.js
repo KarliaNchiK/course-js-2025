@@ -1,7 +1,10 @@
 const isSequenceContinuous = (numbers) => {
-    // Начало
+    if (numbers.length <= 1) return false;
 
-    // Конец
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] !== numbers[i - 1] + 1) return false;
+    }
+    return true;
 };
 
 export default isSequenceContinuous;
