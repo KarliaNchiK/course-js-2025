@@ -1,0 +1,35 @@
+[33m2c77b04[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mLapaev[m[33m, [m[1;31morigin/Lapaev[m[33m)[m HEAD@{0}: checkout: moving from e418f4ce8453c8a4a09b7d47c03f0d81ba551b02 to Lapaev
+[33me418f4c[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: checkout: moving from Lapaev to e418f4c
+[33m2c77b04[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mLapaev[m[33m, [m[1;31morigin/Lapaev[m[33m)[m HEAD@{2}: commit: task 3
+[33m855e14b[m HEAD@{3}: checkout: moving from main to Lapaev
+[33mafc1a13[m[33m ([m[1;32mmain[m[33m)[m HEAD@{4}: checkout: moving from Lapaev to main
+[33m855e14b[m HEAD@{5}: checkout: moving from main to Lapaev
+[33mafc1a13[m[33m ([m[1;32mmain[m[33m)[m HEAD@{6}: checkout: moving from Lapaev to main
+[33m855e14b[m HEAD@{7}: commit (merge): Завершение мержа
+[33m8ef252e[m HEAD@{8}: commit: Урок 2. Сделал homework and classwork
+[33m96acbd2[m HEAD@{9}: checkout: moving from main to Lapaev
+[33mafc1a13[m[33m ([m[1;32mmain[m[33m)[m HEAD@{10}: checkout: moving from Lapaev to main
+[33m96acbd2[m HEAD@{11}: checkout: moving from main to Lapaev
+[33mafc1a13[m[33m ([m[1;32mmain[m[33m)[m HEAD@{12}: checkout: moving from Lapaev to main
+[33m96acbd2[m HEAD@{13}: commit (merge): add
+[33m6a3f84a[m HEAD@{14}: checkout: moving from main to Lapaev
+[33mafc1a13[m[33m ([m[1;32mmain[m[33m)[m HEAD@{15}: checkout: moving from Lapaev to main
+[33m6a3f84a[m HEAD@{16}: checkout: moving from main to Lapaev
+[33mafc1a13[m[33m ([m[1;32mmain[m[33m)[m HEAD@{17}: merge origin/main: Fast-forward
+[33m443317b[m[33m ([m[1;31morigin/gazetdinova[m[33m, [m[1;31morigin/Vdovinova[m[33m, [m[1;31morigin/Sabirv[m[33m, [m[1;31morigin/Nutfullina[m[33m, [m[1;31morigin/Ishueva[m[33m)[m HEAD@{18}: checkout: moving from Lapaev to main
+[33m6a3f84a[m HEAD@{19}: checkout: moving from main to Lapaev
+[33m443317b[m[33m ([m[1;31morigin/gazetdinova[m[33m, [m[1;31morigin/Vdovinova[m[33m, [m[1;31morigin/Sabirv[m[33m, [m[1;31morigin/Nutfullina[m[33m, [m[1;31morigin/Ishueva[m[33m)[m HEAD@{20}: checkout: moving from Lapaev to main
+[33m6a3f84a[m HEAD@{21}: reset: moving to HEAD
+[33m6a3f84a[m HEAD@{22}: reset: moving to HEAD
+[33m6a3f84a[m HEAD@{23}: reset: moving to HEAD
+[33m6a3f84a[m HEAD@{24}: checkout: moving from main to Lapaev
+[33m443317b[m[33m ([m[1;31morigin/gazetdinova[m[33m, [m[1;31morigin/Vdovinova[m[33m, [m[1;31morigin/Sabirv[m[33m, [m[1;31morigin/Nutfullina[m[33m, [m[1;31morigin/Ishueva[m[33m)[m HEAD@{25}: checkout: moving from Lapaev to main
+[33m6a3f84a[m HEAD@{26}: commit: Урок 1. Выполнил hw cw
+[33m443317b[m[33m ([m[1;31morigin/gazetdinova[m[33m, [m[1;31morigin/Vdovinova[m[33m, [m[1;31morigin/Sabirv[m[33m, [m[1;31morigin/Nutfullina[m[33m, [m[1;31morigin/Ishueva[m[33m)[m HEAD@{27}: checkout: moving from main to Lapaev
+[33m443317b[m[33m ([m[1;31morigin/gazetdinova[m[33m, [m[1;31morigin/Vdovinova[m[33m, [m[1;31morigin/Sabirv[m[33m, [m[1;31morigin/Nutfullina[m[33m, [m[1;31morigin/Ishueva[m[33m)[m HEAD@{28}: checkout: moving from Lapaev to main
+[33m443317b[m[33m ([m[1;31morigin/gazetdinova[m[33m, [m[1;31morigin/Vdovinova[m[33m, [m[1;31morigin/Sabirv[m[33m, [m[1;31morigin/Nutfullina[m[33m, [m[1;31morigin/Ishueva[m[33m)[m HEAD@{29}: checkout: moving from main to Lapaev
+[33m443317b[m[33m ([m[1;31morigin/gazetdinova[m[33m, [m[1;31morigin/Vdovinova[m[33m, [m[1;31morigin/Sabirv[m[33m, [m[1;31morigin/Nutfullina[m[33m, [m[1;31morigin/Ishueva[m[33m)[m HEAD@{30}: checkout: moving from Lapaev to main
+[33m443317b[m[33m ([m[1;31morigin/gazetdinova[m[33m, [m[1;31morigin/Vdovinova[m[33m, [m[1;31morigin/Sabirv[m[33m, [m[1;31morigin/Nutfullina[m[33m, [m[1;31morigin/Ishueva[m[33m)[m HEAD@{31}: checkout: moving from main to Lapaev
+[33m443317b[m[33m ([m[1;31morigin/gazetdinova[m[33m, [m[1;31morigin/Vdovinova[m[33m, [m[1;31morigin/Sabirv[m[33m, [m[1;31morigin/Nutfullina[m[33m, [m[1;31morigin/Ishueva[m[33m)[m HEAD@{32}: checkout: moving from lmaooo45 to main
+[33m443317b[m[33m ([m[1;31morigin/gazetdinova[m[33m, [m[1;31morigin/Vdovinova[m[33m, [m[1;31morigin/Sabirv[m[33m, [m[1;31morigin/Nutfullina[m[33m, [m[1;31morigin/Ishueva[m[33m)[m HEAD@{33}: checkout: moving from main to lmaooo45
+[33m443317b[m[33m ([m[1;31morigin/gazetdinova[m[33m, [m[1;31morigin/Vdovinova[m[33m, [m[1;31morigin/Sabirv[m[33m, [m[1;31morigin/Nutfullina[m[33m, [m[1;31morigin/Ishueva[m[33m)[m HEAD@{34}: clone: from https://github.com/KarliaNchiK/course-js-2025.git
