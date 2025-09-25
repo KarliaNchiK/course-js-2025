@@ -37,7 +37,8 @@
         "vitest": "3.2.4",
         "vue": "3.5.17",
         "vue-eslint-parser": "10.1.4",
-        "vue-tsc": "2.2.10"
+        "vue-tsc": "2.2.10",
+        "webpack": "^5.101.3"
     },
     "dependencies": {
         "highlight.js": "11.11.1",
