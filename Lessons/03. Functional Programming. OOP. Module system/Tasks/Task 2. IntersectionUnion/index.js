@@ -1,13 +1,16 @@
 const getIntersectionUnion = (arrOne, arrTwo) => {
 
-    arrOne = new Set();
-    arrTwo = new Set();
+    let setOne = new Set(arrOne);
+    let setTwo = new Set(arrTwo);
 
-    let intersection = [];
-    let union = [];
+    const intersection = [...setOne].filter(item  => setTwo.has(item));
+    const union = [...new Set([...arrOne, ...arrTwo])];
 
-    arrOne.map()
+    return {
+        intersection,
+        union
+    }
 };
 
-getIntersectionUnion([5, 6, 6, 6, 8, 9], [3, 3, 4, 4, 5, 5, 8]);
+console.log(getIntersectionUnion([5, 6, 6, 6, 8, 9], [3, 3, 4, 4, 5, 5, 8]));
 export default getIntersectionUnion;
