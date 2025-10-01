@@ -1,3 +1,38 @@
 .tic-tac-toe {
+    border: 2px solid grey;
+}
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /*background: #f0f0f0;*/
+}
+.tic-tac-toe__row {
+    display: flex;
+}
+
+.tic-tac-toe_cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tic-tac-toe_board {
+    display: grid;
+
+}
+
+.tic-tac-toe__cell:last-of-type {
+    border-right: none;
+}
+
+.tic-tac-toe__icon {
+    width: 60px;
+    height: 60px;
 }
