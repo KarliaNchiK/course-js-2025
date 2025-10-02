@@ -1,7 +1,9 @@
 const CHECK_NUM = 42;
 
 const transformFortyTwo = (arr) => {
-
+    return arr.map(item => 
+        item % CHECK_NUM === 0 ? 'forty two!' : item
+    );
 };
 
 export default transformFortyTwo;
