@@ -5,3 +5,16 @@
     background: #ffeed6;
     border-radius: 10px;
 }
+.resume__header {
+    display: flex;
+    justify-content: space-evenly;
+}
+.resume__main {
+}
+.resume__footer {
+    align-items: center;
+    text-align: center;
+}
+.resume__main-brake {
+    border-bottom: 1px solid black;
+}
