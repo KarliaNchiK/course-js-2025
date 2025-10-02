@@ -43,7 +43,6 @@ class CityGame {
 
     // eslint-disable-next-line class-methods-use-this
     getLastLetter(city) {
-        // Хотя мы не используем this сейчас, оставляем возможность для будущего
         const lastChar = city.charAt(city.length - 1);
         if (lastChar === 'ь' || lastChar === 'ъ') {
             return city.charAt(city.length - 2).toLowerCase();

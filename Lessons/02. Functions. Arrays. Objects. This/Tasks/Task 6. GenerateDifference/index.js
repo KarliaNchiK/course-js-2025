@@ -5,20 +5,40 @@ const getCopy = (el) => JSON.parse(JSON.stringify(el));
 const onlyUnique = (array) => [...new Set(array)];
 
 const generateDifference = (objOne, objTwo) => {
-    const allKeys = onlyUnique([...Object.keys(objOne), ...Object.keys(objTwo)]);
+    // Получаем все уникальные ключи из обоих объектов
+    const allKeys = onlyUnique([
+        ...Object.keys(objOne),
+        ...Object.keys(objTwo),
+    ]);
 
-    return allKeys.reduce((result, key) => {
-        if (!(key in objOne)) {
-            result[key] = 'added';
-        } else if (!(key in objTwo)) {
+    const result = {};
+
+    // Проходим по всем ключам и определяем статус каждого
+    allKeys.forEach(key => {
+        const keyInObjOne = key in objOne;
+        const keyInObjTwo = key in objTwo;
+
+        if (keyInObjOne && keyInObjTwo) {
+            // Ключ есть в обоих объектах
+            const valueOne = getCopy(objOne[key]);
+            const valueTwo = getCopy(objTwo[key]);
+
+            // Сравниваем значения (учитывая, что это могут быть объекты)
+            if (JSON.stringify(valueOne) === JSON.stringify(valueTwo)) {
+                result[key] = 'unchanged';
+            } else {
+                result[key] = 'changed';
+            }
+        } else if (keyInObjOne && !keyInObjTwo) {
+            // Ключ был в первом объекте, но удален во втором
             result[key] = 'deleted';
-        } else if (JSON.stringify(getCopy(objOne[key])) === JSON.stringify(getCopy(objTwo[key]))) {
-            result[key] = 'unchanged';
-        } else {
-            result[key] = 'changed';
+        } else if (!keyInObjOne && keyInObjTwo) {
+            // Ключ добавлен во втором объекте
+            result[key] = 'added';
         }
-        return result;
-    }, {});
+    });
+
+    return result;
 };
 
 export default generateDifference;
