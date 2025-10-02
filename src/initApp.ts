@@ -3,6 +3,7 @@ import initLessonsSelector from './utils/initLessonsSelector';
 
 import type { IAppState } from './types';
 import mountVueApp from './utils/vueApp';
+import 'highlight.js/styles/default.min.css';
 
 interface IProps {
     executeSelector: string;
@@ -38,22 +39,30 @@ export default function initApp(payload: IProps) {
         get(target, param) {
             if (param === 'log') {
                 return (...args) => {
+                    const div = document.createElement('div');
+
                     for (const arg of args) {
-                        const div = document.createElement('div');
                         div.classList.add('app__logger-row');
 
                         const code = document.createElement('code');
                         try {
-                            code.textContent = typeof arg === 'string'
+                            const text = typeof arg === 'string'
                                 ? arg
                                 : JSON.stringify(arg, null, '\t');
+                            if (!text) {
+                                continue;
+                            }
+                            code.textContent = text;
                         } catch (err) {
                             console.error(err);
                             code.textContent = 'Ошибка при сериализации данных';
                         }
 
                         div.appendChild(code);
-                        loggerEl.appendChild(div)
+                    }
+
+                    if (div.children.length > 0) {
+                        loggerEl.insertBefore(div, loggerEl.firstChild);
                     }
                     target[param](...args);
                 };
