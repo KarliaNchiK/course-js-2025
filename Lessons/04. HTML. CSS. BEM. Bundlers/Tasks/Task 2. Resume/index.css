@@ -1,7 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
 .resume {
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
     font-family: Verdana, Tahoma, sans-serif;
-    background: #ffeed6;
+    background: white;
     border-radius: 10px;
+    height: 800px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid gray;
+}
+
+.resume__header {
+    width: 600px;
+    height: 25%;
+    display: flex;
+}
+
+.resume__header__text {
+    height: 80%;
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume__header-link {
+    margin-right: 20px;
+}
+
+.resume__blockHeader {
+    font-size: 22px;
+    padding: 0px;
+    border-bottom: 2px solid gray;
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+
+.resume__blockcontent {
+    width: 100%;
+    height: 100px;
+    border: 1px solid red;
+    font-size: 12px;
 }
