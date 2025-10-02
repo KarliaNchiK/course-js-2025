@@ -37,7 +37,6 @@ function checkWinner() {
         [0, 4, 8],
         [2, 4, 6],
     ];
-
     for (const combo of winCombinations) {
         const [a, b, c] = combo;
         if (board[a] && board[a] === board[b] && board[a] === board[c]) {
