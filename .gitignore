@@ -6,4 +6,9 @@ vue/build
 yarn.lock
 pnpm.lock
 dist
+<<<<<<< HEAD
 tsconfig.tsbuildinfo
+=======
+tsconfig.tsbuildinfo
+.DS_Store
+>>>>>>> origin/lesson-five
