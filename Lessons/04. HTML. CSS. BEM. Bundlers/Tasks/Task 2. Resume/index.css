@@ -1,7 +1,20 @@
 .resume {
-    padding: 10px;
-    margin: 20px;
+    /* Стиль для страницы А4 */
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    padding: 20mm;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
     font-family: Verdana, Tahoma, sans-serif;
-    background: #ffeed6;
+    border-radius: 10px;
+}
+
+.resume__footer {
+    text-align: center;
+    padding: 10px;
+    width: 500px;
+    margin: 20px;
     border-radius: 10px;
 }
