@@ -1,10 +1,27 @@
 const getLastWordLength = (str) => {
-    for(let i = 0;i < str.length; i ++){
-        let l = str[i - 1];
+        const trimy = str.trim();
+        let length = 0;
+    for(let i = trimy.length - 1; i >= 0; i --){
+        if(trimy[i] === ' '){
+            break;
 
+
+
+        }
+        length ++;
 
 
     }
+    return length;
+
+
+
+
+
+
+
+
+
 
 };
 

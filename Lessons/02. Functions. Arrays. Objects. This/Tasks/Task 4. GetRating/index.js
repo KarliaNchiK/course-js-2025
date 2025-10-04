@@ -1,6 +1,6 @@
 const getRating = (object) => {
-    const {like , dislike} = object;
-    return like - dislike;
+    const {likes , dislikes} = object;
+    return likes - dislikes;
     // if(dislike > like && dislike === like){
     //     return  like - dislike;
     // }else{

@@ -1,7 +1,15 @@
 const moreFunction = (number) => {
-    // Начало
+    return function (newFunction){
+        const result = [];
+        for(let i = 0; i < newFunction.length; i ++){
+            let element = newFunction[i];
+            result.push(element / number);
+        }
+        return result;
+    }
 
-    // Конец
+
+
 };
 
 export default moreFunction;
