@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .tic-tac-toe {
     border: 2px solid black;
@@ -18,4 +19,8 @@
 }
 .tic-tac-toe__block:not(:last-of-type) {
     border-right: 2px solid black;
+=======
+.tic-tac-toe {
+
+>>>>>>> origin/lesson-five
 }
