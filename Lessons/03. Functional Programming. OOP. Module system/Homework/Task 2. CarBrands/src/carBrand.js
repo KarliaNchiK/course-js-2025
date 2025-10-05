@@ -1,7 +1,13 @@
 class CarBrand {
-    // Начало
+    runDrag(time){
+        return  `${this.brandName} ${this.model} runs drag for ${time} seconds`;
 
-    // Конец
+    }
+    getWhoIsFaster(car){
+       return  `${this.brandName} ${this.model} is faster for  ${time} seconds`;
+
+    }
+
 }
 
 export default CarBrand;
