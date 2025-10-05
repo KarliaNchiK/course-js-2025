@@ -1,3 +1,21 @@
-.tic-tac-toe {
 
+.tic-tac-toe {
+    border: 2px solid black;
+    width: fit-content;
+}
+.tic-tac-toe__row {
+    display: flex;
+}
+.tic-tac-toe__row:not(:last-of-type) {
+    border-bottom: 2px solid black;
+}
+.tic-tac-toe__block {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tic-tac-toe__block:not(:last-of-type) {
+    border-right: 2px solid black;
 }

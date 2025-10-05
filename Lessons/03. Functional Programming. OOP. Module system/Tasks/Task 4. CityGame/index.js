@@ -1,4 +1,5 @@
 class CityGame {
+
     constructor(player1, player2) {
         this.player1 = player1;
         this.player2 = player2;
@@ -33,8 +34,6 @@ class CityGame {
         this.cityList = [];
         return 'The game has been restarted!';
     }
-
-
 }
 
 export default CityGame;
