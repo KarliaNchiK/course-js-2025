@@ -1,7 +1,76 @@
 .resume {
-    padding: 10px;
-    margin: 20px;
+    padding: 15px 5px 10px;
+    margin: 10px auto;
+    background: #a6b8c5;
+    border-radius: 5px;
     font-family: Verdana, Tahoma, sans-serif;
-    background: #ffeed6;
-    border-radius: 10px;
+    font-size: 40%;
+}
+.resume__header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.resume__image {
+    width: 75px;
+    height: auto;
+    float: right;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.resume__title {
+    font-weight: normal;
+    padding-top: 10px;
+
+}
+.resume__subtitle {
+    margin-bottom: 10px;
+
+}
+.resume__contacts {
+    margin-bottom: 20px;
+}
+.resume__link {
+    transition: all 0.3s ease;
+    margin: 3px;
+    padding: 2px 5px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    text-decoration: none;
+    color: blue;
+
+}
+.resume__link:hover{
+    color: white;
+    background-color: blue;
+}
+.resume__main {
+}
+.resume__section {
+    margin-bottom: 10px;
+}
+.resume__section-title {
+    font-size: 1.4em;
+    border-bottom: 1px solid black;
+}
+.resume__text {
+}
+.resume__job {
+
+}
+.resume__job-title {
+
+}
+.resume__job-post{
+
+}
+.resume__list {
+    padding-left: 10px;
+}
+.resume__list-item {
+
+}
+
+.resume__footer{
+    text-align: center;
+    margin-top: 10px
 }
