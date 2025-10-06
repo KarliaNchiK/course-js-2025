@@ -1,7 +1,74 @@
+p {
+    font-size: 20px;
+}
+
+body {
+    padding:20px;
+    background-color: #f0f8ff;
+
+
+}
 .resume {
-    padding: 10px;
-    margin: 20px;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 900px;
     font-family: Verdana, Tahoma, sans-serif;
-    background: #ffeed6;
+    background: white;
     border-radius: 10px;
+    box-shadow: 0 1.5px 3px rgb(0 17 51 / 24%), 0 0 1px rgb(0 17 51 / 32%);
+}
+
+.resume__header {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume__header-info-section {
+    flex-grow: 1;
+}
+
+.resume__header-title {
+    font-size: 36px;
+    padding-bottom: 0;
+    font-weight: 400;
+}
+
+
+.resume__header-link {
+    font-size: 20px;
+}
+
+.resume__main-header {
+    font-size: 32px;
+    font-weight: normal;
+    border-bottom: 1px solid grey;
+    padding-bottom: 0;
+}
+
+.resume__main-experience {
+    display: flex;
+}
+
+.resume__main-experience-item {
+    width: 50%;
+}
+
+.resume__footer {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.resume__footer-item {
+    font-size: 17px;
+    font-weight: normal;
+    margin-top: 7px
+}
+
+.resume__main-interests {
+    font-size: 17px;
 }
