@@ -1,3 +1,38 @@
-.tic-tac-toe {
+.tic-tac-toe__row{
+    display: flex;
+     align-content: center;
 
+
+}
+.tic-tac-toe__item{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.tic-tac-toe__row:not(:last-of-type) {
+    border-bottom: 10px solid #B0B0B0;
+
+}
+.tic-tac-toe__item img {
+    width: 30px;
+    height: 30px;
+}
+.tic-tac-toe{
+    border: 10px solid #B0B0B0;
+    background-color: rosybrown;
+    width: fit-content;
+
+}
+body {
+    padding: 40px;
+
+}
+.tic-tac-toe__item:not(:last-child) {
+    border-right: 10px solid #B0B0B0;
 }
