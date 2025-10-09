@@ -2,6 +2,44 @@
     padding: 10px;
     margin: 20px;
     font-family: Verdana, Tahoma, sans-serif;
-    background: #ffeed6;
+    background: darkgray;
     border-radius: 10px;
 }
+.resume__header{
+        border-bottom: 3px solid #333;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+
+
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.name-section h1 {
+    margin: 1px 3px 10px 200px;
+    color: #333;
+    font-size: 2.5em;
+}
+.tagline {
+    margin: 0 0 50px 200px;
+    font-size: 1.2em;
+    color: #666;
+    font-style: italic;
+
+}
+.photo-section img {
+    border-radius: 10px;
+    border: 50px solid #333;
+}
+
+
+.contacts {
+    display: flex;
+    align-items: center;
+    margin: 500px 50px 100px 420px;
+     margin-top: 10px;
+}
+
+
