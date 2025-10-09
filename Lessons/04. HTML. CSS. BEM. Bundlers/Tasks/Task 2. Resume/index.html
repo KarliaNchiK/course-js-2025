@@ -1,19 +1,346 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="./index.css"
-        >
-    </head>
-    <body>
-        <div class="resume">
-            <!-- Начало -->
-            Здесь могло бы быть Ваше резюме...
-            <!-- Конец -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Газетдинова Эльвина</title>
+    <style>
+        body {
+            padding: 20px;
+            background: linear-gradient(135deg, #f8f8f8 0%, #ffe6f2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        /* Кружевные вставки по бокам */
+        body::before,
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 60px;
+            background-image:
+                    radial-gradient(circle at 30px 30px, #ffb6c1 2px, transparent 3px),
+                    radial-gradient(circle at 15px 60px, #ffb6c1 2px, transparent 3px),
+                    radial-gradient(circle at 45px 90px, #ffb6c1 2px, transparent 3px);
+            background-size: 60px 120px;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        body::before {
+            left: 0;
+            background-position: 0 0;
+        }
+
+        body::after {
+            right: 0;
+            background-position: 0 0;
+        }
+
+        .resume {
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border: 1px solid #f0f0f0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .resume__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ffb6c1;
+        }
+
+        .resume__header-info {
+            flex-grow: 1;
+        }
+
+        .resume__header-title {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .resume__header-subtitle {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        .resume__header-links {
+            margin-top: 10px;
+        }
+
+        .resume__header-link {
+            margin-right: 25px;
+            text-decoration: none;
+            color: #e75480;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .resume__header-link:hover {
+            color: #ff1493;
+        }
+
+        /* Стили для фото с кружевом и бантиками */
+        .resume__header-photo {
+            position: relative;
+            width: 220px;
+            height: 220px;
+        }
+
+        .resume__header-photo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffb6c1;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Кружевная рамка вокруг фото */
+        .resume__header-photo::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            right: -15px;
+            bottom: -15px;
+            border-radius: 50%;
+            background:
+                    radial-gradient(circle at 30px 30px, #ffb6c1 2px, transparent 3px),
+                    radial-gradient(circle at 60px 15px, #ffb6c1 2px, transparent 3px),
+                    radial-gradient(circle at 90px 45px, #ffb6c1 2px, transparent 3px);
+            background-size: 120px 120px;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 1;
+            opacity: 0.7;
+            border: 2px dashed #ffb6c1;
+        }
+
+        /* Бантики */
+        .photo-bow {
+            position: absolute;
+            font-size: 24px;
+            color: #ff69b4;
+            z-index: 3;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .bow-top { top: -5px; left: 50%; transform: translateX(-50%) rotate(0deg); }
+        .bow-right { top: 50%; right: -5px; transform: translateY(-50%) rotate(90deg); }
+        .bow-bottom { bottom: -5px; left: 50%; transform: translateX(-50%) rotate(180deg); }
+        .bow-left { top: 50%; left: -5px; transform: translateY(-50%) rotate(270deg); }
+
+        /* Дополнительные декоративные элементы */
+        .photo-decoration {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #ffb6c1;
+            border-radius: 50%;
+            z-index: 3;
+        }
+
+        .decoration-1 { top: 20px; left: 20px; }
+        .decoration-2 { top: 20px; right: 20px; }
+        .decoration-3 { bottom: 20px; left: 20px; }
+        .decoration-4 { bottom: 20px; right: 20px; }
+
+        .resume__main-section {
+            margin-bottom: 30px;
+        }
+
+        .resume__main-title {
+            font-size: 24px;
+            color: #333;
+            border-bottom: 2px solid #ffb6c1;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .resume__experience {
+            display: flex;
+            gap: 30px;
+        }
+
+        .resume__experience-item {
+            flex: 1;
+        }
+
+        .resume__experience-company {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .resume__experience-period {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .resume__education-item {
+            margin-bottom: 10px;
+        }
+
+        .resume__education-place {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .resume__education-details {
+            color: #666;
+            margin-left: 20px;
+        }
+
+        .resume__interests-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .resume__interests-list li {
+            background: #fff0f5;
+            padding: 8px 15px;
+            margin-bottom: 8px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-right: 10px;
+            color: #333;
+        }
+
+        .resume__footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ffb6c1;
+            color: #666;
+        }
+
+        .resume__footer-name {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .resume__footer-contacts {
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+
+        /* Декоративные элементы внутри резюме */
+        .resume::before {
+            content: "❦";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 0 20px;
+            color: #ffb6c1;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+<div class="resume">
+    <!-- ШАПКА -->
+    <header class="resume__header">
+        <section class="resume__header-info">
+            <h1 class="resume__header-title">Газетдинова Эльвина Ильнаровна</h1>
+            <h2 class="resume__header-subtitle">Fullstack-разработчик</h2>
+            <div class="resume__header-links">
+                <a href="https://t.me/e33sn" class="resume__header-link" target="_blank">Telegram-канал</a>
+                <a href="https://open.spotify.com/user/31yfemnkqbp7hmgud7dkftkqc7py?si=f35cec512ac84624" class="resume__header-link" target="_blank">Spotify</a>
+            </div>
+        </section>
+        <section class="resume__header-photo">
+            <!-- Бантики вокруг фото -->
+            <div class="photo-bow bow-top">🎀</div>
+            <div class="photo-bow bow-right">🎀</div>
+            <div class="photo-bow bow-bottom">🎀</div>
+            <div class="photo-bow bow-left">🎀</div>
+
+            <!-- Декоративные точки -->
+            <div class="photo-decoration decoration-1"></div>
+            <div class="photo-decoration decoration-2"></div>
+            <div class="photo-decoration decoration-3"></div>
+            <div class="photo-decoration decoration-4"></div>
+
+            <img src="elvina-photo.jpg" alt="Фото Эльвины">
+        </section>
+    </header>
+
+    <!-- ОСНОВНАЯ ЧАСТЬ -->
+    <main class="resume__main">
+        <!-- О СЕБЕ -->
+        <section class="resume__main-section">
+            <h3 class="resume__main-title">О себе</h3>
+            <p>white j's<br>white porsche<br>write wrist<br>white horse</p>
+        </section>
+
+        <!-- ОПЫТ РАБОТЫ -->
+        <section class="resume__main-section">
+            <h3 class="resume__main-title">Опыт работы</h3>
+            <div class="resume__experience">
+                <div class="resume__experience-item">
+                    <h4 class="resume__experience-company">В процессе поиска работы</h4>
+                    <p class="resume__experience-period">Настоящее время</p>
+                    <ul>
+                        <li>Ищу возможности для развития</li>
+                        <li>Готова к новым вызовам</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ОБРАЗОВАНИЕ -->
+        <section class="resume__main-section">
+            <h3 class="resume__main-title">Образование</h3>
+            <div class="resume__education-item">
+                <span class="resume__education-place">КФУ ИТИС</span>
+                <div class="resume__education-details">2024 - настоящее время</div>
+            </div>
+        </section>
+
+        <!-- УВЛЕЧЕНИЯ -->
+        <section class="resume__main-section">
+            <h3 class="resume__main-title">Увлечения</h3>
+            <ul class="resume__interests-list">
+                <li>Музыка</li>
+                <li>Мода</li>
+                <li>Рисование</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="resume__footer">
+        <div class="resume__footer-name">Газетдинова Эльвина</div>
+        <div class="resume__footer-contacts">
+            Казань<br>
+            gazetdiinovaelvina@gmail.com<br>
+            8 (987) 299-97-28
         </div>
-    </body>
+    </footer>
+</div>
+</body>
 </html>
