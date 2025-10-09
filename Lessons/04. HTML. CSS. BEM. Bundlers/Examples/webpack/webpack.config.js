@@ -1,6 +1,6 @@
 const path = require('path');
-const EncodingPlugin = require('webpack-encoding-plugin');
-const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
+const EncodingPlugin = require('my-webpack-app-encoding-plugin');
+const MomentLocalesPlugin = require('moment-locales-my-webpack-app-plugin');
 
 module.exports = {
     // тип сборки - для разработки или в продакшн
