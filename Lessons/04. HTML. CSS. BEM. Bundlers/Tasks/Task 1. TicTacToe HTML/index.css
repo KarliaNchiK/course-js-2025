@@ -23,10 +23,6 @@ body {
     align-items: center;
 }
 
-.tic-tac-toe_board {
-    display: grid;
-
-}
 
 .tic-tac-toe__cell:last-of-type {
     border-right: none;
