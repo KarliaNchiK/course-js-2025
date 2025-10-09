@@ -1,7 +1,13 @@
 const sumSquareDifference = (num) => {
-    // Начало
+    let sum = 0;
+    let sumOfSquares = 0;
     
-    // Конец
+    for (let i = 1; i <= num; i++) {
+        sum += i;
+        sumOfSquares += i * i;
+    }
+    
+    return (sum * sum) - sumOfSquares;
 };
 
 export default sumSquareDifference;
