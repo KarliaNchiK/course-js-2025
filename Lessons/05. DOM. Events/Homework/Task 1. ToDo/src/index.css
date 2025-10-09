@@ -8,6 +8,12 @@
     width: 1100px;
 }
 
+.to-do__main, .to-do__tasks {
+    min-height: 50px;
+    min-width: 200px;
+}
+
+
 .to-do,
 .to-do__tasks {
     display: flex;
