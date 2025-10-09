@@ -1,7 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 .resume {
     padding: 10px;
     margin: 20px;
-    font-family: Verdana, Tahoma, sans-serif;
-    background: #ffeed6;
+    font-family: Georgia, sans-serif;
+    background: paleturquoise;
     border-radius: 10px;
+    line-height: 1.8;
 }
+
+.resume__header-link {
+    margin-right: 20px;
+}
+
+h1.resume__header-title {
+    font-size: 36px;
+    padding-bottom: 0;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: midnightblue;
+}
+
+.resume__header {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 80px;
+}
+
+.resume__main-header {
+    font-size: 32px;
+    font-weight: 400;
+    border-bottom: 1px solid #545960;
+    padding-bottom: 5px;
+    margin: 25px 0 15px 0;
+}
+
+.resume__header-info-section {
+    flex-grow: 1;
+}
+
+.resume__footer {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.resume__footer-item {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.resume__main-experience {
+    display: flex;
+}
+
+.resume__main-experience-item {
+    width: 50%;
+}
+
+.resume__main-experience-item--last {
+    margin-left: 30px;
+}
+
+.resume__main-interests li {
+    font-size: 16px;
+}
+
+.resume__header-link {
+    font-size: 20px;
+}
+
+.resume__header-image-section img {
+    border-radius: 50px;
+    box-shadow: 0 0 10px #545960;
+    margin-top: 15px;
+}
+

@@ -1,3 +1,46 @@
-.tic-tac-toe {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    background: whitesmoke;
+}
+
+.tic-tac-toe {
+    border: 3px solid hotpink;
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.tic-tac-toe__row {
+    display: flex;
+    align-items: center;
+}
+
+.tic-tac-toe__row:not(:last-of-type) {
+    border-bottom: 3px solid lightpink;
+}
+
+.tic-tac-toe__item {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tic-tac-toe__item img {
+    width: 32px;
+    height: 32px;
+}
+
+.tic-tac-toe__item:not(:last-of-type) {
+    border-right: 3px solid lightpink;
 }
