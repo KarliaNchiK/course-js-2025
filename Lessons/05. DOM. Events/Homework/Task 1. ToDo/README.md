@@ -10,7 +10,7 @@
 
 ```
 <div class="to-do">
-    <div class="to-do__header">
+    <div class="to-do__header">a
         <h2>Мой первое ToDo-приложение на js</h2>
     </div>
     <div class="to-do__main"></div>
