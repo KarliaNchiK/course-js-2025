@@ -30,9 +30,17 @@ const setCalculator = () => {
     const calcResult = document.querySelector('.calc__result');
     const calcMain = document.querySelector('.calc__main');
 
+
+    const resultText = document.createElement('span');
+    resultText.textContent = 'Результат: ';
+
+
     const resultNumber = document.createElement('span');
     resultNumber.textContent = '0';
-    resultNumber.className = 'calc_result-number';
+    resultNumber.className = 'calc__result-number';
+
+    calcResult.appendChild(resultText);
+    calcResult.appendChild(resultNumber);
 
     for(let i = 0; i <= 9; i++) {
         const button = document.createElement('button');
@@ -82,8 +90,6 @@ const setCalculator = () => {
 
 
 
-
-
     resetEl.addEventListener('click', () => {
         calcMain.textContent = '';
         resultNumber.textContent = '0';
@@ -92,10 +98,7 @@ const setCalculator = () => {
     calcButtons.appendChild(resetEl);
 
 
-    const resultText = document.createElement('span');
-    resultText.textContent = 'Результат: ';
-    calcResult.appendChild(resultText);
-    calcResult.appendChild(resultNumber);
+
 
 };
 
