@@ -1,5 +1,5 @@
 const createButton = () => {
-    let btn = document.createElement("button");
+    let btn = document.createElement('button');
     btn.className = 'btn btn-primary';
     btn.textContent = 'Кнопка';
 
@@ -8,9 +8,8 @@ const createButton = () => {
 
     btnContainer.append(btn);
     btn.addEventListener('click', () => {
-        let span = document.createElement("span");
+        let span = document.createElement('span');
         span.textContent = 'Текст вставлен!';
-
         description.append(span);
     })
 };
