@@ -1,7 +1,81 @@
-.resume {
-    padding: 10px;
-    margin: 20px;
-    font-family: Verdana, Tahoma, sans-serif;
-    background: #ffeed6;
-    border-radius: 10px;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 960px;
+    display: flex;
+    margin-left: 20%;
+}
+h1, h2, .resume__header{
+    font-family: "Roboto Condensed", sans-serif;
+}
+h2{
+    font-size: 40px;
+}
+p, li, ol{
+    font-family: "Noto Sans Lao", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.resume__header{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: 500;
+    gap: 307px;
+    margin:  37px 37px 37px 60px;
+}
+.resume{
+    background-color: #DDDCDC;
+}
+.resume__header__social-media{
+    display: flex;
+    flex-direction: row;
+    gap: 66px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    opacity: 70%;
+}
+.resume__main__about-me{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.resume__main__about-me-image{
+    padding-left: 54px;
+}
+.resume__main__about-me__text-heading1{
+    font-size: 100px;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+
+}
+.resume__main__about-me__text{
+    margin-left: 34px;
+}
+.resume__main__about-me__text-paragraph{
+    padding-right: 84px;
+}
+.resume__main__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 78px;
+    margin-top: 82px;
+}
+.resume__main__info__experience{
+    padding-left: 90px;
+}
+.resume__main__info__education{
+    padding-right: 31px;
+}
+.resume__footer{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -2,18 +2,71 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <title>Resume</title>
         <link
             rel="stylesheet"
             type="text/css"
             href="./index.css"
         >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="resume">
-            <!-- Начало -->
-            Здесь могло бы быть Ваше резюме...
-            <!-- Конец -->
+            <header class="resume__header">
+                 <div class="resume__header-initials">
+                    Fullstack-разработчик:<br>Галимзянова Адиля
+                 </div>
+                 <div class="resume__header__social-media">
+                    <a href="" class="resume__header-social-media-telegram-link">Telegram</a>
+                    <a href="" class="resume__header-social-media-instagram-link">Instagram</a>
+                 </div>
+            </header>
+            <main class="resume__main">
+                <section class="resume__main__about-me">
+                    <img src="images/my_photo.png" alt="" class="resume__main__about-me-image">
+                    <div class="resume__main__about-me__text">
+                        <h1 class="resume__main__about-me__text-heading1">RESUME</h1>
+                        <h2 class="resume__main__about-me__text-heading2">О СЕБЕ</h2>
+                        <p class="resume__main__about-me__text-paragraph">
+                            Я очень люблю творчество, изучать что-то новое, 
+                            набираться опыта и саморазвиваться. Увлекаться разными 
+                            техническими штукам я начала ещё в детстве: разбирала 
+                            калькуляторы и старые компьютеры, пытаясь понять, как они устроены 
+                            (с рабочим ноутбуком так делать не собираюсь, не волнуйтесь).
+                        </p>
+                    </div>
+                </section>
+                <section class="resume__main__info">
+                    <div class="resume__main__info__experience">
+                    <h2 class="resume__main__info__experience-heading">
+                        ОПЫТ
+                    </h2>
+                    <p class="resume__main__info__experience-text">
+                        <ol>
+                            <li>Свой первый сайт я сделала на телефоне. </li>
+                            <li>Потом я начала интересоваться Unity-разработкой, бэкенд-разработкой и олимпиадным программированием.</li>
+                            <li>В 2025 году начала проходить курс по fullstack-программированию. Планирую развиваться в этой сфере и дальше.</li>
+                        </ol>
+                    </p>
+                </div>
+                <div class="resume__main__info__education">
+                    <h2 class="resume__main__info__education-heading">
+                        ОБРАЗОВАНИЕ
+                    </h2>
+                    <p class="resume__main__info__education-text">
+                        <ol>
+                            <li>В 2022 закончила курсы по <br> разработке игр на Unity от проекта <br> "Код будущего".</li>
+                            <li>На данный момент учусь на 2-м курсе КФУ ИТИС по направлению "Программная инженерия".</li>
+                        </ol>
+                    </p>
+                </div>
+                </section>
+            </main>
+            <footer class="resume__footer">
+                <p class="resume__footer-text">г. Казань, +8 (908) 335-64-64</p>
+            </footer>
         </div>
     </body>
 </html>
