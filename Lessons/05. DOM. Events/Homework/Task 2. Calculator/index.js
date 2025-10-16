@@ -39,8 +39,6 @@ const setCalculator = () => {
 
     calcResult.appendChild(spanResult);
     calcResult.appendChild(spanCalc);
-
-
 };
 
 const createButton = (symbol, calcMain) => {
