@@ -1,43 +1,84 @@
-.main {
-    background: #F6F6F6;
-    display: block;
-    width: 700px;
-    padding: 30px;
-    margin: 40px;
-    font-family: Verdana, Tahoma, sans-serif;
-    border-radius: 10px;
-    align-items: center;
+.main.news {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 26px 24px 18px 24px;
+    max-width: 680px;
+    margin: 24px auto;
 }
 
-.news__header {
-    margin-bottom: 20px;
+.news__header h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 18px;
 }
 
 .news__form {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    gap: 10px;
+    margin-bottom: 14px;
 }
 
-.news__form .btn {
-    margin-left: 8px;
+.form-control {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    font-size: 1.1rem;
+    background: #fff;
+    transition: border .2s;
+}
+
+.form-control:focus {
+    border-color: #1976d2;
+    outline: none;
+}
+
+.btn.btn-primary {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:active {
+    background: #0d47a1;
 }
 
 .news__container-header {
-    margin-bottom: 12px;
+    font-size: 1.6rem;
+    margin: 18px 0 14px 0;
+    font-weight: 400;
+}
+
+.news__container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
 .news__news-element {
-    background: #FFFFFF;
-    padding: 20px 16px;
-    border-radius: 8px;
-    box-shadow: 0 2px 3px rgb(0 17 51 / 24%), 0 0 1px rgb(0 17 51 / 32%);
+    background: #fff;
+    border-radius: 9px;
+    box-shadow: 0 2px 8px rgba(60,60,75,0.07);
+    padding: 14px 20px 10px 18px;
+    font-size: 1.07rem;
 }
 
-.news__news-element:not(:last-child) {
-    margin-bottom: 12px;
+.news__news-element h5 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    margin-top: 0;
+    font-weight: 600;
+    letter-spacing: 0.02em;
 }
 
 .news__news-element div {
-    font-size: 18px;
+    font-size: 1.08rem;
+    color: #232323;
 }
