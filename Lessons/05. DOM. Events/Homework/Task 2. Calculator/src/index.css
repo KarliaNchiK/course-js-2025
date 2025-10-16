@@ -2,26 +2,24 @@
     padding: 30px;
     margin: 40px auto;
     font-family: Verdana, Tahoma, sans-serif;
-    background: #f1f1f1;
+    background: #ffe6f0; /* 🌸 светло-розовый фон калькулятора */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 360px;
-    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
-    border: 1px solid #c2c2c2;
-}
-
-.calc__main {
-    margin-top: 10px;
+    box-shadow: 4px 4px 8px 0 rgba(200, 50, 100, 0.2);
+    border: 1px solid #f0a6c1;
 }
 
 .calc__header h2 {
     text-align: center;
+    color: #b30059;
 }
 
 .calc__main {
-    border: 1px solid #ababab;
+    margin-top: 10px;
+    border: 1px solid #f5b5c5;
     border-radius: 6px;
     padding: 12px;
     background-color: white;
@@ -44,14 +42,27 @@
     margin: 6px 6px 0 0;
     font-size: 22px;
     flex-grow: 1;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff66b2; /* 💗 ярко-розовые кнопки */
+    color: white;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.calc__buttons button:hover {
+    background-color: #ff3385; /* чуть темнее при наведении */
+    transform: scale(1.05);
 }
 
 .calc__result {
     margin-top: 20px;
     font-size: 22px;
     font-weight: bold;
+    color: #b30059;
 }
 
 .calc__result-number {
     word-break: break-all;
+    color: #ff0066;
 }
