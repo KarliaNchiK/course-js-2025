@@ -1,3 +1,37 @@
+/* index.css */
 .tic-tac-toe {
+    display: inline-block;
+    border: 2px solid #cf0c0c;
+}
 
+.tic-tac-toe_row {
+    display: flex;
+}
+
+.tic-tac-toe_row:last-of-type {
+    border-bottom: none;
+}
+
+.tic-tac-toe_ce {
+    width: 100px;
+    height: 100px;
+    border-right: 2px solid #da1c1c;
+    border-bottom: 2px solid #e31414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tic-tac-toe_ce:last-of-type {
+    border-right: none;
+}
+
+.tic-tac-toe_row:last-of-type .tic-tac-toe_ce {
+    border-bottom: none;
+}
+
+.tic-tac-toe_i {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
 }

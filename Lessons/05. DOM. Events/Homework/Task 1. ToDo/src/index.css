@@ -4,7 +4,6 @@
     font-family: Verdana, Tahoma, sans-serif;
     background: #f1f1f1;
     border-radius: 10px;
-    align-items: center;
     width: 1100px;
 }
 
@@ -15,43 +14,98 @@
     align-items: flex-start;
 }
 
-.to-do__header,
-.to-do__main {
+.to-do__header {
     margin-bottom: 20px;
 }
 
 .to-do__main {
-    display: flex;
+    display: flex !important;
     align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.to-do__main input {
+    width: 400px;
+    height: 44px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Verdana, Tahoma, sans-serif;
+    background: white;
+}
+
+.to-do__main input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
 .to-do__main button {
-    margin-left: 10px;
-    width: 400px;
     height: 44px;
+    padding: 0 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Verdana, Tahoma, sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
 }
 
-[data-type] {
+.to-do__main .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    min-width: 180px;
+}
+
+.to-do__main .btn-success {
+    background-color: #198754;
+    color: white;
+    min-width: 200px;
+}
+
+.to-do__main button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.to-do__tasks {
+    width: 100%;
+}
+
+.task {
+    display: block !important;
     border: 1px solid #e0e0e0;
-    padding: 10px;
+    padding: 12px 15px;
     margin-bottom: 10px;
     font-size: 18px;
-    width: 506px;
+    width: 100%;
+    max-width: 800px;
     border-radius: 6px;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
-[data-type]:hover {
+.task:hover {
     box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    transform: translateY(-1px);
 }
 
-[data-type=completed] {
+.task[data-type="completed"] {
     background-color: #c1ffbd;
     border-color: #a2d7a0;
+    color: #2d5016;
 }
 
-[data-type=planned] {
+.task[data-type="planned"] {
     background-color: #ffcccc;
     border-color: #cea7a7;
+    color: #8b0000;
 }
