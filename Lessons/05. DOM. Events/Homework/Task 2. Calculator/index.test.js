@@ -9,7 +9,7 @@ describe('05.h.2 setCalculator', () => {
         '   <h2>Мой первый калькулятор на js</h2>' +
         '</div>' +
         '<div class="calc__main"></div>' +
-        '<div class="calc__buttons"></div>' +7
+        '<div class="calc__buttons"></div>' +
         '<div class="calc__result"></div>' +
         '</div>';
 

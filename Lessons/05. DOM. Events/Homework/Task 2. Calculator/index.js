@@ -25,11 +25,6 @@ const setCalculator = () => {
     const mainBlock = document.querySelector('.calc__main');
     const resultBlock = document.querySelector('.calc__result');
 
-    if (!buttonsBlock || !mainBlock || !resultBlock) {
-        console.error('Не найдены необходимые DOM элементы');
-        return;
-    }
-
     const resultText = document.createElement('span');
     resultText.textContent = 'Результат:';
 
@@ -84,18 +79,33 @@ const setCalculator = () => {
             // eslint-disable-next-line default-case
             switch (type) {
                 case TYPES.DIGIT:
-                    mainBlock.textContent += value;
-                    break;
+                { const currentText = mainBlock.textContent;
+                    if (currentText === '') {
+                        mainBlock.textContent += value;
+                        break;
+                    }
+
+                    if (currentText.endsWith('+')) {
+                        mainBlock.textContent += value;
+                    } else {
+                        const parts = currentText.split('+');
+                        const lastNumber = parts[parts.length - 1];
+
+                        if (lastNumber === '0') { /* empty */ } else {
+                            mainBlock.textContent += value;
+                        }
+                    }
+                    break; }
 
                 case TYPES.PLUS:
-                    { const currentText = mainBlock.textContent;
+                { const currentText = mainBlock.textContent;
                     if (currentText && !currentText.endsWith('+')) {
                         mainBlock.textContent += value;
                     }
                     break; }
 
                 case TYPES.RESULT:
-                    { const result = calculateResult();
+                { const result = calculateResult();
                     resultNumber.textContent = result;
                     break; }
 
@@ -107,8 +117,4 @@ const setCalculator = () => {
         }
     });
 };
-document.addEventListener('DOMContentLoaded', () => {
-    setCalculator();
-});
-
 export default setCalculator;
