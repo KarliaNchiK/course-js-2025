@@ -89,7 +89,7 @@ const setNewsMaker = () => {
 
     // Работа со слоем View
     // Единственная ответственность вотчеров - обновлять DOM при изменении состояния
-    setWatchers({ newsContainer, newsInput },state);
+    setWatchers({ newsContainer, newsInput }, state);
 };
 
 export default setNewsMaker;
