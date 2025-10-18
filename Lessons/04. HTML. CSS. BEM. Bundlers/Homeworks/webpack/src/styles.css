@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: lightblue;
+}
+
+.message {
+    background: white;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
