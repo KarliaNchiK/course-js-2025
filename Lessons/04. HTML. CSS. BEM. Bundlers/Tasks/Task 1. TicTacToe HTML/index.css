@@ -11,6 +11,7 @@
     display: flex;
     background-color: white;
     justify-content: center;
+    align-items: center;
     padding: 4px;
     cursor: pointer;
     transition: background-color 0.2s ease;
@@ -22,7 +23,8 @@
 .tic-tac-toe__cell:nth-child(3n) { border-left: none; }
 .tic-tac-toe__cell:nth-child(n+4) { border-top: none; }
 
-.tic-tac-toe__icon {
+.tic-tac-toe__item {
+    display: block;
     width: 80%;
     height: 80%;
     object-fit: contain;
