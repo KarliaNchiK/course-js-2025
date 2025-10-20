@@ -5,9 +5,9 @@ const initDOM = (state) => {
 
     state.imageUrls.forEach((url, index) => {
         const carouselItem = document.createElement('div');
-        carouselItem.className = 'carousel-item' + (index === 0 ? 'active' : '');
+        carouselItem.className = 'carousel-item' + (index === 0 ? ' active' : '');
 
-        const img = document.createElement('div');
+        const img = document.createElement('img');
         img.className = 'd-block w-100';
         img.src = url;
 
@@ -18,7 +18,7 @@ const initDOM = (state) => {
 
 // Метод для ререндера приложения
 const render = (activeImageIndex) => {
-    const carouselItems = document.querySelector('.carousel-item');
+    const carouselItems = document.querySelectorAll('.carousel-item');
 
     carouselItems.forEach((item,index) => {
         if (index === activeImageIndex) {
@@ -43,7 +43,7 @@ const addListeners = (state) => {
     nextButton.addEventListener('click', () => {
         state.activeImageIndex = state.activeImageIndex === state.imageUrls.length - 1
         ? 0 : state.activeImageIndex + 1;
-        render (state.activeImageIndex);
+        render(state.activeImageIndex);
     });
 
 
@@ -52,6 +52,13 @@ const addListeners = (state) => {
 // Приложение
 const setCarousel = (imageUrls) => {
 
+    const state =  {
+        imageUrls: imageUrls,
+        activeImageIndex: 0
+    };
+
+    initDOM(state);
+    addListeners(state);
 };
 
 export default setCarousel;

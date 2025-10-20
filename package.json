@@ -42,6 +42,7 @@
         "webpack-cli": "^6.0.1"
     },
     "dependencies": {
-        "bootstrap": "^5.3.8"
+        "bootstrap": "^5.3.8",
+        "melanke-watchjs": "^1.5.2"
     }
 }
