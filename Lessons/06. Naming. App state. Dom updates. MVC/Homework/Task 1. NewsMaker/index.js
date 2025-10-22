@@ -28,7 +28,6 @@ const setNewsMaker = () => {
 
     const view = {
         init: () => {
-            const newContainer = document.querySelector('.news__container');
             const inputField = document.querySelector('.news__form .form-control');
             const addButton = document.querySelector('.news__form .btn');
 
