@@ -13,10 +13,6 @@ clearTimeout(timerId);
 
 
 
-
-
-
-
-setInterval(whereIsTheMoney, 1000, 'Тимур');
-const timerId = setInterval(whereIsTheMoney, 1000, 'Тимур');
-clearInterval(timerId);
+// setInterval(whereIsTheMoney, 1000, 'Тимур');
+// const timerId = setInterval(whereIsTheMoney, 1000, 'Тимур');
+// clearInterval(timerId);
