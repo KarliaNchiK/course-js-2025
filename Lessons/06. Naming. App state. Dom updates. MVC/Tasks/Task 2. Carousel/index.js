@@ -12,10 +12,8 @@ const initDOM = (state) => {
 const render = (activeImageIndex) => {
     const carouselInnerContainer = document.querySelector('.carousel-inner');
 
-    // Получаем все существующие carousel-item элементы
     const existingItems = carouselInnerContainer.querySelectorAll('.carousel-item');
 
-    // Создаем недостающие элементы
     for (let i = existingItems.length; i < state.images.length; i += 1) {
         const carouselItem = document.createElement('div');
         carouselItem.className = 'carousel-item';
@@ -29,7 +27,6 @@ const render = (activeImageIndex) => {
         carouselInnerContainer.appendChild(carouselItem);
     }
 
-    // Обновляем активный класс для всех элементов
     const allItems = carouselInnerContainer.querySelectorAll('.carousel-item');
     allItems.forEach((item, index) => {
         if (index === activeImageIndex) {
@@ -45,13 +42,11 @@ const addListeners = (state) => {
     const buttonNext = document.querySelector('.carousel-control-next');
     const buttonPrev = document.querySelector('.carousel-control-prev');
 
-    // Обработчик для кнопки "Вперед"
     buttonNext.addEventListener('click', () => {
         state.currentIndex = (state.currentIndex + 1) % state.images.length;
         render(state.currentIndex);
     });
 
-    // Обработчик для кнопки "Назад"
     buttonPrev.addEventListener('click', () => {
         state.currentIndex = (state.currentIndex - 1 + state.images.length) % state.images.length;
         render(state.currentIndex);

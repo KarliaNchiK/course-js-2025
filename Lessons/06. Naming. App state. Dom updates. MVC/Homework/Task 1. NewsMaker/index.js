@@ -52,7 +52,6 @@ const setWatchers = (state) => {
 
 const setNewsMaker = () => {
     // Начало
-    //Модель
     const mainContainer = document.querySelector('.main');
     const newsInput = mainContainer.querySelector('.form-control');
     const newsCreateButton = mainContainer.querySelector('.btn');
@@ -65,10 +64,8 @@ const setNewsMaker = () => {
         news: [],
     };
 
-    //Controller
     addEventListeners(state);
 
-    //View
     setWatchers(state);
     // Конец
 };
