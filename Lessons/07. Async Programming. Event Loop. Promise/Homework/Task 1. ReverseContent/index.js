@@ -1,4 +1,4 @@
-import { promises as fs } from 'fs';
+import {promises, promises as fs} from 'fs';
 import path from 'path';
 
 
@@ -10,7 +10,11 @@ const getPath = (fileName) => path.join(__dirname, './__fixtures__', fileName);
 
 const reverseContent = (filepath) => {
     // Начало
-
+    return fs.readFile(filepath, 'utf-8')
+        .then(content => {
+            const reversed = content.split('\n').reverse().join('\n');
+            return fs.writeFile(filepath, reversed).then(() => reversed);
+        })
     // Конец
 };
 
