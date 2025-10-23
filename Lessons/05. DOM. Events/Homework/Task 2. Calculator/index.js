@@ -1,10 +1,10 @@
 const setCalculator = () => {
-    // Находим основные блоки
+    // 1. добавить кнопки (находим основные блоки)
     const main = document.querySelector('.calc__main');
     const buttonsContainer = document.querySelector('.calc__buttons');
     const resultContainer = document.querySelector('.calc__result');
 
-    // Создаём кнопки 0–9, +, =, Сбросить
+    // создаём кнопки ... + cбросить
     const buttons = [];
 
     for (let i = 0; i <= 9; i++) {
@@ -33,10 +33,10 @@ const setCalculator = () => {
     resetBtn.dataset.type = 'reset';
     buttons.push(resetBtn);
 
-    // Добавляем все кнопки в контейнер
+    // добавляем все кнопки в контейнер
     buttons.forEach(btn => buttonsContainer.append(btn));
 
-    // Создаём результат
+    // 2. добавить 2 элемента span (cоздаём результат)
     const resultLabel = document.createElement('span');
     resultLabel.textContent = 'Результат: ';
 
@@ -46,7 +46,7 @@ const setCalculator = () => {
 
     resultContainer.append(resultLabel, resultNumber);
 
-    // Логика работы калькулятора
+    // логика работы калькулятора
     buttonsContainer.addEventListener('click', (e) => {
         const target = e.target;
         if (!target.matches('button')) return;

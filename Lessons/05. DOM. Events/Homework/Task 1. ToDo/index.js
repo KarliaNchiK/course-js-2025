@@ -1,15 +1,15 @@
 const setToDo = () => {
-    // Находим основные блоки
+    // 1. добавление в блок 5 элементов (находим основные блоки)
     const main = document.querySelector('.to-do__main');
     const tasks = document.querySelector('.to-do__tasks');
 
-    // Создаём поле ввода
+    // cоздаём поле ввода
     const input = document.createElement('input');
     input.type = 'text';
     input.placeholder = 'Введите наименование задачи';
     input.classList.add('form-control', 'form-control-lg');
 
-    // Создаём кнопки
+    // cоздаём кнопки
     const planButton = document.createElement('button');
     planButton.textContent = 'Добавить в план';
     planButton.classList.add('btn', 'btn-danger');
@@ -18,10 +18,10 @@ const setToDo = () => {
     completedButton.textContent = 'Добавить в сделанные';
     completedButton.classList.add('btn', 'btn-success');
 
-    // Добавляем элементы в блок main
+    // добавляем элементы в блок main
     main.append(input, planButton, completedButton);
 
-    // Функция добавления задачи
+    // 2. функция добавления задачи
     const addTask = (type) => {
         const value = input.value.trim();
         if (!value) return; // не добавляем пустое
@@ -30,7 +30,7 @@ const setToDo = () => {
         span.textContent = value;
         span.dataset.type = type;
 
-        // При клике по задаче — удалить
+        // при клике по задаче = удалить ее
         span.addEventListener('click', () => {
             span.remove();
         });
@@ -39,7 +39,7 @@ const setToDo = () => {
         input.value = ''; // очищаем поле
     };
 
-    // Обработчики кнопок
+    // обработчики кнопок
     planButton.addEventListener('click', () => addTask('planned'));
     completedButton.addEventListener('click', () => addTask('completed'));
 };

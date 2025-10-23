@@ -24,28 +24,28 @@ const setLight = (type) => {
 
 // основная функция, создающая светофор
 const setTrafficLight = () => {
-    // 1️⃣ Находим контейнеры
+    // 1. находим контейнеры
     const trafficLightsBlock = document.querySelector('.traffic__lights');
     const selectBlock = document.querySelector('.traffic__lights-select');
 
-    // 2️⃣ Создаём контейнер для ламп
+    // coздаём контейнер для ламп
     const lightsContainer = document.createElement('div');
     lightsContainer.classList.add('traffic__lights-container');
 
-    // 3️⃣ Создаём 3 лампочки
+    // создаём 3 лампочки
     for (let i = 0; i < 3; i++) {
         const span = document.createElement('span');
         lightsContainer.appendChild(span);
     }
 
-    // 4️⃣ Добавляем контейнер ламп в блок
+    // добавляем контейнер ламп в блок
     trafficLightsBlock.appendChild(lightsContainer);
 
-    // 5️⃣ Создаём select
+    // 2. cоздаём select
     const select = document.createElement('select');
     select.classList.add('form-select');
 
-    // 6️⃣ Добавляем опции
+    // добавляем опции
     for (const key in LIGHTS) {
         const option = document.createElement('option');
         option.value = LIGHTS[key].type;
@@ -53,15 +53,15 @@ const setTrafficLight = () => {
         select.appendChild(option);
     }
 
-    // 7️⃣ Добавляем select в блок
+    // добавляем select в блок
     selectBlock.appendChild(select);
 
-    // 8️⃣ Вешаем обработчик события
+    // 3.вешаем обработчик события
     select.addEventListener('change', (event) => {
         setLight(event.target.value);
     });
 
-    // 9️⃣ По умолчанию — красный свет
+    // 4. по умолчанию — красный свет
     setLight('red');
 };
 
