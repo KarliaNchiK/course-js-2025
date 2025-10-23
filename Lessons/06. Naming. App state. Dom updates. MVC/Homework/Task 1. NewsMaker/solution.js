@@ -1,38 +1,95 @@
 import WatchJS from '../../helpers/melanke-watchjs.js';
 
 const { watch } = WatchJS;
-const state = {
 
-}
-let renderProject = () => {
+const useForm = (mainContainerSelector) => {
+    const mainContainer = document.querySelector(mainContainerSelector);
+    const newsInput = mainContainer.querySelector('.form-control');
+    const newsAddButton = mainContainer.querySelector('.btn-primary');
+    const newsContainer = mainContainer.querySelector('.news__container');
 
-    let newsContainer = document.querySelector('.news__container');
+    return {
+        newsInput,
+        newsAddButton,
+        newsContainer,
+    };
+};
 
-    let newsElement = document.createElement('div');
-    newsElement.classList.add('news__news-element');
+const addEventListeners = ({ newsInput, newsAddButton }, state) => {
+    newsInput.addEventListener('input', (event) => {
+        state.form.text = event.target.value;
+    });
 
-    let currentDate = document.createElement('h5');
-    currentDate.textContent = new Date();
+    newsAddButton.addEventListener('click', () => {
+        const newsText = state.form.text.trim();
 
-    let input = document.querySelector('.form-control');
-    let inputValue = input.value;
-    let newsElementText = document.createElement('div');
-    newsElementText.textContent = inputValue;
+        if (newsText === '') {
+            return;
+        }
 
-    newsElement.appendChild(currentDate);
-    newsElement.appendChild(newsElementText);
+        const date = new Date();
+        state.news.push({
+            text: newsText,
+            date: date.toLocaleDateString() + ' ' + date.toLocaleTimeString(),
+        });
 
-    newsContainer.appendChild(newsElement);
-    input.value = '';
-}
-const addListener = () => {
-    let createNewsBtn = document.querySelector('.btn.btn-primary');
-    createNewsBtn.addEventListener('click', () => {
-        renderProject();
-    })
-}
+        state.form.text = '';
+    });
+};
+
+const setWatchers = ({ newsContainer, newsInput }, state) => {
+    const getNewsHtml = (newsData) => (`
+        <div class="news__news-element">
+            <h5>${ newsData.date }</h5>
+            <div>${ newsData.text }</div>
+        </div>
+    `);
+
+    const getNewsList = (newsList) => (
+        newsList
+            .map(getNewsHtml)
+            .reverse()
+            .join('\n')
+    );
+
+    watch(state, 'news', () => {
+        newsContainer.innerHTML = getNewsList(state.news);
+    });
+
+    watch(state, 'form', () => {
+        if (state.form.text === '') {
+            newsInput.value = '';
+        }
+    });
+};
+
 const setNewsMaker = () => {
-    addListener();
+    // Модель нашего приложения
+    const state = {
+        form: {
+            text: '',
+        },
+        news: [],
+    };
+
+    // Обновляемые элементы нашего приложения
+    const {
+        newsContainer,
+        newsInput,
+        newsAddButton,
+    } = useForm('.main');
+
+    // Мозги приложения - слой Controller
+    // Создаем обработчики для событий в слое View (в интерфейсе)
+    // Единственная ответственность обработчиков - обновлять состояние приложения (слой Model)
+    addEventListeners({
+        newsInput,
+        newsAddButton,
+    }, state);
+
+    // Работа со слоем View
+    // Единственная ответственность вотчеров - обновлять DOM при изменении состояния
+    setWatchers({ newsContainer, newsInput },state);
 };
 
 export default setNewsMaker;
