@@ -1,17 +1,13 @@
-import { promises as fs } from 'fs';
-import path from 'path';
+import { readFileSync, writeFileSync } from 'fs';
 
-
-// Метод для отладки. В итоговом решении использоваться не должен
-const getPath = (fileName) => path.join(__dirname, './__fixtures__', fileName);
-// Пример использования метода
-// const currentPath = getPath('/one.txt');
-
-
-const reverseContent = (filepath) => {
-    // Начало
-
-    // Конец
+const reverseContentSync = (filepath) => {
+    const content = readFileSync(filepath, 'utf-8');
+    const lines = content.split(/\r?\n/);
+    if (lines[lines.length - 1] === '') {
+        lines.pop();
+    }
+    const reversed = lines.reverse().join('\n');
+    writeFileSync(filepath, reversed);
+    return reversed;
 };
-
-export default reverseContent;
+export default reverseContentSync;
