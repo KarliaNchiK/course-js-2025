@@ -24,7 +24,7 @@ const writeSum = (pathToFileOne, pathToFileTwo) => {
             return sumOne + sumTwo;
         })
         .catch(() => {
-            // 3. выбрасываем ошибку
+            // 3. выбрасываем ошибкн
             throw new Error('Такого файла нет');
         });
 };
