@@ -1,16 +1,20 @@
 const createButton = () => {
     const firstElement = document.querySelector(".button-container");
+    const secondElement = document.querySelector(".description");
+
     const myButton = document.createElement('button');
     myButton.className = "btn btn-primary";
-    myButton.innerText = "Кнопка";
+    myButton.textContent = "Кнопка";
     firstElement.appendChild(myButton);
-
-    const secondElement = document.querySelector(".description");
 
 
     myButton.addEventListener('click', (event) => {
+        const existingSpan = secondElement.querySelector('span');
+        if (existingSpan) {
+            existingSpan.remove();
+        }
         const mySpan = document.createElement('span');
-        mySpan.innerText = "Текст вставлен!";
+        mySpan.textContent = "Текст вставлен!";
         secondElement.appendChild(mySpan);
     })
 };

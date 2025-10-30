@@ -14,10 +14,8 @@ const LIGHTS = {
 };
 
 const resetLights = () => {
-    const lights = document.querySelectorAll("span");
-    for (const light of lights) {
-        light.className = '';
-    }
+    const lights = document.querySelectorAll(".traffic__lights-container span");
+    lights.forEach(light => light.className = "");
 };
 
 const setLight = (type) => {
@@ -55,7 +53,7 @@ const setTrafficLight = () => {
     for (const light in LIGHTS) {
         const optionElement = document.createElement("option");
         optionElement.value = LIGHTS[light].type;
-        optionElement.innerText = LIGHTS[light].text;
+        optionElement.textContent = LIGHTS[light].text;
         mySelect.appendChild(optionElement);
     }
 
