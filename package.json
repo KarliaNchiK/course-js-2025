@@ -11,7 +11,7 @@
     "test": "vitest run",
     "test-watch": "vitest",
     "test-task": "vitest run -t=",
-    "update": "git fetch origin main && git merge origin/main"
+    "update": "git fetch origin Safiullina && git merge origin/Safiullina"
   },
   "license": "ISC",
   "devDependencies": {
