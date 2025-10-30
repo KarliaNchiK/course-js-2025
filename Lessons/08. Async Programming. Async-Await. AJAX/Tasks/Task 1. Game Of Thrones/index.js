@@ -1,8 +1,8 @@
 const getCharacterData = (characterId, key) => {
-    return fetch("https://www.anapioficeandfire.com/api/characters/${characterId}")
+    return fetch(`https://www.anapioficeandfire.com/api/characters/${characterId}`)
         .then((r) => {
             if (!r.ok) {
-                throw new Error("Ошибка запроса: ${response.status}")
+                throw new Error(`Ошибка запроса: ${response.status}`)
             }
             return r.json();
         })
