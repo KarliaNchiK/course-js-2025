@@ -9,9 +9,26 @@ const getPath = (fileName) => path.join(__dirname, './__fixtures__', fileName);
 
 
 const reverseContent = (filepath) => {
-    // Начало
-
-    // Конец
+    return fs.readFile(filepath, 'utf8')
+        .then((fileContent) => {
+            return fileContent.split('\n').map(line => line);
+        })
+        .then((fileRowsArray) => {
+            const arrayLength = fileRowsArray.length;
+            let reversedArray = new Array(arrayLength);
+            for (let i = 0; i < arrayLength; i += 1) {
+                reversedArray[i] = fileRowsArray[arrayLength - i - 1];
+            }
+            return reversedArray;
+        })
+        .then((reversedArray) => {
+            const fileNewContent = reversedArray.join('\n');
+            return fs.writeFile(filepath, fileNewContent)
+                .then(() => fileNewContent);
+        })
+        .catch((error) => {
+            throw new Error(`Ошибка: ${error}`);
+        });
 };
 
 export default reverseContent;
