@@ -15,7 +15,7 @@ const fetchData = () => {
         }
 
         if (text !== '') {
-            timeID = setTimeout(() => { alertFunction(inputBar.value); timeID = null }, 1000);
+            timeID = setTimeout(() => alertFunction(inputBar.value), 1000);
         }
         else {
             timeID = null;
