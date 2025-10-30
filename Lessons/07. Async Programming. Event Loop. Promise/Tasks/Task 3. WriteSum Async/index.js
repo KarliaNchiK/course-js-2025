@@ -1,15 +1,24 @@
 import { promises as fs } from 'fs';
-import path from 'path';
 
-// Метод для отладки. В итоговом решении использоваться не должен
-const getPath = (fileName) => path.join(__dirname, './__fixtures__', fileName);
-// Пример использования функции
-// const currentPath = getPath('/one.txt');
+const writeSum = async (pathToFileOne, pathToFileTwo) => {
+    const getSum = (content) => {
+        return content
+            .split(',')
+            .map((s) => s.trim())
+            .map(Number)
+            .reduce((a, b) => a + b, 0);
+    };
 
-const getSum = (content) => 0;
+    try {
+        const [contentOne, contentTwo] = await Promise.all([
+            fs.readFile(pathToFileOne, 'utf-8'),
+            fs.readFile(pathToFileTwo, 'utf-8'),
+        ]);
 
-const writeSum = (pathToFileOne, pathToFileTwo, pathToResultFile) => {
-
+        return getSum(contentOne) + getSum(contentTwo);
+    } catch {
+        throw new Error('Такого файла нет');
+    }
 };
 
 export default writeSum;

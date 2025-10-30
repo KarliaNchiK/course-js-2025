@@ -8,10 +8,8 @@ const setWidth = (number) => {
 const updateProgress = (defaultNumber, delta) => {
     let currentProgress = defaultNumber;
 
-    // Устанавливаем начальное значение
     setWidth(currentProgress);
 
-    // Обработчик для кнопки увеличения
     const increaseButton = document.querySelector('.button-increase');
     if (increaseButton) {
         increaseButton.addEventListener('click', () => {
@@ -20,7 +18,6 @@ const updateProgress = (defaultNumber, delta) => {
         });
     }
 
-    // Обработчик для кнопки уменьшения
     const decreaseButton = document.querySelector('.button-decrease');
     if (decreaseButton) {
         decreaseButton.addEventListener('click', () => {
