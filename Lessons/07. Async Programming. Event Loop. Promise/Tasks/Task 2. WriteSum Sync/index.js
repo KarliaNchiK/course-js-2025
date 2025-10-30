@@ -12,7 +12,7 @@ const getSum = (content) => {
         return 0;
     }
     return content.split(',')
-        .map(num => parseInt(num.trim(), 10) || 0)
+        .map(num => parseInt(num.trim(), 10))
         .reduce((sum, num) => sum + num, 0);
 };
 
