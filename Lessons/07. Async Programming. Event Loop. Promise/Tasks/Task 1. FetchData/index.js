@@ -3,7 +3,7 @@ const fetchData = () => {
     let currentValue = '';
     const inputField = document.querySelector('.form-control');
     
-    inputField.addEventListener('change', (e) => {
+    inputField.addEventListener('input', (e) => {
         currentValue = e.target.value;
         clearTimeout(timeoutId);
         timeoutId = setTimeout(() => {
