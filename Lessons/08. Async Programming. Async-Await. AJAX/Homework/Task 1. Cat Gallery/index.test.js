@@ -1,7 +1,8 @@
 /**
  * @jest-environment jsdom
  */
-import setCatGallery from './index';
+import axios from 'axios';
+import setCatGallery from './index.js';
 
 describe('08.h.1 setCatGallery', () => {
     document.body.innerHTML = '<div class="main">\n' +

@@ -1,23 +1,42 @@
-const findParamsInUrl = (urlStr) => {
-    return new URL(urlStr).searchParams;
-}
+const REPLACEMENTS = {
+    coma: ',',
+    dot: '.',
+    space: ' ',
+    semicolon: ';',
+    apostrophe: "'",
+    ellipsis: '…',
+};
 
-const replaceKeyWords = (str) => {
-    return str
-        .replaceAll('text=', ' ')
-        .replaceAll('coma', ',')
-        .replaceAll('dot', '.')
-        .replaceAll('space', ' ')
-        .replaceAll('semicolon', ';')
-        .replaceAll('apostrophe', "'")
-        .replaceAll('&', '')
-        .replaceAll('=', '')
-        .replaceAll("' ", "'");
-}
+const PUNCTUATION_CHARS = /[,.;…]/;
+const APOSTROPHE_CHAR = "'";
 
-const getTextFromUrl = (url) => {
+const findParamsInUrl = urlStr => new URL(urlStr).searchParams;
+
+const replaceKeyword = str => REPLACEMENTS[str] ?? str;
+
+const getTextFromUrl = url => {
     const params = findParamsInUrl(url);
-    return replaceKeyWords(params.toString());
+    let result = '';
+
+    for (const [key, value] of params.entries()) {
+        let replacement;
+
+        if (key === 'text') {
+            replacement = value;
+        } else {
+            replacement = replaceKeyword(key);
+        }
+
+        if (replacement === APOSTROPHE_CHAR) {
+            result = result.trimEnd() + replacement;
+        } else if (PUNCTUATION_CHARS.test(replacement)) {
+            result = result.trimEnd() + replacement + ' ';
+        } else {
+            result += replacement + ' ';
+        }
+    }
+
+    return ' ' + result.trim();
 };
 
 export default getTextFromUrl;

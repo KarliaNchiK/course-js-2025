@@ -11,15 +11,22 @@ const daysInMonthsNonLeapYear = {
     'October': 31,
     'November': 30,
     'December': 31,
-}
-
-const daysInFebruary = {
-    'leapYear': 29,
-    'nonLeapYear': 28,
-}
+};
 
 const getDaysAmount = (month, year) => {
+    const isLeapYear = (year) => {
+        return year % 4 === 0;
+    };
 
+    if (!daysInMonthsNonLeapYear.hasOwnProperty(month)) {
+        return 'error';
+    }
+
+    if (month === 'February') {
+        return isLeapYear(year) ? 29 : 28;
+    }
+
+    return daysInMonthsNonLeapYear[month];
 };
 
 export default getDaysAmount;
