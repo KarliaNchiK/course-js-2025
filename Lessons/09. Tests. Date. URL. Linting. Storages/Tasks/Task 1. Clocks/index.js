@@ -1,27 +1,25 @@
 const setRotations = () => {
-    const now = new Date();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-    const seconds = now.getSeconds();
+    const currentDate = new Date();
+    const hoursArrow = currentDate.getHours();
+    const minutesArrow = currentDate.getMinutes();
+    const secondsArrow = currentDate.getSeconds();
 
-    const hourAngle = 30 * hours;
-    const minuteAngle = 6 * minutes;
-    const secondAngle = 6 * seconds;
+    const hoursAngle = 30 * hoursArrow;
+    const minutesAngle = 6 * minutesArrow;
+    const secondsAngle = 6 * secondsArrow;
 
-    const hourHand = document.querySelector('.clocks__hour');
-    const minuteHand = document.querySelector('.clocks__minute');
-    const secondHand = document.querySelector('.clocks__second');
+    const currentSecondsAngle = document.querySelector('.clocks__second');
+    const currentMinutesAngle = document.querySelector('.clocks__minute');
+    const currentHoursAngle = document.querySelector('.clocks__hour');
 
-    if (hourHand) {
-        hourHand.style.transform = `rotate(${hourAngle}deg)`;
+    if (currentSecondsAngle) {
+        currentSecondsAngle.style.transform = `rotate(${secondsAngle}deg)`;
     }
-
-    if (minuteHand) {
-        minuteHand.style.transform = `rotate(${minuteAngle}deg)`;
+    if (currentMinutesAngle) {
+        currentMinutesAngle.style.transform = `rotate(${minutesAngle}deg)`;
     }
-
-    if (secondHand) {
-        secondHand.style.transform = `rotate(${secondAngle}deg)`;
+    if (currentHoursAngle) {
+        currentHoursAngle.style.transform = `rotate(${hoursAngle}deg)`;
     }
 };
 
