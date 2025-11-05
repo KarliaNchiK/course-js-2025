@@ -1,16 +1,19 @@
-const getCharacterData = (characterId, key) => {
-    return fetch(`https://www.anapioficeandfire.com/api/characters/${characterId}`)
-        .then(response => response.json())
-        .then(character => {
-            const name = character.name && character.name.length > 0 ? character.name : 'Unknown';
+const getCharacterData = async (characterId, key) => {
+    try {
+        const response = await fetch(`https://www.anapioficeandfire.com/api/characters/${characterId}`);
+        const character = await response.json();
 
-            let value = character[key];
+        const name = character.name && character.name.length > 0 ? character.name : 'Unknown';
+        let value = character[key];
 
-            if (Array.isArray(value)) {
-                value = value.join(', ');
-            }
-            return `${name}, ${key}: ${value}`;
-        });
+        if (Array.isArray(value)) {
+            value = value.join(', ');
+        }
+
+        return `${name}, ${key}: ${value}`;
+    } catch (error) {
+        throw new Error(`Failed to fetch character data: ${error.message}`);
+    }
 };
 
 export default getCharacterData;
