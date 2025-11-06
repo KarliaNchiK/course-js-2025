@@ -41,12 +41,12 @@ const render = (state) => {
 
 // !!! 4ю главная функция
 const setNewsMaker = () => {
-    // MODEL = состояние приложения
+    // MODEL = состояние приложения (отдельное состояние state
     const state = {
         newsList: [],
     };
 
-    // VIEW = получаем элементы
+    // VIEW = получаем элементы (ф-и создание и обновление без бизнес логики createNewsElement и render
     const input = document.querySelector('.news__form input');
     const button = document.querySelector('.news__form button');
 

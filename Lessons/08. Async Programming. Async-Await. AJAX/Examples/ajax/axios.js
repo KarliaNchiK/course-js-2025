@@ -1,6 +1,7 @@
 // https://axios-http.com/
 
 // get-запрос
+// eslint-disable-next-line no-undef
 axios.get('/getorgs.php', {
     params: {
         fio: 'Что-то написано',
@@ -13,8 +14,6 @@ axios.get('/getorgs.php', {
     .catch((error) => {
         console.log(error);
     });
-
-
 
 // post-запрос
 axios.post('/user', {

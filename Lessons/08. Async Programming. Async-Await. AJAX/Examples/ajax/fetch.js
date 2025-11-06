@@ -34,10 +34,6 @@ const result = await response.json();
 - response.headers – похожий на Map объект с HTTP-заголовками.
  */
 
-
-
-
-
 // Пример
 fetch('some_url>')
     .then((response) => {
