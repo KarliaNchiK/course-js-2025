@@ -12,7 +12,7 @@ import { computed, defineAsyncComponent } from 'vue';
 
 import type { IAppState } from '../types';
 
-const allApps = import.meta.glob('../../Lessons/*/{Tasks, Homework}/*/App.vue');
+const allApps = import.meta.glob('../../Lessons/*/{Tasks,Homework}/*/App.vue');
 
 const props = defineProps<{
     appState: IAppState;
