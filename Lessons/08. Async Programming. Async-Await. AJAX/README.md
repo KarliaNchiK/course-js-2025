@@ -253,7 +253,8 @@ const fetchWrapper = (url, data, config = {}) => {
         .then((response) => response.json())        // ответ передаем в формате json
         .catch((error) => {
             console.error('Ошибка:', error);        // выводим в консоль ошибки
-            throw error;                            // "выбрасываем" ошибку для дальнейшего его использования
+
+[//]: # (            throw error;                            // "выбрасываем" ошибку для дальнейшего его использования)
         });
 };
 
