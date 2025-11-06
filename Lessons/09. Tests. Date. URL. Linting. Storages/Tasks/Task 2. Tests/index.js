@@ -6,11 +6,11 @@ const getIsFirstArrayCooler = (numsOne, numsTwo) => {
     const difference = numsOne.reduce((acc, num, index) => {
         if (num > numsTwo[index]) {
             return acc + 1;
-        } else if (num < numsTwo[index]) {
+            // eslint-disable-next-line @stylistic/max-statements-per-line
+        } if (num < numsTwo[index]) {
             return acc - 1;
-        } else {
-            return acc;
         }
+        return acc;
     }, 0);
 
     return difference > 0;
