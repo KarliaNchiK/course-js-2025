@@ -6,8 +6,33 @@
 
 // import axios from 'axios';
 
-const setCatGallery = () => {
 
+const setCatGallery = () => {
+    return new Promise((resolve,reject) => {
+        const container = document.querySelector('.main__container');
+
+        const requests= Array.from({length: 10}, () =>
+            axios.get('https://api.thecatapi.com/v1/images/search')
+        );
+
+       Promise.all(requests)
+           .then(response => {
+               response.forEach(response => {
+                   const imageUrl = response.data[0].url;
+
+                   const img = document.createElement('img');
+                   img.src = imageUrl;
+
+                   container.appendChild(img);
+               });
+
+               resolve('cat gallery is ready!');
+           })
+           .catch(error => {
+               reject(error);
+           });
+    });
 };
+
 
 export default setCatGallery;
