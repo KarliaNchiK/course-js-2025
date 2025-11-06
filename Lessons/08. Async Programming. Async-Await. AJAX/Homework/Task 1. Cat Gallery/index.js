@@ -3,7 +3,7 @@
 // <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 // Выполните задание, отслеживая изменения в браузере,
 // после чего раскомментируйте строку с импортом для прохождения тестов
-//import axios from 'axios';
+import axios from 'axios';
 
 const setCatGallery = async () => {
     const url = 'https://api.thecatapi.com/v1/images/search';
