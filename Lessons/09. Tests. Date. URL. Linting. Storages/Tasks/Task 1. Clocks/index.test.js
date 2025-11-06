@@ -34,7 +34,6 @@ describe('09.c.1 runClocks', () => {
 
     runClocks();
 
-
     it('09.c.1.1 time should update every second', () => {
         jest.useFakeTimers();
         runClocks();
