@@ -10,7 +10,7 @@ describe('09.c.2 getIsFirstArrayCooler', () => {
         expect(getIsFirstArrayCooler(arr1, arr2)).toBe(true);
     });
 
-    it('09.c.2.2 should return false when first array has more elements that are greater at corresponding positions', () => {
+    it('09.c.2.2 should return false when first array has fewer elements that are greater at corresponding positions', () => {
         const arr1 = [2, 5, 7, 1];
         const arr2 = [5, 3, 9, 4];
         expect(getIsFirstArrayCooler(arr1, arr2)).toBe(false);

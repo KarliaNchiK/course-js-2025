@@ -1,19 +1,30 @@
-const getCharacterData = async (characterId, key) => {
-    try {
-        const response = await fetch(`https://www.anapioficeandfire.com/api/characters/${characterId}`);
-        const character = await response.json();
+const getCharacterData = (characterId, key) => {
+    const url = `https://www.anapioficeandfire.com/api/characters/${characterId}`;
 
-        const name = character.name && character.name.length > 0 ? character.name : 'Unknown';
-        let value = character[key];
+    return fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(character => {
+            const name = character.name || 'Unknown Character';
+            const value = character[key];
 
-        if (Array.isArray(value)) {
-            value = value.join(', ');
-        }
+            if (value === undefined || value === null || value === '') {
+                return `${name}, ${key}: No data available`;
+            }
+            if (Array.isArray(value)) {
+                return `${name}, ${key}: ${value.join(', ')}`;
+            }
 
-        return `${name}, ${key}: ${value}`;
-    } catch (error) {
-        throw new Error(`Failed to fetch character data: ${error.message}`);
-    }
+            return `${name}, ${key}: ${value}`;
+        })
+        .catch(error => {
+            console.error('Error fetching character data:', error);
+            throw new Error(`Failed to fetch character data: ${error.message}`);
+        });
 };
 
 export default getCharacterData;

@@ -1,65 +1,75 @@
 const BASE_URL = 'https://api.imgflip.com/get_memes';
 
 const updateImage = (imageData) => {
-    let container = document.querySelector('.main__image-container');
-    if (!container) {
-        container = document.createElement('div');
-        container.className = 'main__image-container';
-        document.querySelector('.main').appendChild(container);
-    }
+    const container = document.querySelector('.main__image-container');
     container.innerHTML = '';
+
     const img = document.createElement('img');
     img.src = imageData.url;
-    img.alt = imageData.name;
-    img.style.maxWidth = '100%';
+    img.alt = imageData.name || 'Meme';
+    img.className = 'meme-image';
+
     container.appendChild(img);
 };
 
 const giveMeMeme = async () => {
-    // eslint-disable-next-line no-useless-catch
     try {
-        let main = document.querySelector('.main');
-        if (!main) {
-            main = document.createElement('div');
-            main.className = 'main';
-            document.body.appendChild(main);
+        // Создаем кнопку
+        const button = document.createElement('button');
+        button.className = 'btn btn-warning';
+        button.textContent = 'ДАЙ МНЕ МЕМ!';
+
+        // Создаем контейнер для мемов
+        const container = document.createElement('div');
+        container.className = 'main__image-container';
+
+        // Находим основной контейнер
+        const mainContainer = document.querySelector('.main');
+        if (!mainContainer) {
+            throw new Error('Element with class .main not found');
         }
 
-        let container = document.querySelector('.main__image-container');
-        if (!container) {
-            container = document.createElement('div');
-            container.className = 'main__image-container';
-            main.appendChild(container);
-        }
+        // Добавляем элементы в DOM (сначала контейнер, потом кнопку)
+        mainContainer.appendChild(container);
+        mainContainer.appendChild(button);
 
-        let btn = document.querySelector('.btn.btn-warning');
-        if (!btn) {
-            btn = document.createElement('button');
-            btn.className = 'btn btn-warning';
-            btn.textContent = 'ДАЙ МНЕ МЕМ!';
-            main.appendChild(btn);
-        }
+        // Обработчик клика на кнопку
+        button.addEventListener('click', async () => {
+            try {
+                const response = await fetch(BASE_URL);
 
-        if (!btn.hasListener) {
-            btn.addEventListener('click', async () => {
-                // eslint-disable-next-line no-useless-catch
-                try {
-                    const resp = await fetch(BASE_URL);
-                    if (!resp.ok) {
-                        throw new Error('Ошибка загрузки');
-                    }
-                    const data = await resp.json();
-                    const memes = data.data.memes;
-                    const random = memes[Math.floor(Math.random() * memes.length)];
-                    updateImage(random);
-                } catch (err) {
-                    throw err;
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
                 }
-            });
-            btn.hasListener = true;
-        }
-    } catch (e) {
-        throw e;
+
+                const data = await response.json();
+
+                if (!data.success) {
+                    throw new Error('API request failed');
+                }
+
+                const memes = data.data.memes;
+
+                if (!memes || memes.length === 0) {
+                    throw new Error('No memes found');
+                }
+
+                // Выбираем случайный мем
+                const randomIndex = Math.floor(Math.random() * memes.length);
+                const randomMeme = memes[randomIndex];
+
+                // Обновляем изображение
+                updateImage(randomMeme);
+
+            } catch (error) {
+                console.error('Error fetching meme:', error);
+                throw error;
+            }
+        });
+
+    } catch (error) {
+        console.error('Error in giveMeMeme:', error);
+        throw error;
     }
 };
 

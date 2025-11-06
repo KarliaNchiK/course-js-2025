@@ -18,29 +18,16 @@ const daysInFebruary = {
     nonLeapYear: 28,
 };
 
-const isLeapYear = (year) => {
-    if (year % 400 === 0) {
-        return true;
-    }
-    if (year % 100 === 0) {
-        return false;
-    }
-    if (year % 4 === 0) {
-        return true;
-    }
-    return false;
-};
-
 const getDaysAmount = (month, year) => {
-    if (!(month in daysInMonthsNonLeapYear)) {
+    if (daysInMonthsNonLeapYear[month] === undefined) {
         return 'error';
     }
-
-    if (month === 'February') {
-        return isLeapYear(year) ? daysInFebruary.leapYear : daysInFebruary.nonLeapYear;
+    if (month !== 'February') {
+        return daysInMonthsNonLeapYear[month];
     }
+    const isLeapYear = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
 
-    return daysInMonthsNonLeapYear[month];
+    return isLeapYear ? daysInFebruary.leapYear : daysInFebruary.nonLeapYear;
 };
 
 export default getDaysAmount;
