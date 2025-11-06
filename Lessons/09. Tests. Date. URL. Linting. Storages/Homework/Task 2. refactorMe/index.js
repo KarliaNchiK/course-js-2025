@@ -1,22 +1,23 @@
-const findParamsInUrl = (urlStr) => {
-    return new URL(urlStr).searchParams;
-}
-
+const replacers = {
+    'text=': ' ',
+    'coma': ',',
+    'dot': '.',
+    'space': ' ',
+    'semicolon': ';',
+    'apostrophe': "'",
+    '&': '',
+    '=': '',
+    "' ": "'",
+};
 const replaceKeyWords = (str) => {
-    return str
-        .replaceAll('text=', ' ')
-        .replaceAll('coma', ',')
-        .replaceAll('dot', '.')
-        .replaceAll('space', ' ')
-        .replaceAll('semicolon', ';')
-        .replaceAll('apostrophe', "'")
-        .replaceAll('&', '')
-        .replaceAll('=', '')
-        .replaceAll("' ", "'");
-}
+    for (const key in replacers) {
+        str = str.replaceAll(key, replacers[key]);
+    }
+    return str;
+};
 
 const getTextFromUrl = (url) => {
-    const params = findParamsInUrl(url);
+    const params = new URL(url).searchParams;
     return replaceKeyWords(params.toString());
 };
 

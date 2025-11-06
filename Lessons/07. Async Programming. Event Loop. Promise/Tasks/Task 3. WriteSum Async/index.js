@@ -22,8 +22,6 @@ const writeSum = (pathToFileOne, pathToFileTwo) => {
                 throw new Error('Такого файла нет');
             });
     };
-
-    // Читаем оба файла параллельно и суммируем
     return Promise.all([readFile(pathToFileOne), readFile(pathToFileTwo)])
         .then(sums => sums.reduce((total, current) => total + current, 0));
 };
