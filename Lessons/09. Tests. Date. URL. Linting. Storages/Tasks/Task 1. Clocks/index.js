@@ -6,18 +6,20 @@ const setRotations = (time) => {
     clocksHour.style = "transform: rotate(" + (time.hour * 30) + "deg);";
     clocksMin.style = "transform: rotate(" + (time.minute * 6) + "deg);";
     clocksSec.style = "transform: rotate(" + (time.second * 6) + "deg);";
-
-    setTimeout(runClocks, 1000);
 };
 
 const runClocks = () => {
-    const now = new Date();
-    const currentTime = {
-        hour: now.getHours(),
-        minute: now.getMinutes(),
-        second: now.getSeconds(),
+    const updateClock = () => {
+        const now = new Date();
+        const currentTime = {
+            hour: now.getHours(),
+            minute: now.getMinutes(),
+            second: now.getSeconds(),
+        };
+        setRotations(currentTime);
     };
-    setRotations(currentTime);
+    updateClock();
+    setInterval(updateClock, 1000);
 };
 
 export default runClocks;
