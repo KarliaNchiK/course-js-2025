@@ -1,23 +1,31 @@
-const findParamsInUrl = (urlStr) => {
+const extractParamsFromUrl = (urlStr) => {
     return new URL(urlStr).searchParams;
 }
 
-const replaceKeyWords = (str) => {
-    return str
-        .replaceAll('text=', ' ')
-        .replaceAll('coma', ',')
-        .replaceAll('dot', '.')
-        .replaceAll('space', ' ')
-        .replaceAll('semicolon', ';')
-        .replaceAll('apostrophe', "'")
-        .replaceAll('&', '')
-        .replaceAll('=', '')
-        .replaceAll("' ", "'");
+const CHANGES = {
+    'coma' : ',',
+    'dot' : '.',
+    'semicolon' : ';',
+    'apostrophe' : "'",
+    "' " : "'"
 }
 
+const changeSymbols = (key, value) => {
+    if (key === "text") {
+        return ` ${value}`;
+    }
+    return CHANGES[key] || '';
+}
+const buildTextFromParams = (urlSearchParams) => {
+    let result = '';
+    for (let [key, value] of urlSearchParams) {
+        result += changeSymbols(key,value);
+    }
+    return result.replace(/' /g, "'");
+}
 const getTextFromUrl = (url) => {
-    const params = findParamsInUrl(url);
-    return replaceKeyWords(params.toString());
+    const urlSearchParams = extractParamsFromUrl(url);
+    return buildTextFromParams(urlSearchParams);
 };
 
 export default getTextFromUrl;

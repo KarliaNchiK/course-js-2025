@@ -20,6 +20,16 @@ const daysInFebruary = {
 
 const getDaysAmount = (month, year) => {
 
+    if (!(month in daysInMonthsNonLeapYear)) {
+        return "error";
+    }
+
+    if (month === "February") {
+        return year % 4 === 0 ? daysInFebruary.leapYear : daysInFebruary.nonLeapYear;
+    }
+    return daysInMonthsNonLeapYear[month];
 };
 
 export default getDaysAmount;
+
+console.log(getDaysAmount('Da', 2011))
