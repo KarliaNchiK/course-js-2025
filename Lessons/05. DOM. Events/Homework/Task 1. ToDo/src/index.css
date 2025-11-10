@@ -4,6 +4,10 @@
     font-family: Verdana, Tahoma, sans-serif;
     background: #f1f1f1;
     border-radius: 10px;
+<<<<<<< HEAD
+=======
+    align-items: center;
+>>>>>>> origin/main
     width: 1100px;
 }
 
@@ -14,11 +18,17 @@
     align-items: flex-start;
 }
 
+<<<<<<< HEAD
 .to-do__header {
+=======
+.to-do__header,
+.to-do__main {
+>>>>>>> origin/main
     margin-bottom: 20px;
 }
 
 .to-do__main {
+<<<<<<< HEAD
     display: flex !important;
     align-items: center;
     gap: 15px;
@@ -108,4 +118,39 @@
     background-color: #ffcccc;
     border-color: #cea7a7;
     color: #8b0000;
+=======
+    display: flex;
+    align-items: center;
+}
+
+.to-do__main button {
+    margin-left: 10px;
+    width: 400px;
+    height: 44px;
+}
+
+[data-type] {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 506px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+[data-type]:hover {
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+}
+
+[data-type=completed] {
+    background-color: #c1ffbd;
+    border-color: #a2d7a0;
+}
+
+[data-type=planned] {
+    background-color: #ffcccc;
+    border-color: #cea7a7;
+>>>>>>> origin/main
 }
