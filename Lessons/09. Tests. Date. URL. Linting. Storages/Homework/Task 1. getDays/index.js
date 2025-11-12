@@ -20,6 +20,18 @@ const daysInFebruary = {
 
 const getDaysAmount = (month, year) => {
 
+    if (!daysInMonthsNonLeapYear.hasOwnProperty(month)) {
+        return 'error';
+    }
+
+    if (month != 'February') {
+        return daysInMonthsNonLeapYear[month];
+    }
+
+    const isLeapYear = (year % 4 === 0) && (year % 100 !== 0 || year % 400 === 0);
+
+    return isLeapYear ? daysInFebruary.leapYear : daysInFebruary.nonLeapYear;
+
 };
 
 export default getDaysAmount;
