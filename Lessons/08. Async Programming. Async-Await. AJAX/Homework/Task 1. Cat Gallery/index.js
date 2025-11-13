@@ -6,34 +6,19 @@
 
 import axios from 'axios';
 
-const url = 'https://api.thecatapi.com/v1/images/search';
+const setCatGallery = async () => {
+    const url = 'https://api.thecatapi.com/v1/images/search';
+    const container = document.querySelector('.main__container');
+    const requests = Array.from({length: 10}, () => axios.get(url));
 
-const generateCatImagePromises = (arrayLength) => {
-    return Array.from({ length: arrayLength }, () =>
-        axios.get(url).then(res => res.data));
-};
-
-const addCatsToGallery = (array) => {
-    let galleryContainer = document.querySelector('.main__container');
-    if(!galleryContainer) return;
-    galleryContainer.innerHTML = '';
-    array.forEach(singleCatData => {
-        const catImageElement = document.createElement('img');
-        catImageElement.src = singleCatData[0].url;
-        galleryContainer.appendChild(catImageElement);
+    const responses = await Promise.all(requests);
+    container.innerHTML = '';
+    responses.forEach(response => {
+        const img = document.createElement('img');
+        img.src = response.data[0].url;
+        container.appendChild(img);
     });
-};
-
-const setCatGallery = async() => {
-    try {
-        const imageLoadPromises = generateCatImagePromises(10);
-        const loadedCatsData = await Promise.all(imageLoadPromises);
-        addCatsToGallery(loadedCatsData);
-        return 'cat gallery is ready!';
-    } catch (error) {
-        console.error('Error loading cat gallery:', error);
-        throw error;
-    }
+    return 'cat gallery is ready!';
 };
 
 export default setCatGallery;
