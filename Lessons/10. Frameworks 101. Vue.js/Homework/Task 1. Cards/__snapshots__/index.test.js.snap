@@ -445,7 +445,7 @@ exports[`10.h.1 Cards > 10.h.1.5 third card plus button two clicks 1`] = `
   >
     <img
       class="card-img-top"
-      src="/Lessons/9. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/iphone10.jpg"
+      src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/iphone10.jpg"
     />
     <div
       class="card-body"
@@ -490,7 +490,7 @@ exports[`10.h.1 Cards > 10.h.1.5 third card plus button two clicks 1`] = `
   >
     <img
       class="card-img-top"
-      src="/Lessons/9. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/galaxys21.jpg"
+      src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/galaxys21.jpg"
     />
     <div
       class="card-body"
@@ -535,7 +535,7 @@ exports[`10.h.1 Cards > 10.h.1.5 third card plus button two clicks 1`] = `
   >
     <img
       class="card-img-top"
-      src="/Lessons/9. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/nokia2600.jpg"
+      src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/nokia2600.jpg"
     />
     <div
       class="card-body"
@@ -593,7 +593,7 @@ exports[`10.h.1 Cards > 10.h.1.6 third card minus button click 1`] = `
   >
     <img
       class="card-img-top"
-      src="/Lessons/9. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/iphone10.jpg"
+      src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/iphone10.jpg"
     />
     <div
       class="card-body"
@@ -638,7 +638,7 @@ exports[`10.h.1 Cards > 10.h.1.6 third card minus button click 1`] = `
   >
     <img
       class="card-img-top"
-      src="/Lessons/9. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/galaxys21.jpg"
+      src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/galaxys21.jpg"
     />
     <div
       class="card-body"
@@ -683,7 +683,7 @@ exports[`10.h.1 Cards > 10.h.1.6 third card minus button click 1`] = `
   >
     <img
       class="card-img-top"
-      src="/Lessons/9. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/nokia2600.jpg"
+      src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/nokia2600.jpg"
     />
     <div
       class="card-body"
