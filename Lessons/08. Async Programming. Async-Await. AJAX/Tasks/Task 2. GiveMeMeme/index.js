@@ -1,4 +1,4 @@
-const BASE_URL = 'https://api.imgflip.com/get_memes  ';
+const BASE_URL = 'https://api.imgflip.com/get_memes';
 
 const updateImage = (imageData) => {
     const image = document.createElement('img');
@@ -20,15 +20,19 @@ const giveMeMeme = () => {
     buttonMem.addEventListener('click', async () => {
         try {
             const response = await fetch(BASE_URL);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
             const json = await response.json();
 
-            let randomIndex = Math.round(Math.random() * 40);
-            const randomImg = json.data.memes[randomIndex];
+            const memes = json.data.memes;
+            const randomIndex = Math.floor(Math.random() * memes.length);
+            const randomImg = memes[randomIndex];
 
             updateImage(randomImg);
         }
-        catch {
-            throw Error;
+        catch (error) {
+            throw error;
         }
     });
 
