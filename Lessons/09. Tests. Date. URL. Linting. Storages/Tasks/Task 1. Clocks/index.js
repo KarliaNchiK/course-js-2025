@@ -6,7 +6,7 @@ const setRotations = () => {
     const minutes = now.getMinutes();
     const seconds = now.getSeconds();
 
-    const hourAngle = (hours % 12 ) * 30;
+    const hourAngle = hours  * 30;
     const minuteAngle = minutes * 6;
     const secondAngle = seconds * 6;
 

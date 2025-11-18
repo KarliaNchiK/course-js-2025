@@ -22,7 +22,7 @@ const buildTextFromParams = (params) => {
                 result += value;
                 glueNextWord = false;
             } else {
-                result += ` ${value}`; // обычное слово с проблемом перед ним
+                result += ` ${value}`; // обычное слово с пробелом перед ним
             }
             continue;
         }
