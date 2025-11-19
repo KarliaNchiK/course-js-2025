@@ -36,27 +36,13 @@
         "vite": "7.1.0",
         "vite-plugin-checker": "0.9.3",
         "vitest": "3.2.4",
-        "vitest-fetch-mock": "^0.4.5",
+        "vitest-fetch-mock": "0.4.5",
         "vue": "3.5.17",
         "vue-eslint-parser": "10.1.4",
-        "vue-tsc": "2.2.10",
-        "webpack": "^5.102.0",
-        "webpack-cli": "^6.0.1"
+        "vue-tsc": "2.2.10"
     },
     "dependencies": {
-        "axios": "^1.13.2",
         "highlight.js": "11.11.1",
         "marked": "16.3.0"
-    },
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/KarliaNchiK/course-js-2025.git"
-    },
-    "keywords": [],
-    "author": "",
-    "bugs": {
-        "url": "https://github.com/KarliaNchiK/course-js-2025/issues"
-    },
-    "homepage": "https://github.com/KarliaNchiK/course-js-2025#readme"
+    }
 }
