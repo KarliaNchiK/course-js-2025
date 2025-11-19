@@ -11,15 +11,28 @@ const daysInMonthsNonLeapYear = {
     'October': 31,
     'November': 30,
     'December': 31,
-}
+};
 
 const daysInFebruary = {
     'leapYear': 29,
     'nonLeapYear': 28,
-}
+};
+
+const isLeapYear = (year) => {
+    return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+};
 
 const getDaysAmount = (month, year) => {
+    if (!daysInMonthsNonLeapYear.hasOwnProperty(month)) {
+        return 'error';
+    }
+    if (month === 'February') {
+        return isLeapYear(year)
+            ? daysInFebruary.leapYear
+            : daysInFebruary.nonLeapYear;
+    }
 
+    return daysInMonthsNonLeapYear[month];
 };
 
 export default getDaysAmount;
