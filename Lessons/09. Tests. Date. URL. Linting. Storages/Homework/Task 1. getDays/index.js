@@ -19,7 +19,20 @@ const daysInFebruary = {
 }
 
 const getDaysAmount = (month, year) => {
+    if (!daysInMonthsNonLeapYear.hasOwnProperty(month)) {
+        return 'error';
+    }
 
+    const isLeap =
+        (year % 4 === 0 && year % 100 !== 0) ||
+        (year % 400 === 0);
+
+    if (month === 'February') {
+        return isLeap ? daysInFebruary.leapYear : daysInFebruary.nonLeapYear;
+    }
+
+    // Остальные месяцы — просто из справочника
+    return daysInMonthsNonLeapYear[month];
 };
 
 export default getDaysAmount;
