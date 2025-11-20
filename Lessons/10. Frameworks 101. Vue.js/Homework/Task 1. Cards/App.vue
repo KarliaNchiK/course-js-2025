@@ -48,9 +48,10 @@
 <script>
 export default {
   name: 'Cards',
-  data() {
-    return {
-      cardStates: [
+  props: {
+    cards: {
+      type: Array,
+      default: () => [
         {
           id: 0,
           src: '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/iphone10.jpg',
@@ -79,7 +80,7 @@ export default {
           max: 1,
         },
       ],
-    };
+    },
   },
   methods: {
     increment(card) {
