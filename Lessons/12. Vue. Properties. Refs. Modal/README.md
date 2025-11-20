@@ -114,7 +114,7 @@ watch: {
 </template>
 
 <script>
-import { ref, onMounted } from 'vue'
+import { shallowRef, onMounted } from 'vue'
 import UserBlock from './UserBlock.vue';
 
 export default {
@@ -123,8 +123,8 @@ export default {
     UserBlock,
   },
   setup() {
-    const description = ref(null)
-    const userBlock = ref(null)
+    const description = shallowRef(null)
+    const userBlock = shallowRef(null)
     
     onMounted(() => {
       // обращаемся к элементу и берем у него высоту
@@ -153,6 +153,9 @@ export default {
 import { onMounted, getCurrentInstance } from 'vue'
 
 export default {
+  onMounted() {
+      console.log(this.$parent);
+  },
   setup() {
     const instance = getCurrentInstance()
     
