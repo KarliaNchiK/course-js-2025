@@ -4,30 +4,30 @@
         <div class="recipe-form__block">
             <label class="form-label">Название нового рецепта</label>
             <input
+                v-model="name"
                 type="text"
                 class="form-control recipe-form__name"
-                v-model="name"
             >
         </div>
         <div class="recipe-form__block">
             <label class="form-label">Ингредиенты</label>
             <textarea
-                class="form-control recipe-form__ingredients"
                 v-model="ingredients"
+                class="form-control recipe-form__ingredients"
             />
         </div>
         <div class="recipe-form__block">
             <label class="form-label">Последовательность действий</label>
             <textarea
+                v-model="steps"
                 class="form-control recipe-form__recipe-text"
-                v-model="recipeText"
             />
         </div>
         <div class="recipe-form__block">
             <label class="form-label">Время приготовления</label>
             <select
-                class="form-select recipe-form__cook-time"
                 v-model="cookTime"
+                class="form-select recipe-form__cook-time"
             >
                 <option value="5 минут">
                     5 минут
@@ -84,16 +84,17 @@
 import { ref } from 'vue';
 
 const emit = defineEmits(['add']);
+
 const name = ref('');
 const ingredients = ref('');
-const recipeText = ref('');
+const steps = ref('');
 const cookTime = ref('5 минут');
 const isVegan = ref(false);
 
 function clear() {
     name.value = '';
     ingredients.value = '';
-    recipeText.value = '';
+    steps.value = '';
     cookTime.value = '5 минут';
     isVegan.value = false;
 }
@@ -102,7 +103,7 @@ function onAdd() {
     emit('add', {
         name: name.value,
         ingredients: ingredients.value,
-        recipeText: recipeText.value,
+        steps: steps.value,
         cookTime: cookTime.value,
         isVegan: isVegan.value,
     });

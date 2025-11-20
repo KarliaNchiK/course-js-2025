@@ -1,9 +1,6 @@
 <template>
     <div class="recipes">
-        <NewRecipeForm
-            @add="addRecipe"
-        />
-
+        <NewRecipeForm @add="addRecipe" />
         <RecipesContainer
             :recipes="recipes"
             @remove="removeRecipe"
@@ -18,13 +15,13 @@ import RecipesContainer from './components/RecipesContainer.vue';
 
 const recipes = ref([]);
 
-const addRecipe = (recipe) => {
+function addRecipe(recipe) {
     recipes.value.push(recipe);
-};
+}
 
-const removeRecipe = (index) => {
-    recipes.value.splice(index, 1);
-};
+function removeRecipe(idx) {
+    recipes.value.splice(idx, 1);
+}
 </script>
 
 <style>

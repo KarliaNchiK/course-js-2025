@@ -8,8 +8,9 @@
             Рецептов нет
         </div>
         <div
-            v-for="(recipe, idx) in recipes"
-            :key="idx"
+            v-else
+            v-for="(recipe, index) in recipes"
+            :key="index"
             class="card"
         >
             <div class="card-body">
@@ -23,11 +24,11 @@
                 Ингредиенты:
                 {{ recipe.ingredients }}
                 <div>
-                    {{ recipe.recipeText }}
+                    {{ recipe.steps }}
                 </div>
                 <button
                     class="btn btn-light card-body__remove-button"
-                    @click="remove(idx)"
+                    @click="emit('remove', index)"
                 >
                     Удалить рецепт
                 </button>
@@ -40,11 +41,6 @@
 import VeganIcon from '../icons/VeganIcon.vue';
 import TimeIcon from '../icons/TimeIcon.vue';
 
-const props = defineProps({
-    recipes: { type: Array, default: () => [] },
-});
+const props = defineProps({ recipes: { type: Array, default: () => [] } });
 const emit = defineEmits(['remove']);
-function remove(idx) {
-    emit('remove', idx);
-}
 </script>
