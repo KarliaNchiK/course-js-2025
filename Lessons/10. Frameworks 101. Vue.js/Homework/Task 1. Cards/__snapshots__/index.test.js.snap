@@ -2,49 +2,61 @@
 
 exports[`10.h.1 Cards > 10.h.1.0 Cards 1`] = `
 <div
-  cards="[object Object],[object Object],[object Object]"
   class="card-container"
+  data-v-9d488560=""
 >
   
   <div
     class="card"
+    data-v-9d488560=""
   >
     <img
+      alt="product image"
       class="card-img-top"
+      data-v-9d488560=""
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/iphone10.jpg"
     />
     <div
       class="card-body"
+      data-v-9d488560=""
     >
       <h5
         class="card-title"
+        data-v-9d488560=""
       >
         Iphone X 64GB
       </h5>
       <h4
         class="card-title"
+        data-v-9d488560=""
       >
         800$
       </h4>
       <p
         class="card-text"
+        data-v-9d488560=""
       >
         Packed with Innovative Features Including a Super Retina Display, TrueDepth Camera System, Face ID and A11 Bionic Chip with Neural Engine
       </p>
       <div
         class="card__buttons"
+        data-v-9d488560=""
       >
         <button
           class="btn btn-primary button-plus"
+          data-v-9d488560=""
         >
            + 
         </button>
         <button
           class="btn btn-primary button-minus"
+          data-v-9d488560=""
         >
            - 
         </button>
-        <div>
+        <div
+          data-v-9d488560=""
+        >
           0 шт.
         </div>
       </div>
@@ -53,43 +65,55 @@ exports[`10.h.1 Cards > 10.h.1.0 Cards 1`] = `
   </div>
   <div
     class="card"
+    data-v-9d488560=""
   >
     <img
+      alt="product image"
       class="card-img-top"
-      src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/galaxys21.jpg"
+      data-v-9d488560=""
+      src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/galaxys21.jpg."
     />
     <div
       class="card-body"
+      data-v-9d488560=""
     >
       <h5
         class="card-title"
+        data-v-9d488560=""
       >
         Samsung Galaxy S21 128GB
       </h5>
       <h4
         class="card-title"
+        data-v-9d488560=""
       >
         1000$
       </h4>
       <p
         class="card-text"
+        data-v-9d488560=""
       >
         Introducing Galaxy S21 Ultra 5G. Designed with a unique contour-cut camera to create a revolution in photography — letting you capture cinematic 8K video and snap epic stills, all in one go.
       </p>
       <div
         class="card__buttons"
+        data-v-9d488560=""
       >
         <button
           class="btn btn-primary button-plus"
+          data-v-9d488560=""
         >
            + 
         </button>
         <button
           class="btn btn-primary button-minus"
+          data-v-9d488560=""
         >
            - 
         </button>
-        <div>
+        <div
+          data-v-9d488560=""
+        >
           0 шт.
         </div>
       </div>
@@ -98,43 +122,55 @@ exports[`10.h.1 Cards > 10.h.1.0 Cards 1`] = `
   </div>
   <div
     class="card"
+    data-v-9d488560=""
   >
     <img
+      alt="product image"
       class="card-img-top"
+      data-v-9d488560=""
       src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/nokia2600.jpg"
     />
     <div
       class="card-body"
+      data-v-9d488560=""
     >
       <h5
         class="card-title"
+        data-v-9d488560=""
       >
         Nokia 2600
       </h5>
       <h4
         class="card-title"
+        data-v-9d488560=""
       >
         Priceless
       </h4>
       <p
         class="card-text"
+        data-v-9d488560=""
       >
         Give me back my 2007
       </p>
       <div
         class="card__buttons"
+        data-v-9d488560=""
       >
         <button
           class="btn btn-primary button-plus"
+          data-v-9d488560=""
         >
            + 
         </button>
         <button
           class="btn btn-primary button-minus"
+          data-v-9d488560=""
         >
            - 
         </button>
-        <div>
+        <div
+          data-v-9d488560=""
+        >
           0 шт.
         </div>
       </div>
