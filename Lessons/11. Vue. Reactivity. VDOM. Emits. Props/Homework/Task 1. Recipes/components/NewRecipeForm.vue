@@ -1,6 +1,58 @@
 <template>
     <div class="recipe-form">
         <!--Начало-->
+        <h3>
+            Создать новый рецепт
+        </h3>
+        <div class="recipe-form__block">
+            <label
+                class
+                form-label
+            >
+                Название нового рецепта
+            </label>
+            <input
+                v-model="header"
+                type="text"
+                class="form-control recipe-form__name"
+            >
+        </div>
+        <div class="recipe-form__block">
+            <label class="form-label">
+                Ингредиенты
+            </label>
+            <textarea class="form-control recipe-form_ingredients" />
+        </div>
+        <div class="recipe-form__block">
+            <label class="form-label">
+                Последовательность действий
+            </label>
+            <textarea class="form-control recipe-form__recipe-text" />
+        </div>
+        <div class="recipe=form__block">
+            <label class="form-label">
+                Время приготовления
+            </label>
+            <select class="form-select recipe-form__cook-time">
+                <option value="1">
+                    5 минут
+                </option>
+            </select>
+        </div>
+        <div class="recipe-form__block">
+            <input
+                type="checkbox"
+                class="form-check-input"
+            >
+            <label class="form-check-label">
+                Вегетарианское блюдо
+            </label>
+        </div>
+        <div class="recipe-form__block">
+            <button class="btn btn-dark recipe-form__add-button">
+                Добавить рецепт
+            </button>
+        </div>
         <!--Конец-->
     </div>
 </template>
@@ -25,6 +77,9 @@ export default {
             { value: 12, text: '3 часа' },
             { value: 13, text: 'Бесконечность' },
         ];
+        const recipeform = {
+            header:
+        };
 
         return {
             timeOptions,

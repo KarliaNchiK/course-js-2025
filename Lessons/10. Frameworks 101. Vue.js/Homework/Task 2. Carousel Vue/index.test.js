@@ -2,15 +2,15 @@
  * @jest-environment jsdom
  */
 import { mount } from '@vue/test-utils';
-import Carousel from './App.vue';
+import App from './App.vue';
 
-describe('10.h.2 Carousel', () => {
-    const wrapper = mount(Carousel, {
+describe('10.h.2 App', () => {
+    const wrapper = mount(App, {
         props: {
             images: [
-                '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg',
-                '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg',
-                '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg',
+                '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. App Vue/assets/carousel-1.jpg',
+                '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. App Vue/assets/carousel-2.jpg',
+                '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. App Vue/assets/carousel-3.jpg',
             ],
         },
     });

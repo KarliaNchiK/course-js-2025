@@ -12,7 +12,7 @@ window.localStorage.clear();
 const testData = { 'one': 1, 'two': 2, 'three': 3 };
 
 window.localStorage.setItem('data', JSON.stringify(testData));
-const data = JSON.parse(window.localStorage.getItem('data'));
+let data = JSON.parse(window.localStorage.getItem('data'));
 
 
 
