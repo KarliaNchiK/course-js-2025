@@ -40,11 +40,7 @@ export default {
 
   props: {
     cards: Array,
-  },
-
-  data() {
-    return {
-      cards: [
+    default: () => [
         {
           id: 0,
           src: "/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/iphone10.jpg",
@@ -56,27 +52,33 @@ export default {
           max: 4,
         },
 
-        {
-          id: 1,
-          src: "/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/galaxys21.jpg",
-          description:
-              "Introducing Galaxy S21 Ultra 5G. Designed with a unique contour-cut camera to create a revolution in photography — letting you capture cinematic 8K video and snap epic stills, all in one go.",
-          head: "Samsung Galaxy S21 128GB",
-          price: "1000$",
-          number: 0,
-          max: 10,
-        },
+            {
+              id: 1,
+              src: "/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/galaxys21.jpg",
+              description:
+                  "Introducing Galaxy S21 Ultra 5G. Designed with a unique contour-cut camera to create a revolution in photography — letting you capture cinematic 8K video and snap epic stills, all in one go.",
+              head: "Samsung Galaxy S21 128GB",
+              price: "1000$",
+              number: 0,
+              max: 10,
+            },
 
-        {
-          id: 2,
-          src: "/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/nokia2600.jpg",
-          description: "Give me back my 2007",
-          head: "Nokia 2600",
-          price: "Priceless",
-          number: 0,
-          max: 1,
-        },
-      ],
+            {
+              id: 2,
+              src: "/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/nokia2600.jpg",
+              description: "Give me back my 2007",
+              head: "Nokia 2600",
+              price: "Priceless",
+              number: 0,
+              max: 1,
+            },
+        ]
+  },
+
+  data() {
+    return {
+
+
     };
   },
 
