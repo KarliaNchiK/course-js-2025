@@ -9,10 +9,10 @@ exports[`10.h.2 Carousel > 10.h.2.2 1`] = `
   >
     
     <div
-      class="carousel-item"
+      class="carousel-item active"
     >
       <img
-        class="d-block w-100 active"
+        class="d-block w-100"
         src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg"
       />
     </div>

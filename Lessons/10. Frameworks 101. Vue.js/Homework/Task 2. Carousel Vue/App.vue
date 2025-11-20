@@ -2,12 +2,13 @@
   <div class="carousel">
     <div class="carousel-inner">
       <div v-for="(image, index) in images"
-          :key="index"
-          class="carousel-item"
+           :key="index"
+           class="carousel-item"
+           :class="{ active: index === currentIndex }"
       >
         <img :src="image"
             class="d-block w-100"
-             :class="{ active: index === currentIndex }"
+
         >
       </div>
     </div>
@@ -26,12 +27,16 @@ export default {
   props: {
       images: {
         type: Array,
-        required: true
+        required: true,
+        default: () => ['/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg',
+          '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg',
+          '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg']
       }
   },
   data() {
     return {
       currentIndex: 0
+
     };
   },
   methods: {

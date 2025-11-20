@@ -1,12 +1,11 @@
 <template>
-  <div class="times-container">
-    <div class="times-container__item"
-         v-for="(block, index) in blocks"
-         :key="index"
-         @mouseover="removeBlock(index)">
-      {{block.timestamp}}
-    </div>
+  <div class="times-container__item"
+       v-for="(block, index) in blocks"
+       :key="index"
+       @mouseover="removeBlock(index)">
+    {{block.timestamp}}
   </div>
+
 </template>
 
 <script>

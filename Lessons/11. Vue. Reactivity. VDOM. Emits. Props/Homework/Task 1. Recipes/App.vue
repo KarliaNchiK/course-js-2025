@@ -1,6 +1,14 @@
 <template>
     <div class="recipes">
         <!--Начало-->
+      <div class="recipe-form">
+        <h3>
+          Создать новый рецепт
+        </h3>
+        <div class="recipe-form__block">
+          <label class="form-label">
+            Название нового рецепта
+          </label>
         <!--Конец-->
     </div>
 </template>
