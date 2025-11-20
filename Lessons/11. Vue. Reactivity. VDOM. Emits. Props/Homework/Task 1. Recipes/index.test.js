@@ -3,10 +3,10 @@
  */
 
 import { mount } from '@vue/test-utils';
-import Recipes from './App.vue';
+import Recipe from './Recipe.vue';
 
-describe('11.h.1 Recipes', () => {
-    const wrapper = mount(Recipes);
+describe('11.h.1 Recipe', () => {
+    const wrapper = mount(Recipe);
 
     it('11.h.1.2 Cards is a Vue instance', () => {
         expect(wrapper.vm).toBeTruthy();

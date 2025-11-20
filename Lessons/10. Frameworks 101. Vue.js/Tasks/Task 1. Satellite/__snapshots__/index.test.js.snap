@@ -25,7 +25,7 @@ exports[`10.c.1 Satellite > 10.c.1.2 with radius 42000k 1`] = `
       Требуемая скорость спутника:
     </h3>
     <div>
-      Infinity м/с 
+      0 м/с 
     </div>
     <img
       src="https://mediasat.info/wp-content/uploads/2015/06/sat-orbit.jpg"

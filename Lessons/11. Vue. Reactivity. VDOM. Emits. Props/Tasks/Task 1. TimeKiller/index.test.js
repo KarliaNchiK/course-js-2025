@@ -3,7 +3,7 @@
  */
 
 import { mount } from '@vue/test-utils';
-import TimeKiller from './App.vue';
+import TimeKiller from './TimeKiller.vue';
 
 describe('11.c.1 TimeKiller', () => {
     const wrapper = mount(TimeKiller);

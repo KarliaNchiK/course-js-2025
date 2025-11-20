@@ -13,7 +13,7 @@ const allTasks = import.meta.glob('../../Lessons/*/{Tasks,Homework}/*/index.{js,
 const allTasksRaw = import.meta.glob('../../Lessons/*/{Tasks,Homework}/*/index.{js,ts}', { query: '?raw' });
 const tasksReadme = import.meta.glob('../../Lessons/*/{Tasks,Homework}/*/README.md', { query: '?raw' });
 const allHtml = import.meta.glob('../../Lessons/*/{Tasks,Homework}/**/index.html', { query: '?url' });
-const allApps = import.meta.glob('../../Lessons/*/{Tasks,Homework}/*/App.vue', { query: '?url' });
+const allApps = import.meta.glob('../../Lessons/*/{Tasks,Homework}/*/TimeKiller.vue', { query: '?url' });
 
 export const getLessonsOptions = () => Object.entries(lessonModules).map(([path, loader]) => {
     const match = path.match(/\.\/Lessons\/(.*)\/README\.md$/);

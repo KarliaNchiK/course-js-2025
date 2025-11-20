@@ -17,8 +17,6 @@ const setCarousel = (imageUrls) => {
         carouselInner.appendChild(div);
         return div;
     });
-
-    // State
     let active = 0;
 
     // Перерисовка

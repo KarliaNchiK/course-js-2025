@@ -126,7 +126,7 @@ Vue-приложение начинается с точки входа:
 
 ```js
 import { createApp } from 'vue'
-import App from './App.vue'
+import App from './TimeKiller.vue'
 
 createApp(App).mount('#app')
 ```
