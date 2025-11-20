@@ -566,7 +566,7 @@ exports[`10.h.1 Cards > 10.h.1.5 third card plus button two clicks 1`] = `
            - 
         </button>
         <div>
-          2 шт.
+          1 шт.
         </div>
       </div>
       <div
@@ -714,7 +714,7 @@ exports[`10.h.1 Cards > 10.h.1.6 third card minus button click 1`] = `
            - 
         </button>
         <div>
-          1 шт.
+          0 шт.
         </div>
       </div>
       <!--v-if-->
