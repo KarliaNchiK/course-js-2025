@@ -1,58 +1,58 @@
 <template>
   <div class="carousel">
     <div class="carousel-inner">
-      <div
-          v-for="(image, index) in images"
-          :key="index"
-          :class="['carousel-item', { active: index === currentIndex }]"
+      <div v-for="(image, index) in images"
+           :key="index"
+           class="carousel-item"
+           :class="{ active: index === currentIndex }"
       >
-        <img
-            :src="image"
-            class="d-block w-100"
-        />
+        <img :src="image"
+             class="d-block w-100"
+
+        >
       </div>
     </div>
-    <button
-        class="carousel-control-prev"
-        @click="prevSlide"
-    >
+    <button @click="prevImage" class="carousel-control-prev">
       <span class="carousel-control-prev-icon"></span>
     </button>
-    <button
-        class="carousel-control-next"
-        @click="nextSlide"
-    >
+    <button @click="nextImage" class="carousel-control-next">
       <span class="carousel-control-next-icon"></span>
     </button>
   </div>
 </template>
-
+<!-- ПРОБЛЕМА С ТЕСТАМИ -->
 <script>
 export default {
   name: 'Carousel',
+  props: {
+    images: {
+      type: Array,
+      required: true,
+      default: () => ['/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg',
+        '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg',
+        '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg']
+    }
+  },
   data() {
     return {
-      currentIndex: 0,
-      images: [
-        '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg',
-        '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg',
-        '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg',
-      ]
+      currentIndex: 0
+
     };
   },
   methods: {
-    nextSlide() {
-      if (this.currentIndex === this.images.length - 1) {
-        this.currentIndex = 0;
-      } else {
-        this.currentIndex++;
-      }
-    },
-    prevSlide() {
+    prevImage() {
       if (this.currentIndex === 0) {
         this.currentIndex = this.images.length - 1;
       } else {
         this.currentIndex--;
+      }
+    },
+
+    nextImage() {
+      if (this.currentIndex === this.images.length - 1) {
+        this.currentIndex = 0;
+      } else {
+        this.currentIndex++;
       }
     }
   }
