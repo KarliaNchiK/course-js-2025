@@ -30,14 +30,40 @@
 </template>
 
 <script>
-
 export default {
   name: 'Cards',
-  props: {
-    cards: {
-      type: Array,
-      required: true
-    }
+  data() {
+    return {
+      cards: [
+        {
+          id: 0,
+          src: '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/iphone10.jpg',
+          description: 'Packed with Innovative Features Including a Super Retina Display, TrueDepth Camera System, Face ID and A11 Bionic Chip with Neural Engine',
+          head: 'Iphone X 64GB',
+          price: '800$',
+          number: 0,
+          max: 4,
+        },
+        {
+          id: 1,
+          src: '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/galaxys21.jpg',
+          description: 'Introducing Galaxy S21 Ultra 5G. Designed with a unique contour-cut camera to create a revolution in photography — letting you capture cinematic 8K video and snap epic stills, all in one go.',
+          head: 'Samsung Galaxy S21 128GB',
+          price: '1000$',
+          number: 0,
+          max: 10,
+        },
+        {
+          id: 2,
+          src: '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 1. Cards/assets/nokia2600.jpg',
+          description: 'Give me back my 2007',
+          head: 'Nokia 2600',
+          price: 'Priceless',
+          number: 0,
+          max: 1,
+        },
+      ],
+    };
   },
   methods: {
     addCard(card) {
@@ -51,10 +77,5 @@ export default {
       }
     }
   },
-  data() {
-    return {
-    };
-  }
-
 };
 </script>
