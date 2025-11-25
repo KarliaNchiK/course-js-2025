@@ -3,6 +3,7 @@ p {
 }
 
 body {
+<<<<<<< HEAD
     padding:20px;
     background-color: #f0f8ff;
 
@@ -16,6 +17,35 @@ body {
     background: white;
     border-radius: 10px;
     box-shadow: 0 1.5px 3px rgb(0 17 51 / 24%), 0 0 1px rgb(0 17 51 / 32%);
+=======
+    padding: 20px;
+    background: rgb(100, 210, 230);
+}
+
+.resume {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 16px;
+    margin: 50px auto;
+    max-width: 820px;
+    line-height: 1.7;
+    padding: 45px 50px;
+    background: #FFFEF7;
+    border-radius: 4px;
+    border: 1px solid #E8E4D9;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    color: #3C3C3C;
+}
+
+.resume__header-link {
+    margin-right: 20px;
+}
+
+h1.resume__header-title {
+    font-size: 36px;
+    padding-bottom: 0;
+    font-weight: 400;
+>>>>>>> origin/main
 }
 
 .resume__header {
@@ -27,10 +57,21 @@ body {
     align-items: center;
 }
 
+<<<<<<< HEAD
+=======
+.resume__main-header {
+    font-size: 32px;
+    font-weight: 400;
+    border-bottom: 1px solid #545960;
+    padding-bottom: 0;
+}
+
+>>>>>>> origin/main
 .resume__header-info-section {
     flex-grow: 1;
 }
 
+<<<<<<< HEAD
 .resume__header-title {
     font-size: 36px;
     padding-bottom: 0;
@@ -47,6 +88,17 @@ body {
     font-weight: normal;
     border-bottom: 1px solid grey;
     padding-bottom: 0;
+=======
+.resume__footer {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.resume__footer-item {
+    font-size: 18px;
+    margin-top: 6px;
+>>>>>>> origin/main
 }
 
 .resume__main-experience {
@@ -57,6 +109,7 @@ body {
     width: 50%;
 }
 
+<<<<<<< HEAD
 .resume__footer {
     margin-bottom: 20px;
     margin-top: 30px;
@@ -72,3 +125,16 @@ body {
 .resume__main-interests {
     font-size: 17px;
 }
+=======
+.resume__main-experience-item--last {
+    margin-left: 30px;
+}
+
+.resume__main-interests li {
+    font-size: 20px;
+}
+
+.resume__header-link {
+    font-size: 20px;
+}
+>>>>>>> origin/main

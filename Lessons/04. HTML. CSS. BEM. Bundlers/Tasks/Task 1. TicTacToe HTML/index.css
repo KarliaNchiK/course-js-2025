@@ -1,4 +1,8 @@
+body {
+    padding: 40px;
+}
 .tic-tac-toe {
+<<<<<<< HEAD
     border: 2px solid grey;
 }
 
@@ -10,10 +14,18 @@ body {
     margin: 0;
     /*background: #f0f0f0;*/
 }
+=======
+    border: 2px solid #B0B0B0;
+    width: fit-content;
+    background-color: white;
+}
+
+>>>>>>> origin/main
 .tic-tac-toe__row {
     display: flex;
 }
 
+<<<<<<< HEAD
 .tic-tac-toe_cell {
     width: 100px;
     height: 100px;
@@ -32,3 +44,28 @@ body {
     width: 60px;
     height: 60px;
 }
+=======
+
+.tic-tac-toe__row:not(:last-of-type) {
+    border-bottom: 2px solid #B0B0B0;
+}
+
+.tic-tac-toe__item {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.tic-tac-toe__item:not(:last-of-type) {
+    border-right: 2px solid #B0B0B0;
+}
+
+.tic-tac-toe__item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+>>>>>>> origin/main
