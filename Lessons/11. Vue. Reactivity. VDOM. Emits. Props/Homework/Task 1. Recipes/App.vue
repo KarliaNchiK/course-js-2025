@@ -1,56 +1,86 @@
+<!--<template>-->
+<!--    <div class="recipes">-->
+<!--        &lt;!&ndash;Начало&ndash;&gt;-->
+<!--        <NewRecipeForm-->
+<!--            :add-recipe="addRecipe"-->
+<!--        />-->
+<!--        <RecipesContainer-->
+<!--            :recipes="recipes"-->
+<!--            :remove-recipe="removeRecipe"-->
+<!--        />-->
+<!--        &lt;!&ndash;Конец&ndash;&gt;-->
+<!--    </div>-->
+<!--</template>-->
+
+<!--<script>-->
+<!--import NewRecipeForm from './components/NewRecipeForm.vue';-->
+<!--import RecipesContainer from './components/RecipesContainer.vue';-->
+
+<!--export default {-->
+<!--    name: 'App',-->
+<!--    // Начало-->
+<!--    components: { RecipesContainer, NewRecipeForm },-->
+<!--    data() {-->
+<!--        return {-->
+<!--            state: [],-->
+<!--        };-->
+<!--    },-->
+<!--    methods: {-->
+<!--        addRecipe(newRecipe) {-->
+<!--            return this.state.push(newRecipe);-->
+<!--        },-->
+<!--        removeRecipe(index) {-->
+<!--            return this.state.splice(index, 1);-->
+<!--        },-->
+<!--    },-->
+<!--    // Конец-->
+<!--};-->
+<!--</script>-->
+
+<!--<style>-->
+<!--.recipes {-->
+<!--  width: 1000px;-->
+<!--  margin: 40px;-->
+<!--  display: flex;-->
+<!--  justify-content: center;-->
+<!--  padding: 20px 0;-->
+<!--  background: whitesmoke;-->
+<!--  border-radius: 15px;-->
+<!--}-->
+
+<!--.recipes > div {-->
+<!--  width: 50%;-->
+<!--}-->
+<!--</style>-->
 <template>
     <div class="recipes">
-        <!--Начало-->
-        <NewRecipeForm />
+        <NewRecipeForm @add-recipe="addRecipe" />
         <RecipesContainer
             :recipes="recipes"
-            :remove-recipe="removeRecipe"
+            @remove-recipe="removeRecipe"
         />
-        <!--Конец-->
     </div>
 </template>
 
 <script>
 import NewRecipeForm from './components/NewRecipeForm.vue';
 import RecipesContainer from './components/RecipesContainer.vue';
-import { reactive } from 'vue';
 
 export default {
     name: 'App',
     components: { RecipesContainer, NewRecipeForm },
-    // Начало
-    setup() {
-        const state = reactive({
-            recipes: [],
-        });
-        const addRecipe = () => {
-            return state.recipes.push();
-        };
-        const removeRecipe = (index) => {
-            return state.recipes.splice(index, 1);
-        };
+    data() {
         return {
-            recipes: state.recipes,
-            addRecipe,
-            removeRecipe,
+            recipes: [],
         };
     },
-    // Конец
+    methods: {
+        addRecipe(newRecipe) {
+            this.recipes.push(newRecipe);
+        },
+        removeRecipe(index) {
+            this.recipes.splice(index, 1);
+        },
+    },
 };
 </script>
-
-<style>
-.recipes {
-    width: 1000px;
-    margin: 40px;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    background: whitesmoke;
-    border-radius: 15px;
-}
-
-.recipes > div {
-    width: 50%;
-}
-</style>

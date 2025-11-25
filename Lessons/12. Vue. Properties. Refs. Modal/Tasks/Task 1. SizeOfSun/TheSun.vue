@@ -46,8 +46,8 @@ export default {
             this.diameter = Math.round(this.diameter * 0.95);
             const widthSun = this.$refs.sun.offsetWidth;
             this.widthSunPicture = widthSun * 0.95;
-        }
-    }
+        },
+    },
     // Конец
 };
 </script>
