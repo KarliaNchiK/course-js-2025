@@ -5,7 +5,7 @@
                 v-for="(image, index) in images"
                 :key="index"
                 class="carousel-item"
-                :class="{ active: currentIndex === index }"
+                :class="{ active: index === activeIndex }"
             >
                 <img
                     class="d-block w-100"
@@ -34,19 +34,35 @@ export default {
     props: {
         images: {
             type: Array,
+            default: () => [],
         },
     },
     data() {
         return {
-            currentIndex: 0,
+            activeIndex: 0,
         };
     },
     methods: {
         nextSlide() {
-            this.currentIndex = (this.currentIndex + 1) % this.images.length;
+            if (this.images.length === 0) {
+                return;
+            }
+
+            this.activeIndex += 1;
+            if (this.activeIndex > this.images.length - 1) {
+                this.activeIndex = 0;
+            }
         },
+
         prevSlide() {
-            this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+            if (this.images.length === 0) {
+                return;
+            }
+
+            this.activeIndex -= 1;
+            if (this.activeIndex < 0) {
+                this.activeIndex = this.images.length - 1;
+            }
         },
     },
 };
