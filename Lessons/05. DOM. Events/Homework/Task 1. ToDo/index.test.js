@@ -6,7 +6,7 @@ import setToDo from './index';
 describe('05.h.1 setToDo', () => {
     document.body.innerHTML = '<div class="to-do">\n' +
         '    <div class="to-do__header">\n' +
-        '        <h2>Мой первое ToDo-приложение на js</h2>\n' +
+        '        <h2>Моё первое ToDo-приложение на js</h2>\n' +
         '    </div>\n' +
         '    <div class="to-do__main"></div>\n' +
         '    <div class="to-do__tasks"></div>\n' +

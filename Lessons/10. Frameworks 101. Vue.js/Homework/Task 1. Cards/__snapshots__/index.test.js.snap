@@ -2,6 +2,7 @@
 
 exports[`10.h.1 Cards > 10.h.1.0 Cards 1`] = `
 <div
+  cards="[object Object],[object Object],[object Object]"
   class="card-container"
 >
   
@@ -146,6 +147,7 @@ exports[`10.h.1 Cards > 10.h.1.0 Cards 1`] = `
 
 exports[`10.h.1 Cards > 10.h.1.3 first card plus button click 1`] = `
 <div
+  cards="[object Object],[object Object],[object Object]"
   class="card-container"
 >
   
@@ -290,6 +292,7 @@ exports[`10.h.1 Cards > 10.h.1.3 first card plus button click 1`] = `
 
 exports[`10.h.1 Cards > 10.h.1.4 second card minus button click 1`] = `
 <div
+  cards="[object Object],[object Object],[object Object]"
   class="card-container"
 >
   
@@ -434,6 +437,7 @@ exports[`10.h.1 Cards > 10.h.1.4 second card minus button click 1`] = `
 
 exports[`10.h.1 Cards > 10.h.1.5 third card plus button two clicks 1`] = `
 <div
+  cards="[object Object],[object Object],[object Object]"
   class="card-container"
 >
   
@@ -566,7 +570,7 @@ exports[`10.h.1 Cards > 10.h.1.5 third card plus button two clicks 1`] = `
            - 
         </button>
         <div>
-          2 шт.
+          1 шт.
         </div>
       </div>
       <div
@@ -582,6 +586,7 @@ exports[`10.h.1 Cards > 10.h.1.5 third card plus button two clicks 1`] = `
 
 exports[`10.h.1 Cards > 10.h.1.6 third card minus button click 1`] = `
 <div
+  cards="[object Object],[object Object],[object Object]"
   class="card-container"
 >
   
@@ -714,7 +719,7 @@ exports[`10.h.1 Cards > 10.h.1.6 third card minus button click 1`] = `
            - 
         </button>
         <div>
-          1 шт.
+          0 шт.
         </div>
       </div>
       <!--v-if-->
@@ -726,6 +731,7 @@ exports[`10.h.1 Cards > 10.h.1.6 third card minus button click 1`] = `
 
 exports[`10.h.1 Cards > 10.h.1.7 third card minus button two more clicks 1`] = `
 <div
+  cards="[object Object],[object Object],[object Object]"
   class="card-container"
 >
   
