@@ -41,13 +41,13 @@ export default {
     },
     // Начало
     methods: {
-        lookToTheFuture() {
-            this.year += 500000;
-            this.diameter = Math.round(this.diameter * 0.95);
-            const widthSun = this.$refs.sun.offsetWidth;
-            this.widthSunPicture = widthSun * 0.95;
-        }
+      lookToTheFuture() {
+       this.year += 500000;
+       this.diameter = Math.round(this.diameter * 0.95);
+       this.widthSunPicture = Math.round(this.widthSunPicture * 0.95);
+      }
     }
+
     // Конец
 };
 </script>

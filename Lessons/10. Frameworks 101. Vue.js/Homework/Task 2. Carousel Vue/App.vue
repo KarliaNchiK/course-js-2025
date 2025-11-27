@@ -36,7 +36,6 @@ export default {
   data() {
     return {
       currentIndex: 0
-
     };
   },
   methods: {
@@ -59,7 +58,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .carousel {
   position: relative;
 }
