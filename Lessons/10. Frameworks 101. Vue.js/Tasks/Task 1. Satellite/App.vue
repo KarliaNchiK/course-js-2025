@@ -1,15 +1,12 @@
 <template>
-    <div class="satellite">
-        Привет
-    </div>
+  <Satellite />
 </template>
 
 <script>
+import Satellite from './Satellite.vue'
+
 export default {
-    name: 'Satellite',
-};
+  name: 'App',
+  components: { Satellite }
+}
 </script>
-
-<style>
-
-</style>
