@@ -3,52 +3,49 @@
         <div class="sun-container__block sun-container__block--sun">
             <h3>Нажми на солнце</h3>
             <div class="sun-container__img">
-                <img src="/Lessons/12.%20Vue.%20Properties.%20Refs.%20Modal/Tasks/Task 1. SizeOfSun/assets/sun.svg"
-                     class="sun-container__the-sun"
-                     @click="lookToTheFuture"
-                     ref="sun"
-                     :style="{'width': widthSunPicture + 'px'}"
-                />
+                <img
+                    ref="sun"
+                    src="/Lessons/12. Vue. Properties. Refs. Modal/Tasks/Task 1. SizeOfSun/assets/sun.svg"
+                    class="sun-container__the-sun"
+                    alt=""
+                    @click="onReduceSunSize"
+                >
             </div>
         </div>
         <div class="sun-container__block">
-            <!--Начало-->
-            <h3>Год:</h3>
-            <span>
-                {{ year }}
-            </span>
-            <h3>Диаметр солнца:</h3>
-            <span>
-                {{ diameter }} км
-            </span>
-            <!--Конец-->
+            <!-- Начало -->
+
+            <!-- Конец -->
         </div>
     </div>
 </template>
 
 <script>
+import { ref, shallowRef } from 'vue';
 
 export default {
     name: 'TheSun',
-    data() {
+    setup() {
+        const sun = shallowRef(null);
+        const diameter = ref(1392700);
+        const year = ref(2021);
+        const imageWidthInPx = ref(450);
+
+        const NUM_OF_ADDITIONS_YEARS = 500000;
+        const REDUCTION_FACTOR = 0.95;
+
+        const onReduceSunSize = () => {
+            //Начало
+            //Конец
+        };
+
         return {
-            diameter: 1392700,
-            year: 2021,
-            // Начало
-            widthSunPicture: 450,
-            // Конец
+            sun,
+            year,
+            diameter,
+            onReduceSunSize,
         };
     },
-    // Начало
-    methods: {
-      lookToTheFuture() {
-       this.year += 500000;
-       this.diameter = Math.round(this.diameter * 0.95);
-       this.widthSunPicture = Math.round(this.widthSunPicture * 0.95);
-      }
-    }
-
-    // Конец
 };
 </script>
 
@@ -63,6 +60,7 @@ export default {
 .sun-container {
     margin: 30px;
     color: #f6f6f6;
+    background: url('/Lessons/12. Vue. Properties. Refs. Modal/Tasks/Task 1. SizeOfSun/assets/sky.jpg') center center/cover no-repeat;
 }
 
 .sun-container__block {
