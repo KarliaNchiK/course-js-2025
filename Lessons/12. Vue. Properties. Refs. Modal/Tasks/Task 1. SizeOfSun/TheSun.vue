@@ -3,12 +3,13 @@
         <div class="sun-container__block sun-container__block--sun">
             <h3>Нажми на солнце</h3>
             <div class="sun-container__img">
-                <img src="/Lessons/12.%20Vue.%20Properties.%20Refs.%20Modal/Tasks/Task 1. SizeOfSun/assets/sun.svg"
-                     class="sun-container__the-sun"
-                     @click="lookToTheFuture"
-                     ref="sun"
-                     :style="{'width': widthSunPicture + 'px'}"
-                />
+                <img
+                    src="/Lessons/12.%20Vue.%20Properties.%20Refs.%20Modal/Tasks/Task 1. SizeOfSun/assets/sun.svg"
+                    class="sun-container__the-sun"
+                    @click="lookToTheFuture"
+                    ref="sun"
+                    :style="{'width': widthSunPicture + 'px'}"
+                >
             </div>
         </div>
         <div class="sun-container__block">
@@ -46,8 +47,8 @@ export default {
             this.diameter = Math.round(this.diameter * 0.95);
             const widthSun = this.$refs.sun.offsetWidth;
             this.widthSunPicture = widthSun * 0.95;
-        }
-    }
+        },
+    },
     // Конец
 };
 </script>

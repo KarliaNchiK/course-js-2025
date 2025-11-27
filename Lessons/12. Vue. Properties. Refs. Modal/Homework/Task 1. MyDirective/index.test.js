@@ -2,6 +2,7 @@
  * @jest-environment jsdom
  */
 
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const { mount } = require("@vue/test-utils");
 const MyDirective = require("./MyDirective.vue");
 

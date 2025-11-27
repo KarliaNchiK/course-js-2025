@@ -6,18 +6,23 @@
             type="text"
             v-model="searchText"
             placeholder="Жизнь"
-        />
+        >
         <div class="quotes__container">
             <template v-for="quote in quotes">
                 <!--Начало-->
-                <div class="quotes__quote-block" v-show="getVisibility(quote.text)">
+                <div
+                    class="quotes__quote-block"
+                    v-show="getVisibility(quote.text)"
+                >
                     <div
                         class="quotes__quote-text"
-                        v-replace:[searchText]="{searchText}">
+                        v-replace:[searchText]="{searchText}"
+                    >
                         "{{ quote.text }}"
                     </div>
                     <div
-                        class="quotes__quote-author">
+                        class="quotes__quote-author"
+                    >
                         (c) {{ quote.author }}
                     </div>
                 </div>
@@ -26,6 +31,7 @@
         </div>
     </div>
 </template>
+
 0 1 2 3 4
 <script>
 export default {
@@ -33,18 +39,17 @@ export default {
     // Начало
     directives: {
         replace: {
-            update: (element, bindings) => {
-                if (element.textContent.includes(bindings.arg)) {
-                    const elementText = element.textContent;
-                    element.innerHTML = elementText.replaceAll(bindings.arg, '<span>' + bindings.arg + '</span>');
+            update(el, binding) {
+                const searchText = binding.value?.searchText || '';
+
+                if (!searchText) {
+                    el.innerHTML = el.textContent;
+                    return;
                 }
-            }
-        }
-    },
-    // Конец
-    methods: {
-        getVisibility(text) {
-            return text.includes(this.searchText);
+
+                const regex = new RegExp(`(${searchText})`, 'gi');
+                el.innerHTML = el.textContent.replace(regex, '<span>$1</span>');
+            },
         },
     },
     data() {
@@ -134,6 +139,13 @@ export default {
 
             ],
         };
+    },
+
+    // Конец
+    methods: {
+        getVisibility(text) {
+            return text.includes(this.searchText);
+        },
     },
 };
 </script>
