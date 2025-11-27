@@ -1,5 +1,4 @@
 <template>
-    <!--Начало-->
     <div class="recipe-container">
         <h3>
             Мои рецепты
@@ -12,7 +11,7 @@
             <div class="card-body">
                 <div class="card-body__header">
                     <h4>
-                        {{ recipe.name }}
+                        {{ recipe.recipeName }}
                     </h4>
                     <VeganIcon />
                     {{ recipe.isVegan ? 'Да' : 'Нет' }}
@@ -29,8 +28,13 @@
                 </button>
             </div>
         </div>
+        <div
+            v-if="recipes.length < 1"
+            class="recipe-container__no-recipes"
+        >
+            Рецептов нет
+        </div>
     </div>
-<!--Конец-->
 </template>
 
 <script>
@@ -82,8 +86,7 @@ export default {
 }
 
 .card-body__header h4 {
-  margin: 0;
-  margin-right: auto;
+  margin: 0 auto 0 0;
 }
 
 .card-body__remove-button {
