@@ -1,36 +1,3 @@
-body {
-    padding: 40px;
-}
 .tic-tac-toe {
-    border: 2px solid #B0B0B0;
-    width: fit-content;
-    background-color: white;
-}
 
-.tic-tac-toe__row {
-    display: flex;
-}
-
-
-.tic-tac-toe__row:not(:last-of-type) {
-    border-bottom: 2px solid #B0B0B0;
-}
-
-.tic-tac-toe__item {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-.tic-tac-toe__item:not(:last-of-type) {
-    border-right: 2px solid #B0B0B0;
-}
-
-.tic-tac-toe__item img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
 }
