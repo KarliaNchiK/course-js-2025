@@ -102,6 +102,69 @@ exports[`10.h.2 Carousel > 10.h.2.3 next button click 1`] = `
 </div>
 `;
 
+exports[`10.h.2 Carousel > 10.h.2.3 next button click 2`] = `
+<div
+  class="carousel"
+  data-v-7a3b4641=""
+>
+  <div
+    class="carousel-inner"
+    data-v-7a3b4641=""
+  >
+    
+    <div
+      class="carousel-item"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg"
+      />
+    </div>
+    <div
+      class="carousel-item active"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg"
+      />
+    </div>
+    <div
+      class="carousel-item"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg"
+      />
+    </div>
+    
+  </div>
+  <button
+    class="carousel-control-prev"
+    data-v-7a3b4641=""
+  >
+    <span
+      class="carousel-control-prev-icon"
+      data-v-7a3b4641=""
+    />
+  </button>
+  <button
+    class="carousel-control-next"
+    data-v-7a3b4641=""
+  >
+    <span
+      class="carousel-control-next-icon"
+      data-v-7a3b4641=""
+    />
+  </button>
+</div>
+`;
+
 exports[`10.h.2 Carousel > 10.h.2.4 next button one more click 1`] = `
 <div
   class="carousel"
@@ -199,6 +262,69 @@ exports[`10.h.2 Carousel > 10.h.2.4 next button one more click 2`] = `
   >
     <span
       class="carousel-control-next-icon"
+    />
+  </button>
+</div>
+`;
+
+exports[`10.h.2 Carousel > 10.h.2.4 next button one more click 3`] = `
+<div
+  class="carousel"
+  data-v-7a3b4641=""
+>
+  <div
+    class="carousel-inner"
+    data-v-7a3b4641=""
+  >
+    
+    <div
+      class="carousel-item"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg"
+      />
+    </div>
+    <div
+      class="carousel-item"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg"
+      />
+    </div>
+    <div
+      class="carousel-item active"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg"
+      />
+    </div>
+    
+  </div>
+  <button
+    class="carousel-control-prev"
+    data-v-7a3b4641=""
+  >
+    <span
+      class="carousel-control-prev-icon"
+      data-v-7a3b4641=""
+    />
+  </button>
+  <button
+    class="carousel-control-next"
+    data-v-7a3b4641=""
+  >
+    <span
+      class="carousel-control-next-icon"
+      data-v-7a3b4641=""
     />
   </button>
 </div>
@@ -306,6 +432,69 @@ exports[`10.h.2 Carousel > 10.h.2.5 next button one more click 2`] = `
 </div>
 `;
 
+exports[`10.h.2 Carousel > 10.h.2.5 next button one more click 3`] = `
+<div
+  class="carousel"
+  data-v-7a3b4641=""
+>
+  <div
+    class="carousel-inner"
+    data-v-7a3b4641=""
+  >
+    
+    <div
+      class="carousel-item active"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg"
+      />
+    </div>
+    <div
+      class="carousel-item"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg"
+      />
+    </div>
+    <div
+      class="carousel-item"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg"
+      />
+    </div>
+    
+  </div>
+  <button
+    class="carousel-control-prev"
+    data-v-7a3b4641=""
+  >
+    <span
+      class="carousel-control-prev-icon"
+      data-v-7a3b4641=""
+    />
+  </button>
+  <button
+    class="carousel-control-next"
+    data-v-7a3b4641=""
+  >
+    <span
+      class="carousel-control-next-icon"
+      data-v-7a3b4641=""
+    />
+  </button>
+</div>
+`;
+
 exports[`10.h.2 Carousel > 10.h.2.6 prev button click 1`] = `
 <div
   class="carousel"
@@ -352,6 +541,69 @@ exports[`10.h.2 Carousel > 10.h.2.6 prev button click 1`] = `
   >
     <span
       class="carousel-control-next-icon"
+    />
+  </button>
+</div>
+`;
+
+exports[`10.h.2 Carousel > 10.h.2.6 prev button click 2`] = `
+<div
+  class="carousel"
+  data-v-7a3b4641=""
+>
+  <div
+    class="carousel-inner"
+    data-v-7a3b4641=""
+  >
+    
+    <div
+      class="carousel-item"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg"
+      />
+    </div>
+    <div
+      class="carousel-item"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg"
+      />
+    </div>
+    <div
+      class="carousel-item active"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg"
+      />
+    </div>
+    
+  </div>
+  <button
+    class="carousel-control-prev"
+    data-v-7a3b4641=""
+  >
+    <span
+      class="carousel-control-prev-icon"
+      data-v-7a3b4641=""
+    />
+  </button>
+  <button
+    class="carousel-control-next"
+    data-v-7a3b4641=""
+  >
+    <span
+      class="carousel-control-next-icon"
+      data-v-7a3b4641=""
     />
   </button>
 </div>
@@ -459,6 +711,69 @@ exports[`10.h.2 Carousel > 10.h.2.7 prev button one more click 2`] = `
 </div>
 `;
 
+exports[`10.h.2 Carousel > 10.h.2.7 prev button one more click 3`] = `
+<div
+  class="carousel"
+  data-v-7a3b4641=""
+>
+  <div
+    class="carousel-inner"
+    data-v-7a3b4641=""
+  >
+    
+    <div
+      class="carousel-item"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg"
+      />
+    </div>
+    <div
+      class="carousel-item active"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg"
+      />
+    </div>
+    <div
+      class="carousel-item"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg"
+      />
+    </div>
+    
+  </div>
+  <button
+    class="carousel-control-prev"
+    data-v-7a3b4641=""
+  >
+    <span
+      class="carousel-control-prev-icon"
+      data-v-7a3b4641=""
+    />
+  </button>
+  <button
+    class="carousel-control-next"
+    data-v-7a3b4641=""
+  >
+    <span
+      class="carousel-control-next-icon"
+      data-v-7a3b4641=""
+    />
+  </button>
+</div>
+`;
+
 exports[`10.h.2 Carousel > 10.h.2.8 next button click 1`] = `
 <div
   class="carousel"
@@ -556,6 +871,69 @@ exports[`10.h.2 Carousel > 10.h.2.8 next button click 2`] = `
   >
     <span
       class="carousel-control-next-icon"
+    />
+  </button>
+</div>
+`;
+
+exports[`10.h.2 Carousel > 10.h.2.8 next button click 3`] = `
+<div
+  class="carousel"
+  data-v-7a3b4641=""
+>
+  <div
+    class="carousel-inner"
+    data-v-7a3b4641=""
+  >
+    
+    <div
+      class="carousel-item"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg"
+      />
+    </div>
+    <div
+      class="carousel-item"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg"
+      />
+    </div>
+    <div
+      class="carousel-item active"
+      data-v-7a3b4641=""
+    >
+      <img
+        class="d-block w-100"
+        data-v-7a3b4641=""
+        src="/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg"
+      />
+    </div>
+    
+  </div>
+  <button
+    class="carousel-control-prev"
+    data-v-7a3b4641=""
+  >
+    <span
+      class="carousel-control-prev-icon"
+      data-v-7a3b4641=""
+    />
+  </button>
+  <button
+    class="carousel-control-next"
+    data-v-7a3b4641=""
+  >
+    <span
+      class="carousel-control-next-icon"
+      data-v-7a3b4641=""
     />
   </button>
 </div>

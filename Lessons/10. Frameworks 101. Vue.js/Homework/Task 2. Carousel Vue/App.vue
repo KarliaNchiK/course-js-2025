@@ -1,6 +1,6 @@
 
 <template>
-<<<<<<< HEAD
+
   <!--Начало-->
   <div class="carousel">
     <div class="carousel-inner">
@@ -33,7 +33,7 @@
   </div>
   <!--Конец-->
 </template>
-=======
+
   <div class="carousel">
     <div class="carousel-inner">
       <div v-for="(image, index) in images"
@@ -43,7 +43,7 @@
       >
         <img :src="image"
              class="d-block w-100"
->>>>>>> origin/main
+
 
         >
       </div>
@@ -55,11 +55,11 @@
       <span class="carousel-control-next-icon"></span>
     </button>
   </div>
-</template>
-<!-- ПРОБЛЕМА С ТЕСТАМИ -->
+
+
 <script>
 export default {
-<<<<<<< HEAD
+
     name: 'Carousel',
 
     props: {
@@ -93,9 +93,9 @@ export default {
 </script>
 
 
-<style></style>
+<style>
 
-=======
+
   name: 'Carousel',
   props: {
     images: {
@@ -174,4 +174,4 @@ export default {
   width: 100%;
 }
 </style>
->>>>>>> origin/main
+
