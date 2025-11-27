@@ -1,29 +1,21 @@
 <template>
+  <Carousel :images="images" />
 </template>
 
 <script>
+import Carousel from './Carousel.vue'
+
 export default {
-    name: 'Carousel',
-};
+  name: 'App',
+  components: { Carousel },
+  data() {
+    return {
+      images: [
+        '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg',
+        '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg',
+        '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg',
+      ]
+    }
+  }
+}
 </script>
-
-<style>
-.carousel {
-    background: #f6f6f6;
-    display: block;
-    padding: 30px;
-    margin: 40px;
-    font-family: Verdana, Tahoma, sans-serif;
-    border-radius: 10px;
-    align-items: center;
-    width: 1000px;
-}
-
-.carousel-item {
-    min-height: 325px;
-}
-
-.carousel-item.active {
-    display: flex;
-}
-</style>
