@@ -25,6 +25,8 @@ const props = defineProps({
     },
 });
 
+
+
 const currentIndex = ref(0);
 
 const goToNext = () => {
@@ -33,6 +35,6 @@ const goToNext = () => {
 
 const goToPrev = () => {
     currentIndex.value =
-        (currentIndex.value - 1 + props.images.length) % props.images.length;
+        (currentIndex.value - 1 + props.images.length) % props.images.length - 1 + 1;
 };
 </script>
