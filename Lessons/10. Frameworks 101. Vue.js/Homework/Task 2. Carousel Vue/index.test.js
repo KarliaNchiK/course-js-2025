@@ -3,14 +3,15 @@
  */
 import { mount } from '@vue/test-utils';
 import Carousel from './App.vue';
+import { waitFor } from '@testing-library/dom';
 
 describe('10.h.2 Carousel', () => {
     const wrapper = mount(Carousel, {
         props: {
             images: [
-                '/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg',
-                '/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg',
-                '/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg',
+                '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg',
+                '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg',
+                '/Lessons/10. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg',
             ],
         },
     });
@@ -24,31 +25,44 @@ describe('10.h.2 Carousel', () => {
 
     it('10.h.2.3 next button click', async () => {
         await buttonNext.trigger('click');
-        expect(wrapper.element).toMatchSnapshot();
+
+        await waitFor(() => {
+            expect(wrapper.element).toMatchSnapshot();
+        });
     });
 
     it('10.h.2.4 next button one more click', async () => {
         await buttonNext.trigger('click');
-        expect(wrapper.element).toMatchSnapshot();
+        await waitFor(() => {
+            expect(wrapper.element).toMatchSnapshot();
+        });
     });
 
     it('10.h.2.5 next button one more click', async () => {
         await buttonNext.trigger('click');
-        expect(wrapper.element).toMatchSnapshot();
+        await waitFor(() => {
+            expect(wrapper.element).toMatchSnapshot();
+        });
     });
 
     it('10.h.2.6 prev button click', async () => {
         await buttonPrev.trigger('click');
-        expect(wrapper.element).toMatchSnapshot();
+        await waitFor(() => {
+            expect(wrapper.element).toMatchSnapshot();
+        });
     });
 
     it('10.h.2.7 prev button one more click', async () => {
         await buttonPrev.trigger('click');
-        expect(wrapper.element).toMatchSnapshot();
+        await waitFor(() => {
+            expect(wrapper.element).toMatchSnapshot();
+        });
     });
 
     it('10.h.2.8 next button click', async () => {
         await buttonNext.trigger('click');
-        expect(wrapper.element).toMatchSnapshot();
+        await waitFor(() => {
+            expect(wrapper.element).toMatchSnapshot();
+        });
     });
 });
