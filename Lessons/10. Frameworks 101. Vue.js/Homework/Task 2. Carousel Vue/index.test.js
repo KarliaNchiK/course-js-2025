@@ -3,7 +3,6 @@
  */
 import { mount } from '@vue/test-utils';
 import Carousel from './App.vue';
-import { nextTick } from 'vue';
 import { waitFor } from '@testing-library/dom';
 
 describe('10.h.2 Carousel', () => {
