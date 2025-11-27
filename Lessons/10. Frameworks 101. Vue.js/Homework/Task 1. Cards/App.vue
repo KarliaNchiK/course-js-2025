@@ -47,7 +47,7 @@
 
 <script>
 export default {
-    name: 'Cards',
+    name: 'App',
     props: {
         cards: {
             type: Array,

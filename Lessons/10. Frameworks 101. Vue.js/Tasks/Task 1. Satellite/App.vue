@@ -22,7 +22,7 @@
 
 <script>
 export default {
-    name: 'Satellite',
+    name: 'App',
     data() {
         return {
             radiusInput: '',
