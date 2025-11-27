@@ -36,7 +36,7 @@ export default {
 
       if (!this.radiusKm) return Infinity;
 
-      const r = this.radiusKm * 1000; // км → м
+      const r = this.radiusKm * 1000; // км в м
 
       const v = Math.sqrt((G * M) / r);
 

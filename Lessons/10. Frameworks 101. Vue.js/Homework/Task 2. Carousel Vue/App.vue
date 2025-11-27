@@ -1,5 +1,4 @@
 <template>
-  <!--Начало-->
   <div class="carousel">
     <div class="carousel-inner">
       <div
@@ -24,7 +23,6 @@
       <span class="carousel-control-next-icon"></span>
     </button>
   </div>
-  <!--Конец-->
 </template>
 
 <script>
