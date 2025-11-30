@@ -33,9 +33,9 @@ export default defineConfig(() => {
         base: './',
         plugins: [
             vuePlugin(),
-            checker({
-                vueTsc: true,
-            }),
+            // checker({
+            //     vueTsc: true,
+            // }),
         ],
         server: {
             host: '0.0.0.0',

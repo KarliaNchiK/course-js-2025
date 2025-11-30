@@ -1,26 +1,29 @@
 <template>
-  <div class="times-container">
-    <div
-        v-for="(time, index) in times"
-        :key="time + index"
-        class="times-container__item"
-        @mouseover="$emit('remove-time', index)"
+  <div
+    class="times-container__item"
+    @mouseover="remove"
     >
-      {{ time }}
-    </div>
+    {{time}}
   </div>
 </template>
 
 <script>
 export default {
-  name: 'TimeElement',
   props: {
-    times: {
-      type: Array,
+    time: {
+      type: Date,
       required: true
     }
+  },
+
+  emits: ['remove'],
+
+  methods: {
+    remove() {
+      this.$emit('remove');
+    }
   }
-};
+}
 </script>
 
 <style>

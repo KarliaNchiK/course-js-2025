@@ -1,7 +1,6 @@
 <template>
   <div class="recipes">
     <!--Начало-->
-      <span>sadad213</span>
     <!--Конец-->
   </div>
 </template>
