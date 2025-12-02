@@ -8,15 +8,35 @@
             placeholder="Жизнь"
         />
         <div class="quotes__container">
-            <!--Начало-->
-            <!--Конец-->
+          <div v-for="quote in quotes"
+               :key="quote.id"
+               class="quotes__quote-block"
+               v-show="getVisibility(quote.text)"
+               >
+              <div
+                class="quotes__quote-text"
+                v-replace="searchText"
+                >
+                "{{ quote.text }}"
+              </div>
+            <div class="quotes__quote-author">
+              (c) {{ quote.author }}
+            </div>
+          </div>
         </div>
     </div>
 </template>
 
 <script>
+import { ref } from 'vue';
+import vReplace from './vReplace.js';
+
 export default {
     name: 'MyDirective',
+    directives: {
+      'replace': vReplace
+    },
+
     setup() {
         const searchText = ref('');
 
