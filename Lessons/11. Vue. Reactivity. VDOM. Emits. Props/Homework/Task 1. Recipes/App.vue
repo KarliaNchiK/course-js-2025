@@ -1,37 +1,30 @@
 <template>
   <div class="recipes">
+
     <NewRecipeForm @add-recipe="addRecipe" />
-    <RecipesContainer
-        :recipes="recipes"
-        @remove-recipe="removeRecipe"
-    />
+    <RecipesContainer :recipes="recipes" @remove-recipe="removeRecipe" />
+
   </div>
 </template>
 
 <script>
-import NewRecipeForm from './components/NewRecipeForm.vue'
-import RecipesContainer from './components/RecipesContainer.vue'
+import NewRecipeForm from "./components/NewRecipeForm.vue";
+import RecipesContainer from "./components/RecipesContainer.vue";
 
 export default {
   name: 'Recipes',
-  components: {
-    NewRecipeForm,
-    RecipesContainer
-  },
+  components: {RecipesContainer, NewRecipeForm},
   data() {
     return {
       recipes: []
     };
   },
   methods: {
-    addRecipe(newRecipe) {
-      this.recipes.push({
-        id: Date.now(),
-        ...newRecipe
-      });
+    addRecipe(recipe) {
+      this.recipes.push(recipe);
     },
-    removeRecipe(recipeId) {
-      this.recipes = this.recipes.filter(recipe => recipe.id !== recipeId);
+    removeRecipe(index) {
+      this.recipes.splice(index, 1);
     }
   }
 };
