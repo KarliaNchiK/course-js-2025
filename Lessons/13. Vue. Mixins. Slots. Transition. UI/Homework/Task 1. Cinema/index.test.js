@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import Cinema from './App.vue';
+import Cinema from './Cinema.vue';
 import CardBlock from './components/CardBlock.vue';
 import DirectorCard from './components/DirectorCard.vue';
 

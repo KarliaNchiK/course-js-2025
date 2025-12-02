@@ -4,8 +4,6 @@ exports[`12.c2 ItisIcon > 12.c2.3 change prop 'icon-type' to 'excited' 1`] = `
 <div
   data-v-app=""
 >
-  
-  <!--Начало-->
   <svg
     height="94.56px"
     viewBox="0 -12.02 94.56 94.56"
@@ -118,8 +116,6 @@ exports[`12.c2 ItisIcon > 12.c2.3 change prop 'icon-type' to 'excited' 1`] = `
       </g>
     </g>
   </svg>
-  <!--Конец-->
-  
 </div>
 `;
 
@@ -127,8 +123,6 @@ exports[`12.c2 ItisIcon > 12.c2.4 change prop 'icon-type' to 'loved' 1`] = `
 <div
   data-v-app=""
 >
-  
-  <!--Начало-->
   <svg
     height="94.571px"
     viewBox="0 -12.02 94.571 94.571"
@@ -244,8 +238,6 @@ exports[`12.c2 ItisIcon > 12.c2.4 change prop 'icon-type' to 'loved' 1`] = `
       />
     </g>
   </svg>
-  <!--Конец-->
-  
 </div>
 `;
 
@@ -253,8 +245,6 @@ exports[`12.c2 ItisIcon > 12.c2.5 change prop 'icon-type' to 'happy' 1`] = `
 <div
   data-v-app=""
 >
-  
-  <!--Начало-->
   <svg
     height="94.572px"
     viewBox="0 -12.02 94.572 94.572"
@@ -362,7 +352,5 @@ exports[`12.c2 ItisIcon > 12.c2.5 change prop 'icon-type' to 'happy' 1`] = `
       </g>
     </g>
   </svg>
-  <!--Конец-->
-  
 </div>
 `;

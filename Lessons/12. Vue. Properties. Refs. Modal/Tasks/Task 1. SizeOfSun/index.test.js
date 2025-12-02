@@ -3,7 +3,7 @@
  */
 
 import { mount } from '@vue/test-utils';
-import TheSun from './App.vue';
+import TheSun from './TheSun.vue';
 
 describe('12.c1 TheSun', () => {
     const wrapper = mount(TheSun);

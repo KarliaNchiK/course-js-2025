@@ -1,6 +1,7 @@
 <template>
-    <!--Начало-->
-    <!--Конец-->
+    <div data-v-app="">
+        <component :is="iconsMap[iconType]" />
+    </div>
 </template>
 
 <script>
@@ -23,7 +24,33 @@ import TiredIcon from './icons/TiredIcon.vue';
 
 export default {
     name: 'ItisIcon',
-    // Начало
-    // Конец
+    props: {
+        iconType: {
+            type: String,
+            required: true,
+        },
+    },
+    computed: {
+        iconsMap() {
+            return {
+                angry: AngryIcon,
+                annoyed: AnnoyedIcon,
+                embarrassed: EmbarrassedIcon,
+                excited: ExcitedIcon,
+                frustrated: FrustratedIcon,
+                happy: HappyIcon,
+                lonely: LonelyIcon,
+                loved: LovedIcon,
+                nervous: NervousIcon,
+                neutral: NeutralIcon,
+                sad: SadIcon,
+                scared: ScaredIcon,
+                sick: SickIcon,
+                stressed: StressedIcon,
+                surprised: SurprisedIcon,
+                tired: TiredIcon,
+            };
+        },
+    },
 };
 </script>
