@@ -1,0 +1,393 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`10.h.2 Carousel > 10.h.2.2 1`] = `
+<div
+  data-v-app=""
+  images="/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg,/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg,/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg"
+>
+  <!--Начало-->
+  <div
+    class="carousel"
+  >
+    <div
+      class="carousel-inner"
+    >
+      <div
+        class="carousel-item active"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzM3OCIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAxPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzc1MyIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAyPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzU4NCIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAzPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+    >
+      <span
+        class="carousel-control-prev-icon"
+      />
+    </button>
+    <button
+      class="carousel-control-next"
+    >
+      <span
+        class="carousel-control-next-icon"
+      />
+    </button>
+  </div>
+  <!--Конец-->
+</div>
+`;
+
+exports[`10.h.2 Carousel > 10.h.2.3 next button click 1`] = `
+<div
+  data-v-app=""
+  images="/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg,/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg,/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg"
+>
+  <!--Начало-->
+  <div
+    class="carousel"
+  >
+    <div
+      class="carousel-inner"
+    >
+      <div
+        class="carousel-item active"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzM3OCIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAxPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzc1MyIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAyPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzU4NCIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAzPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+    >
+      <span
+        class="carousel-control-prev-icon"
+      />
+    </button>
+    <button
+      class="carousel-control-next"
+    >
+      <span
+        class="carousel-control-next-icon"
+      />
+    </button>
+  </div>
+  <!--Конец-->
+</div>
+`;
+
+exports[`10.h.2 Carousel > 10.h.2.4 next button one more click 1`] = `
+<div
+  data-v-app=""
+  images="/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg,/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg,/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg"
+>
+  <!--Начало-->
+  <div
+    class="carousel"
+  >
+    <div
+      class="carousel-inner"
+    >
+      <div
+        class="carousel-item active"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzM3OCIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAxPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzc1MyIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAyPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzU4NCIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAzPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+    >
+      <span
+        class="carousel-control-prev-icon"
+      />
+    </button>
+    <button
+      class="carousel-control-next"
+    >
+      <span
+        class="carousel-control-next-icon"
+      />
+    </button>
+  </div>
+  <!--Конец-->
+</div>
+`;
+
+exports[`10.h.2 Carousel > 10.h.2.5 next button one more click 1`] = `
+<div
+  data-v-app=""
+  images="/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg,/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg,/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg"
+>
+  <!--Начало-->
+  <div
+    class="carousel"
+  >
+    <div
+      class="carousel-inner"
+    >
+      <div
+        class="carousel-item active"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzM3OCIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAxPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzc1MyIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAyPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzU4NCIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAzPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+    >
+      <span
+        class="carousel-control-prev-icon"
+      />
+    </button>
+    <button
+      class="carousel-control-next"
+    >
+      <span
+        class="carousel-control-next-icon"
+      />
+    </button>
+  </div>
+  <!--Конец-->
+</div>
+`;
+
+exports[`10.h.2 Carousel > 10.h.2.6 prev button click 1`] = `
+<div
+  data-v-app=""
+  images="/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg,/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg,/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg"
+>
+  <!--Начало-->
+  <div
+    class="carousel"
+  >
+    <div
+      class="carousel-inner"
+    >
+      <div
+        class="carousel-item active"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzM3OCIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAxPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzc1MyIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAyPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzU4NCIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAzPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+    >
+      <span
+        class="carousel-control-prev-icon"
+      />
+    </button>
+    <button
+      class="carousel-control-next"
+    >
+      <span
+        class="carousel-control-next-icon"
+      />
+    </button>
+  </div>
+  <!--Конец-->
+</div>
+`;
+
+exports[`10.h.2 Carousel > 10.h.2.7 prev button one more click 1`] = `
+<div
+  data-v-app=""
+  images="/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg,/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg,/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg"
+>
+  <!--Начало-->
+  <div
+    class="carousel"
+  >
+    <div
+      class="carousel-inner"
+    >
+      <div
+        class="carousel-item active"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzM3OCIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAxPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzc1MyIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAyPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzU4NCIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAzPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+    >
+      <span
+        class="carousel-control-prev-icon"
+      />
+    </button>
+    <button
+      class="carousel-control-next"
+    >
+      <span
+        class="carousel-control-next-icon"
+      />
+    </button>
+  </div>
+  <!--Конец-->
+</div>
+`;
+
+exports[`10.h.2 Carousel > 10.h.2.8 next button click 1`] = `
+<div
+  data-v-app=""
+  images="/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-1.jpg,/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-2.jpg,/Lessons/09. Frameworks 101. Vue.js/Homework/Task 2. Carousel Vue/assets/carousel-3.jpg"
+>
+  <!--Начало-->
+  <div
+    class="carousel"
+  >
+    <div
+      class="carousel-inner"
+    >
+      <div
+        class="carousel-item active"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzM3OCIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAxPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzc1MyIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAyPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <img
+          class="d-block w-100"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzU4NCIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbGlkZSAzPC90ZXh0Pgo8L3N2Zz4K"
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+    >
+      <span
+        class="carousel-control-prev-icon"
+      />
+    </button>
+    <button
+      class="carousel-control-next"
+    >
+      <span
+        class="carousel-control-next-icon"
+      />
+    </button>
+  </div>
+  <!--Конец-->
+</div>
+`;
