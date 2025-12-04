@@ -1,10 +1,12 @@
-import { createApp } from 'vue';
-
-const app = createApp({});
-app.directive('replace', {
-    mounted: (element, binding) => {
-        const textDiv = element.querySelector('.quotes__quote-text');
-        const textHtml = textDiv.innerHTML;
-        textHtml.innerHTML.replace(binding.value, '"<span>' + binding.value + '</span>"');
+const replaceDirective = {
+    mounted(element, binding) {
+        const text = element.textContent;
+        element.innerHTML = text.replace(binding.value, '<span>' + binding.value + '</span>');
     },
-});
+    updated(element, binding) {
+        const text = element.textContent;
+        element.innerHTML = text.replace(binding.value, '<span>' + binding.value + '</span>');
+    },
+};
+
+export { replaceDirective };

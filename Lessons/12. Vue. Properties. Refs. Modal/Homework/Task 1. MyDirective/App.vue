@@ -18,7 +18,7 @@
                     class="quotes__quote-text"
                     v-replace="searchText"
                 >
-                    {{ quote.text }}
+                    "{{ quote.text }}"
                 </div>
                 <div class="quotes__quote-author">
                     (c) {{ quote.author }}
@@ -30,16 +30,12 @@
 
 <script>
 import { ref } from 'vue';
+import { replaceDirective } from './vReplace.js';
 
 export default {
     name: 'App',
     directives: {
-        replace: {
-            update: (element, bindings) => {
-                const elementText = element.textContent;
-                element.innerHTML = elementText.replaceAll(bindings.value, '<span>' + bindings.value + '</span>');
-            },
-        },
+        replace: replaceDirective,
     },
     setup() {
         const searchText = ref('');
