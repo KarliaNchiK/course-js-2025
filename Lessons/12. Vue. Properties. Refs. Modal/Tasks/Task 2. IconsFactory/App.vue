@@ -17,7 +17,7 @@
 import ItisIcon from './ItisIcon.vue';
 
 export default {
-    name: 'IconCarousel',
+    name: 'App',
     components: {
         ItisIcon,
     },

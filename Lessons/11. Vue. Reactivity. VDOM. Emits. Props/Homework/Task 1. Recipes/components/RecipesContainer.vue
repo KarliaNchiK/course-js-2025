@@ -8,7 +8,7 @@
             @remove-item="removeItem"
             v-for="(item, index) in recipes"
             :key="index"
-            :recipeName="item.recipeName"
+            :recipe-name="item.recipeName"
             :ingredients="item.ingredients"
             :actions="item.actions"
             :time="item.time"
@@ -16,7 +16,7 @@
             :index="index"
             class="card"
         />
-        <!--v-if-->
+
         <div
             class="recipe-container__no-recipes"
             v-if="recipes.length === 0"

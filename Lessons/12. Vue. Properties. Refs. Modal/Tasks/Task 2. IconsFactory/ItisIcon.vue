@@ -1,6 +1,7 @@
 <template>
-    <!--Начало-->
-    <!--Конец-->
+    <component
+        :is="inIcons()"
+    />
 </template>
 
 <script>
@@ -23,7 +24,36 @@ import TiredIcon from './icons/TiredIcon.vue';
 
 export default {
     name: 'ItisIcon',
-    // Начало
-    // Конец
+    props: {
+        iconType: {
+            type: String,
+            required: true,
+        },
+    },
+
+    methods: {
+        inIcons() {
+            const icons = {
+                angry: AngryIcon,
+                annoyed: AnnoyedIcon,
+                embarrassed: EmbarrassedIcon,
+                excited: ExcitedIcon,
+                frustrated: FrustratedIcon,
+                happy: HappyIcon,
+                lonely: LonelyIcon,
+                loved: LovedIcon,
+                nervous: NervousIcon,
+                neutral: NeutralIcon,
+                sad: SadIcon,
+                scared: ScaredIcon,
+                sick: SickIcon,
+                stressed: StressedIcon,
+                surprised: SurprisedIcon,
+                tired: TiredIcon,
+            };
+            return icons[this.iconType] || null;
+        },
+    },
+
 };
 </script>
