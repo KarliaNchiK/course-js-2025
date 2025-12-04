@@ -3,6 +3,6 @@
 
 <script>
 export default {
-    name: 'Cards',
+    name: 'Cards'
 };
 </script>
