@@ -1,6 +1,32 @@
 <template>
-    <!--Начало-->
-    <!--Конец-->
+    <CardBlock>
+      <template #image>
+        <img :src="movie.image">
+      </template>
+      <template #info>
+        <div class="movie__info-name">
+          {{ movie.name }}
+        </div>
+        <div>
+          <span class="movie__title">
+            Год:
+          </span>
+          {{ movie.year }}
+        </div>
+        <div>
+          <span class="movie__title">
+            Режиссер:
+          </span>
+          {{ movie.director }}
+        </div>
+        <div>
+          <span class="movie__title">
+            Жанр:
+          </span>
+          {{ movie.genre }}
+        </div>
+      </template>
+    </CardBlock>
 </template>
 
 <script>
@@ -10,6 +36,19 @@ export default {
     name: 'MovieCard',
     components: { CardBlock },
     // Начало
+    props: {
+      movie: {
+        type: Object,
+        required: true,
+        default: () => ({
+          image: '',
+          name: '',
+          year: '',
+          director: '',
+          genre: ''
+        })
+      }
+    }
     // Конец
 };
 </script>
