@@ -6,17 +6,45 @@
             type="text"
             v-model="searchText"
             placeholder="Жизнь"
-        />
+        >
         <div class="quotes__container">
-            <!--Начало-->
-            <!--Конец-->
+            <div
+                class="quotes__quote-block"
+                v-for="quote in quotes"
+                :key="quote.id"
+                v-show="getVisibility(quote.text)"
+            >
+                <div
+                    class="quotes__quote-text"
+                    v-replace:[searchText]="{searchText}"
+                >
+                    {{ quote.text }}
+                </div>
+                <div class="quotes__quote-author">
+                    (c) {{ quote.author }}
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+import { ref } from 'vue';
+
 export default {
-    name: 'MyDirective',
+    name: 'App',
+    directives: {
+        replace: {
+            update: (element, bindings) => {
+                const elementText = element.textContent;
+                element.innerHTML = elementText.replace(bindings.value, '<span>' + bindings.value + '</span>');
+            },
+            mounted: (element, bindings) => {
+                const elementText = element.textContent;
+                element.innerHTML = elementText.replace(bindings.value, '<span>' + bindings.value+ '</span>');
+            },
+        },
+    },
     setup() {
         const searchText = ref('');
 
@@ -144,8 +172,9 @@ export default {
     font-size: 16px;
 }
 
-.quotes__quote-text span {
+span {
     color: #1783b7;
     text-decoration: underline;
 }
+
 </style>

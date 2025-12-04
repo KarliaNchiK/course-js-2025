@@ -1,9 +1,16 @@
 <template>
-    <!--Начало-->
-    <!--Конец-->
+    <div class="card-block">
+        <div class="card-block__image">
+            <slot name="image" />
+        </div>
+        <div class="card-block__info">
+            <slot name="info" />
+        </div>
+    </div>
 </template>
 
 <script>
+
 export default {
     name: 'CardBlock',
 };

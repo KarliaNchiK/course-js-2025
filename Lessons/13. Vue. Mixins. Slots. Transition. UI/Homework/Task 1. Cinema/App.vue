@@ -24,7 +24,7 @@ import DirectorCard from './components/DirectorCard.vue';
 import MovieCard from './components/MovieCard.vue';
 
 export default {
-    name: 'Cinema',
+    name: 'App',
     components: { DirectorCard, MovieCard },
     props: {
         directors: {

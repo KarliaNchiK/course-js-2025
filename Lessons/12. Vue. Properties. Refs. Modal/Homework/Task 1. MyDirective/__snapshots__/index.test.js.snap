@@ -1650,3 +1650,4418 @@ exports[`12.h.1 MyDirective > 12.h.1.5 text 'а' 2`] = `
   </div>
 </div>
 `;
+
+exports[`12.h.1 MyDirective > 12.h.1.5 text 'а' 3`] = `
+<div
+  class="quotes"
+>
+  <h3>
+    Введите текст для поиск по нему цитат
+  </h3>
+  <input
+    class="form-control form-control-lg"
+    placeholder="Жизнь"
+    type="text"
+  />
+  <div
+    class="quotes__container"
+  >
+    <!--Начало-->
+    
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Настойчивость очень важна. Вы не должны сдаваться, если только не вынуждены сдаться.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Илон Маск
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Проблемы — это спрятанные решения.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Павел Дуров
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Если вы не желаете слышать критику, пожалуйста, не делайте ничего нового.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Джефф Безос
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Если вы предпринимаете только те действия, результат которых известен вам заранее, долго ваш бизнес не протянет.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Джефф Безос
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        В мире, который меняется очень быстро, единственная стратегия, которая гарантированно провальна — не рисковать
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Марк Цукерберг
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+         Если бы я мог прожить жизнь заново, я был бы сантехником.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Альберт Эйнштейн
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Ты не несешь ответственности за то, чего ждут от тебя другие люди. Если от тебя ждут слишком многого, то это их ошибка, а не твоя вина.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Ричард Фейнман
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Если вы ученый, квантовый физик и не можете в двух словах объяснить пятилетнему ребенку, чем вы занимаетесь, — вы шарлатан
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Ричард Фейнман
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Мне всегда нравилось преуспевать в том, что у меня никак не должно было получиться.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Ричард Фейнман
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style="display: none;"
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        В жизни нет ничего, чего стоило бы бояться, есть только то, что нужно понять.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Мария Кюри-Склодовская
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Мне кажется, каждый призван заниматься одним делом на Земле.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Жан-Поль Бельмондо
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Важно помнить: всякий раз, когда ты покупаешь что-то, ты на сто процентов поддерживаешь политику той компании, которая произвела эту вещь.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Леонардо Ди Каприо
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Деньги — странная вещь. Люди, которые не имеют их, сильно к ним стремятся. Люди, которые их имеют, имеют также много проблем.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Айртон Сенна
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Никто из нас не хотел быть бас-гитаристом. В нашем представлении это был толстый парень, который играл где-то сзади.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Пол Маккартни
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Я всё время что-то пишу. Потому что я помешан на мысли, что мы должны стать ещё лучше.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Крис Мартин
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        С тех пор прошло 80 лет и я по-прежнему задаю себе этот же вопрос. Что же такое электричество?), но не в состоянии ответить на него.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+        Никола Тесла
+      </div>
+    </div>
+    
+    <!--Конец-->
+  </div>
+</div>
+`;
+
+exports[`12.h.1 MyDirective > 12.h.1.5 text 'а' 4`] = `
+<div
+  class="quotes"
+>
+  <h3>
+    Введите текст для поиск по нему цитат
+  </h3>
+  <input
+    class="form-control form-control-lg"
+    placeholder="Жизнь"
+    type="text"
+  />
+  <div
+    class="quotes__container"
+  >
+    <!--Начало-->
+    
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Настойчивость очень важна. Вы не должны сдаваться, если только не вынуждены сдаться.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Илон Маск
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Проблемы — это спрятанные решения.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Павел Дуров
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Если вы не желаете слышать критику, пожалуйста, не делайте ничего нового.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Джефф Безос
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Если вы предпринимаете только те действия, результат которых известен вам заранее, долго ваш бизнес не протянет.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Джефф Безос
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        В мире, который меняется очень быстро, единственная стратегия, которая гарантированно провальна — не рисковать
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Марк Цукерберг
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+         Если бы я мог прожить жизнь заново, я был бы сантехником.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Альберт Эйнштейн
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Ты не несешь ответственности за то, чего ждут от тебя другие люди. Если от тебя ждут слишком многого, то это их ошибка, а не твоя вина.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Ричард Фейнман
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Если вы ученый, квантовый физик и не можете в двух словах объяснить пятилетнему ребенку, чем вы занимаетесь, — вы шарлатан
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Ричард Фейнман
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Мне всегда нравилось преуспевать в том, что у меня никак не должно было получиться.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Ричард Фейнман
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style="display: none;"
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        В жизни нет ничего, чего стоило бы бояться, есть только то, что нужно понять.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Мария Кюри-Склодовская
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Мне кажется, каждый призван заниматься одним делом на Земле.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Жан-Поль Бельмондо
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Важно помнить: всякий раз, когда ты покупаешь что-то, ты на сто процентов поддерживаешь политику той компании, которая произвела эту вещь.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Леонардо Ди Каприо
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Деньги — странная вещь. Люди, которые не имеют их, сильно к ним стремятся. Люди, которые их имеют, имеют также много проблем.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Айртон Сенна
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Никто из нас не хотел быть бас-гитаристом. В нашем представлении это был толстый парень, который играл где-то сзади.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Пол Маккартни
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Я всё время что-то пишу. Потому что я помешан на мысли, что мы должны стать ещё лучше.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Крис Мартин
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        С тех пор прошло 80 лет и я по-прежнему задаю себе этот же вопрос. Что же такое электричество?), но не в состоянии ответить на него.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Никола Тесла
+      </div>
+    </div>
+    
+    <!--Конец-->
+  </div>
+</div>
+`;
+
+exports[`12.h.1 MyDirective > 12.h.1.5 text 'а' 5`] = `
+<div
+  class="quotes"
+>
+  <h3>
+    Введите текст для поиск по нему цитат
+  </h3>
+  <input
+    class="form-control form-control-lg"
+    placeholder="Жизнь"
+    type="text"
+  />
+  <div
+    class="quotes__container"
+  >
+    
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Настойчивость очень важна. Вы не должны сдаваться, если только не вынуждены сдаться.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Илон Маск
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Проблемы — это спрятанные решения.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Павел Дуров
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Если вы не желаете слышать критику, пожалуйста, не делайте ничего нового.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Джефф Безос
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Если вы предпринимаете только те действия, результат которых известен вам заранее, долго ваш бизнес не протянет.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Джефф Безос
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        В мире, который меняется очень быстро, единственная стратегия, которая гарантированно провальна — не рисковать
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Марк Цукерберг
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+         Если бы я мог прожить жизнь заново, я был бы сантехником.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Альберт Эйнштейн
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Ты не несешь ответственности за то, чего ждут от тебя другие люди. Если от тебя ждут слишком многого, то это их ошибка, а не твоя вина.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Ричард Фейнман
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Если вы ученый, квантовый физик и не можете в двух словах объяснить пятилетнему ребенку, чем вы занимаетесь, — вы шарлатан
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Ричард Фейнман
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Мне всегда нравилось преуспевать в том, что у меня никак не должно было получиться.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Ричард Фейнман
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style="display: none;"
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        В жизни нет ничего, чего стоило бы бояться, есть только то, что нужно понять.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Мария Кюри-Склодовская
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Мне кажется, каждый призван заниматься одним делом на Земле.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Жан-Поль Бельмондо
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Важно помнить: всякий раз, когда ты покупаешь что-то, ты на сто процентов поддерживаешь политику той компании, которая произвела эту вещь.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Леонардо Ди Каприо
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Деньги — странная вещь. Люди, которые не имеют их, сильно к ним стремятся. Люди, которые их имеют, имеют также много проблем.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Айртон Сенна
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Никто из нас не хотел быть бас-гитаристом. В нашем представлении это был толстый парень, который играл где-то сзади.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Пол Маккартни
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        Я всё время что-то пишу. Потому что я помешан на мысли, что мы должны стать ещё лучше.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Крис Мартин
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        С тех пор прошло 80 лет и я по-прежнему задаю себе этот же вопрос. Что же такое электричество?), но не в состоянии ответить на него.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Никола Тесла
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`12.h.1 MyDirective > 12.h.1.5 text 'а' 6`] = `
+<div
+  class="quotes"
+>
+  <h3>
+    Введите текст для поиск по нему цитат
+  </h3>
+  <input
+    class="form-control form-control-lg"
+    placeholder="Жизнь"
+    type="text"
+  />
+  <div
+    class="quotes__container"
+  >
+    
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Н
+        <span />
+        а
+        <span />
+        с
+        <span />
+        т
+        <span />
+        о
+        <span />
+        й
+        <span />
+        ч
+        <span />
+        и
+        <span />
+        в
+        <span />
+        о
+        <span />
+        с
+        <span />
+        т
+        <span />
+        ь
+        <span />
+         
+        <span />
+        о
+        <span />
+        ч
+        <span />
+        е
+        <span />
+        н
+        <span />
+        ь
+        <span />
+         
+        <span />
+        в
+        <span />
+        а
+        <span />
+        ж
+        <span />
+        н
+        <span />
+        а
+        <span />
+        .
+        <span />
+         
+        <span />
+        В
+        <span />
+        ы
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+         
+        <span />
+        д
+        <span />
+        о
+        <span />
+        л
+        <span />
+        ж
+        <span />
+        н
+        <span />
+        ы
+        <span />
+         
+        <span />
+        с
+        <span />
+        д
+        <span />
+        а
+        <span />
+        в
+        <span />
+        а
+        <span />
+        т
+        <span />
+        ь
+        <span />
+        с
+        <span />
+        я
+        <span />
+        ,
+        <span />
+         
+        <span />
+        е
+        <span />
+        с
+        <span />
+        л
+        <span />
+        и
+        <span />
+         
+        <span />
+        т
+        <span />
+        о
+        <span />
+        л
+        <span />
+        ь
+        <span />
+        к
+        <span />
+        о
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+         
+        <span />
+        в
+        <span />
+        ы
+        <span />
+        н
+        <span />
+        у
+        <span />
+        ж
+        <span />
+        д
+        <span />
+        е
+        <span />
+        н
+        <span />
+        ы
+        <span />
+         
+        <span />
+        с
+        <span />
+        д
+        <span />
+        а
+        <span />
+        т
+        <span />
+        ь
+        <span />
+        с
+        <span />
+        я
+        <span />
+        .
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Илон Маск
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        П
+        <span />
+        р
+        <span />
+        о
+        <span />
+        б
+        <span />
+        л
+        <span />
+        е
+        <span />
+        м
+        <span />
+        ы
+        <span />
+         
+        <span />
+        —
+        <span />
+         
+        <span />
+        э
+        <span />
+        т
+        <span />
+        о
+        <span />
+         
+        <span />
+        с
+        <span />
+        п
+        <span />
+        р
+        <span />
+        я
+        <span />
+        т
+        <span />
+        а
+        <span />
+        н
+        <span />
+        н
+        <span />
+        ы
+        <span />
+        е
+        <span />
+         
+        <span />
+        р
+        <span />
+        е
+        <span />
+        ш
+        <span />
+        е
+        <span />
+        н
+        <span />
+        и
+        <span />
+        я
+        <span />
+        .
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Павел Дуров
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Е
+        <span />
+        с
+        <span />
+        л
+        <span />
+        и
+        <span />
+         
+        <span />
+        в
+        <span />
+        ы
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+         
+        <span />
+        ж
+        <span />
+        е
+        <span />
+        л
+        <span />
+        а
+        <span />
+        е
+        <span />
+        т
+        <span />
+        е
+        <span />
+         
+        <span />
+        с
+        <span />
+        л
+        <span />
+        ы
+        <span />
+        ш
+        <span />
+        а
+        <span />
+        т
+        <span />
+        ь
+        <span />
+         
+        <span />
+        к
+        <span />
+        р
+        <span />
+        и
+        <span />
+        т
+        <span />
+        и
+        <span />
+        к
+        <span />
+        у
+        <span />
+        ,
+        <span />
+         
+        <span />
+        п
+        <span />
+        о
+        <span />
+        ж
+        <span />
+        а
+        <span />
+        л
+        <span />
+        у
+        <span />
+        й
+        <span />
+        с
+        <span />
+        т
+        <span />
+        а
+        <span />
+        ,
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+         
+        <span />
+        д
+        <span />
+        е
+        <span />
+        л
+        <span />
+        а
+        <span />
+        й
+        <span />
+        т
+        <span />
+        е
+        <span />
+         
+        <span />
+        н
+        <span />
+        и
+        <span />
+        ч
+        <span />
+        е
+        <span />
+        г
+        <span />
+        о
+        <span />
+         
+        <span />
+        н
+        <span />
+        о
+        <span />
+        в
+        <span />
+        о
+        <span />
+        г
+        <span />
+        о
+        <span />
+        .
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Джефф Безос
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Е
+        <span />
+        с
+        <span />
+        л
+        <span />
+        и
+        <span />
+         
+        <span />
+        в
+        <span />
+        ы
+        <span />
+         
+        <span />
+        п
+        <span />
+        р
+        <span />
+        е
+        <span />
+        д
+        <span />
+        п
+        <span />
+        р
+        <span />
+        и
+        <span />
+        н
+        <span />
+        и
+        <span />
+        м
+        <span />
+        а
+        <span />
+        е
+        <span />
+        т
+        <span />
+        е
+        <span />
+         
+        <span />
+        т
+        <span />
+        о
+        <span />
+        л
+        <span />
+        ь
+        <span />
+        к
+        <span />
+        о
+        <span />
+         
+        <span />
+        т
+        <span />
+        е
+        <span />
+         
+        <span />
+        д
+        <span />
+        е
+        <span />
+        й
+        <span />
+        с
+        <span />
+        т
+        <span />
+        в
+        <span />
+        и
+        <span />
+        я
+        <span />
+        ,
+        <span />
+         
+        <span />
+        р
+        <span />
+        е
+        <span />
+        з
+        <span />
+        у
+        <span />
+        л
+        <span />
+        ь
+        <span />
+        т
+        <span />
+        а
+        <span />
+        т
+        <span />
+         
+        <span />
+        к
+        <span />
+        о
+        <span />
+        т
+        <span />
+        о
+        <span />
+        р
+        <span />
+        ы
+        <span />
+        х
+        <span />
+         
+        <span />
+        и
+        <span />
+        з
+        <span />
+        в
+        <span />
+        е
+        <span />
+        с
+        <span />
+        т
+        <span />
+        е
+        <span />
+        н
+        <span />
+         
+        <span />
+        в
+        <span />
+        а
+        <span />
+        м
+        <span />
+         
+        <span />
+        з
+        <span />
+        а
+        <span />
+        р
+        <span />
+        а
+        <span />
+        н
+        <span />
+        е
+        <span />
+        е
+        <span />
+        ,
+        <span />
+         
+        <span />
+        д
+        <span />
+        о
+        <span />
+        л
+        <span />
+        г
+        <span />
+        о
+        <span />
+         
+        <span />
+        в
+        <span />
+        а
+        <span />
+        ш
+        <span />
+         
+        <span />
+        б
+        <span />
+        и
+        <span />
+        з
+        <span />
+        н
+        <span />
+        е
+        <span />
+        с
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+         
+        <span />
+        п
+        <span />
+        р
+        <span />
+        о
+        <span />
+        т
+        <span />
+        я
+        <span />
+        н
+        <span />
+        е
+        <span />
+        т
+        <span />
+        .
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Джефф Безос
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        В
+        <span />
+         
+        <span />
+        м
+        <span />
+        и
+        <span />
+        р
+        <span />
+        е
+        <span />
+        ,
+        <span />
+         
+        <span />
+        к
+        <span />
+        о
+        <span />
+        т
+        <span />
+        о
+        <span />
+        р
+        <span />
+        ы
+        <span />
+        й
+        <span />
+         
+        <span />
+        м
+        <span />
+        е
+        <span />
+        н
+        <span />
+        я
+        <span />
+        е
+        <span />
+        т
+        <span />
+        с
+        <span />
+        я
+        <span />
+         
+        <span />
+        о
+        <span />
+        ч
+        <span />
+        е
+        <span />
+        н
+        <span />
+        ь
+        <span />
+         
+        <span />
+        б
+        <span />
+        ы
+        <span />
+        с
+        <span />
+        т
+        <span />
+        р
+        <span />
+        о
+        <span />
+        ,
+        <span />
+         
+        <span />
+        е
+        <span />
+        д
+        <span />
+        и
+        <span />
+        н
+        <span />
+        с
+        <span />
+        т
+        <span />
+        в
+        <span />
+        е
+        <span />
+        н
+        <span />
+        н
+        <span />
+        а
+        <span />
+        я
+        <span />
+         
+        <span />
+        с
+        <span />
+        т
+        <span />
+        р
+        <span />
+        а
+        <span />
+        т
+        <span />
+        е
+        <span />
+        г
+        <span />
+        и
+        <span />
+        я
+        <span />
+        ,
+        <span />
+         
+        <span />
+        к
+        <span />
+        о
+        <span />
+        т
+        <span />
+        о
+        <span />
+        р
+        <span />
+        а
+        <span />
+        я
+        <span />
+         
+        <span />
+        г
+        <span />
+        а
+        <span />
+        р
+        <span />
+        а
+        <span />
+        н
+        <span />
+        т
+        <span />
+        и
+        <span />
+        р
+        <span />
+        о
+        <span />
+        в
+        <span />
+        а
+        <span />
+        н
+        <span />
+        н
+        <span />
+        о
+        <span />
+         
+        <span />
+        п
+        <span />
+        р
+        <span />
+        о
+        <span />
+        в
+        <span />
+        а
+        <span />
+        л
+        <span />
+        ь
+        <span />
+        н
+        <span />
+        а
+        <span />
+         
+        <span />
+        —
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+         
+        <span />
+        р
+        <span />
+        и
+        <span />
+        с
+        <span />
+        к
+        <span />
+        о
+        <span />
+        в
+        <span />
+        а
+        <span />
+        т
+        <span />
+        ь
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Марк Цукерберг
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+         
+        <span />
+        Е
+        <span />
+        с
+        <span />
+        л
+        <span />
+        и
+        <span />
+         
+        <span />
+        б
+        <span />
+        ы
+        <span />
+         
+        <span />
+        я
+        <span />
+         
+        <span />
+        м
+        <span />
+        о
+        <span />
+        г
+        <span />
+         
+        <span />
+        п
+        <span />
+        р
+        <span />
+        о
+        <span />
+        ж
+        <span />
+        и
+        <span />
+        т
+        <span />
+        ь
+        <span />
+         
+        <span />
+        ж
+        <span />
+        и
+        <span />
+        з
+        <span />
+        н
+        <span />
+        ь
+        <span />
+         
+        <span />
+        з
+        <span />
+        а
+        <span />
+        н
+        <span />
+        о
+        <span />
+        в
+        <span />
+        о
+        <span />
+        ,
+        <span />
+         
+        <span />
+        я
+        <span />
+         
+        <span />
+        б
+        <span />
+        ы
+        <span />
+        л
+        <span />
+         
+        <span />
+        б
+        <span />
+        ы
+        <span />
+         
+        <span />
+        с
+        <span />
+        а
+        <span />
+        н
+        <span />
+        т
+        <span />
+        е
+        <span />
+        х
+        <span />
+        н
+        <span />
+        и
+        <span />
+        к
+        <span />
+        о
+        <span />
+        м
+        <span />
+        .
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Альберт Эйнштейн
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Т
+        <span />
+        ы
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+        с
+        <span />
+        е
+        <span />
+        ш
+        <span />
+        ь
+        <span />
+         
+        <span />
+        о
+        <span />
+        т
+        <span />
+        в
+        <span />
+        е
+        <span />
+        т
+        <span />
+        с
+        <span />
+        т
+        <span />
+        в
+        <span />
+        е
+        <span />
+        н
+        <span />
+        н
+        <span />
+        о
+        <span />
+        с
+        <span />
+        т
+        <span />
+        и
+        <span />
+         
+        <span />
+        з
+        <span />
+        а
+        <span />
+         
+        <span />
+        т
+        <span />
+        о
+        <span />
+        ,
+        <span />
+         
+        <span />
+        ч
+        <span />
+        е
+        <span />
+        г
+        <span />
+        о
+        <span />
+         
+        <span />
+        ж
+        <span />
+        д
+        <span />
+        у
+        <span />
+        т
+        <span />
+         
+        <span />
+        о
+        <span />
+        т
+        <span />
+         
+        <span />
+        т
+        <span />
+        е
+        <span />
+        б
+        <span />
+        я
+        <span />
+         
+        <span />
+        д
+        <span />
+        р
+        <span />
+        у
+        <span />
+        г
+        <span />
+        и
+        <span />
+        е
+        <span />
+         
+        <span />
+        л
+        <span />
+        ю
+        <span />
+        д
+        <span />
+        и
+        <span />
+        .
+        <span />
+         
+        <span />
+        Е
+        <span />
+        с
+        <span />
+        л
+        <span />
+        и
+        <span />
+         
+        <span />
+        о
+        <span />
+        т
+        <span />
+         
+        <span />
+        т
+        <span />
+        е
+        <span />
+        б
+        <span />
+        я
+        <span />
+         
+        <span />
+        ж
+        <span />
+        д
+        <span />
+        у
+        <span />
+        т
+        <span />
+         
+        <span />
+        с
+        <span />
+        л
+        <span />
+        и
+        <span />
+        ш
+        <span />
+        к
+        <span />
+        о
+        <span />
+        м
+        <span />
+         
+        <span />
+        м
+        <span />
+        н
+        <span />
+        о
+        <span />
+        г
+        <span />
+        о
+        <span />
+        г
+        <span />
+        о
+        <span />
+        ,
+        <span />
+         
+        <span />
+        т
+        <span />
+        о
+        <span />
+         
+        <span />
+        э
+        <span />
+        т
+        <span />
+        о
+        <span />
+         
+        <span />
+        и
+        <span />
+        х
+        <span />
+         
+        <span />
+        о
+        <span />
+        ш
+        <span />
+        и
+        <span />
+        б
+        <span />
+        к
+        <span />
+        а
+        <span />
+        ,
+        <span />
+         
+        <span />
+        а
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+         
+        <span />
+        т
+        <span />
+        в
+        <span />
+        о
+        <span />
+        я
+        <span />
+         
+        <span />
+        в
+        <span />
+        и
+        <span />
+        н
+        <span />
+        а
+        <span />
+        .
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Ричард Фейнман
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Е
+        <span />
+        с
+        <span />
+        л
+        <span />
+        и
+        <span />
+         
+        <span />
+        в
+        <span />
+        ы
+        <span />
+         
+        <span />
+        у
+        <span />
+        ч
+        <span />
+        е
+        <span />
+        н
+        <span />
+        ы
+        <span />
+        й
+        <span />
+        ,
+        <span />
+         
+        <span />
+        к
+        <span />
+        в
+        <span />
+        а
+        <span />
+        н
+        <span />
+        т
+        <span />
+        о
+        <span />
+        в
+        <span />
+        ы
+        <span />
+        й
+        <span />
+         
+        <span />
+        ф
+        <span />
+        и
+        <span />
+        з
+        <span />
+        и
+        <span />
+        к
+        <span />
+         
+        <span />
+        и
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+         
+        <span />
+        м
+        <span />
+        о
+        <span />
+        ж
+        <span />
+        е
+        <span />
+        т
+        <span />
+        е
+        <span />
+         
+        <span />
+        в
+        <span />
+         
+        <span />
+        д
+        <span />
+        в
+        <span />
+        у
+        <span />
+        х
+        <span />
+         
+        <span />
+        с
+        <span />
+        л
+        <span />
+        о
+        <span />
+        в
+        <span />
+        а
+        <span />
+        х
+        <span />
+         
+        <span />
+        о
+        <span />
+        б
+        <span />
+        ъ
+        <span />
+        я
+        <span />
+        с
+        <span />
+        н
+        <span />
+        и
+        <span />
+        т
+        <span />
+        ь
+        <span />
+         
+        <span />
+        п
+        <span />
+        я
+        <span />
+        т
+        <span />
+        и
+        <span />
+        л
+        <span />
+        е
+        <span />
+        т
+        <span />
+        н
+        <span />
+        е
+        <span />
+        м
+        <span />
+        у
+        <span />
+         
+        <span />
+        р
+        <span />
+        е
+        <span />
+        б
+        <span />
+        е
+        <span />
+        н
+        <span />
+        к
+        <span />
+        у
+        <span />
+        ,
+        <span />
+         
+        <span />
+        ч
+        <span />
+        е
+        <span />
+        м
+        <span />
+         
+        <span />
+        в
+        <span />
+        ы
+        <span />
+         
+        <span />
+        з
+        <span />
+        а
+        <span />
+        н
+        <span />
+        и
+        <span />
+        м
+        <span />
+        а
+        <span />
+        е
+        <span />
+        т
+        <span />
+        е
+        <span />
+        с
+        <span />
+        ь
+        <span />
+        ,
+        <span />
+         
+        <span />
+        —
+        <span />
+         
+        <span />
+        в
+        <span />
+        ы
+        <span />
+         
+        <span />
+        ш
+        <span />
+        а
+        <span />
+        р
+        <span />
+        л
+        <span />
+        а
+        <span />
+        т
+        <span />
+        а
+        <span />
+        н
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Ричард Фейнман
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        М
+        <span />
+        н
+        <span />
+        е
+        <span />
+         
+        <span />
+        в
+        <span />
+        с
+        <span />
+        е
+        <span />
+        г
+        <span />
+        д
+        <span />
+        а
+        <span />
+         
+        <span />
+        н
+        <span />
+        р
+        <span />
+        а
+        <span />
+        в
+        <span />
+        и
+        <span />
+        л
+        <span />
+        о
+        <span />
+        с
+        <span />
+        ь
+        <span />
+         
+        <span />
+        п
+        <span />
+        р
+        <span />
+        е
+        <span />
+        у
+        <span />
+        с
+        <span />
+        п
+        <span />
+        е
+        <span />
+        в
+        <span />
+        а
+        <span />
+        т
+        <span />
+        ь
+        <span />
+         
+        <span />
+        в
+        <span />
+         
+        <span />
+        т
+        <span />
+        о
+        <span />
+        м
+        <span />
+        ,
+        <span />
+         
+        <span />
+        ч
+        <span />
+        т
+        <span />
+        о
+        <span />
+         
+        <span />
+        у
+        <span />
+         
+        <span />
+        м
+        <span />
+        е
+        <span />
+        н
+        <span />
+        я
+        <span />
+         
+        <span />
+        н
+        <span />
+        и
+        <span />
+        к
+        <span />
+        а
+        <span />
+        к
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+         
+        <span />
+        д
+        <span />
+        о
+        <span />
+        л
+        <span />
+        ж
+        <span />
+        н
+        <span />
+        о
+        <span />
+         
+        <span />
+        б
+        <span />
+        ы
+        <span />
+        л
+        <span />
+        о
+        <span />
+         
+        <span />
+        п
+        <span />
+        о
+        <span />
+        л
+        <span />
+        у
+        <span />
+        ч
+        <span />
+        и
+        <span />
+        т
+        <span />
+        ь
+        <span />
+        с
+        <span />
+        я
+        <span />
+        .
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Ричард Фейнман
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style="display: none;"
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        В
+        <span />
+         
+        <span />
+        ж
+        <span />
+        и
+        <span />
+        з
+        <span />
+        н
+        <span />
+        и
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+        т
+        <span />
+         
+        <span />
+        н
+        <span />
+        и
+        <span />
+        ч
+        <span />
+        е
+        <span />
+        г
+        <span />
+        о
+        <span />
+        ,
+        <span />
+         
+        <span />
+        ч
+        <span />
+        е
+        <span />
+        г
+        <span />
+        о
+        <span />
+         
+        <span />
+        с
+        <span />
+        т
+        <span />
+        о
+        <span />
+        и
+        <span />
+        л
+        <span />
+        о
+        <span />
+         
+        <span />
+        б
+        <span />
+        ы
+        <span />
+         
+        <span />
+        б
+        <span />
+        о
+        <span />
+        я
+        <span />
+        т
+        <span />
+        ь
+        <span />
+        с
+        <span />
+        я
+        <span />
+        ,
+        <span />
+         
+        <span />
+        е
+        <span />
+        с
+        <span />
+        т
+        <span />
+        ь
+        <span />
+         
+        <span />
+        т
+        <span />
+        о
+        <span />
+        л
+        <span />
+        ь
+        <span />
+        к
+        <span />
+        о
+        <span />
+         
+        <span />
+        т
+        <span />
+        о
+        <span />
+        ,
+        <span />
+         
+        <span />
+        ч
+        <span />
+        т
+        <span />
+        о
+        <span />
+         
+        <span />
+        н
+        <span />
+        у
+        <span />
+        ж
+        <span />
+        н
+        <span />
+        о
+        <span />
+         
+        <span />
+        п
+        <span />
+        о
+        <span />
+        н
+        <span />
+        я
+        <span />
+        т
+        <span />
+        ь
+        <span />
+        .
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Мария Кюри-Склодовская
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        М
+        <span />
+        н
+        <span />
+        е
+        <span />
+         
+        <span />
+        к
+        <span />
+        а
+        <span />
+        ж
+        <span />
+        е
+        <span />
+        т
+        <span />
+        с
+        <span />
+        я
+        <span />
+        ,
+        <span />
+         
+        <span />
+        к
+        <span />
+        а
+        <span />
+        ж
+        <span />
+        д
+        <span />
+        ы
+        <span />
+        й
+        <span />
+         
+        <span />
+        п
+        <span />
+        р
+        <span />
+        и
+        <span />
+        з
+        <span />
+        в
+        <span />
+        а
+        <span />
+        н
+        <span />
+         
+        <span />
+        з
+        <span />
+        а
+        <span />
+        н
+        <span />
+        и
+        <span />
+        м
+        <span />
+        а
+        <span />
+        т
+        <span />
+        ь
+        <span />
+        с
+        <span />
+        я
+        <span />
+         
+        <span />
+        о
+        <span />
+        д
+        <span />
+        н
+        <span />
+        и
+        <span />
+        м
+        <span />
+         
+        <span />
+        д
+        <span />
+        е
+        <span />
+        л
+        <span />
+        о
+        <span />
+        м
+        <span />
+         
+        <span />
+        н
+        <span />
+        а
+        <span />
+         
+        <span />
+        З
+        <span />
+        е
+        <span />
+        м
+        <span />
+        л
+        <span />
+        е
+        <span />
+        .
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Жан-Поль Бельмондо
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        В
+        <span />
+        а
+        <span />
+        ж
+        <span />
+        н
+        <span />
+        о
+        <span />
+         
+        <span />
+        п
+        <span />
+        о
+        <span />
+        м
+        <span />
+        н
+        <span />
+        и
+        <span />
+        т
+        <span />
+        ь
+        <span />
+        :
+        <span />
+         
+        <span />
+        в
+        <span />
+        с
+        <span />
+        я
+        <span />
+        к
+        <span />
+        и
+        <span />
+        й
+        <span />
+         
+        <span />
+        р
+        <span />
+        а
+        <span />
+        з
+        <span />
+        ,
+        <span />
+         
+        <span />
+        к
+        <span />
+        о
+        <span />
+        г
+        <span />
+        д
+        <span />
+        а
+        <span />
+         
+        <span />
+        т
+        <span />
+        ы
+        <span />
+         
+        <span />
+        п
+        <span />
+        о
+        <span />
+        к
+        <span />
+        у
+        <span />
+        п
+        <span />
+        а
+        <span />
+        е
+        <span />
+        ш
+        <span />
+        ь
+        <span />
+         
+        <span />
+        ч
+        <span />
+        т
+        <span />
+        о
+        <span />
+        -
+        <span />
+        т
+        <span />
+        о
+        <span />
+        ,
+        <span />
+         
+        <span />
+        т
+        <span />
+        ы
+        <span />
+         
+        <span />
+        н
+        <span />
+        а
+        <span />
+         
+        <span />
+        с
+        <span />
+        т
+        <span />
+        о
+        <span />
+         
+        <span />
+        п
+        <span />
+        р
+        <span />
+        о
+        <span />
+        ц
+        <span />
+        е
+        <span />
+        н
+        <span />
+        т
+        <span />
+        о
+        <span />
+        в
+        <span />
+         
+        <span />
+        п
+        <span />
+        о
+        <span />
+        д
+        <span />
+        д
+        <span />
+        е
+        <span />
+        р
+        <span />
+        ж
+        <span />
+        и
+        <span />
+        в
+        <span />
+        а
+        <span />
+        е
+        <span />
+        ш
+        <span />
+        ь
+        <span />
+         
+        <span />
+        п
+        <span />
+        о
+        <span />
+        л
+        <span />
+        и
+        <span />
+        т
+        <span />
+        и
+        <span />
+        к
+        <span />
+        у
+        <span />
+         
+        <span />
+        т
+        <span />
+        о
+        <span />
+        й
+        <span />
+         
+        <span />
+        к
+        <span />
+        о
+        <span />
+        м
+        <span />
+        п
+        <span />
+        а
+        <span />
+        н
+        <span />
+        и
+        <span />
+        и
+        <span />
+        ,
+        <span />
+         
+        <span />
+        к
+        <span />
+        о
+        <span />
+        т
+        <span />
+        о
+        <span />
+        р
+        <span />
+        а
+        <span />
+        я
+        <span />
+         
+        <span />
+        п
+        <span />
+        р
+        <span />
+        о
+        <span />
+        и
+        <span />
+        з
+        <span />
+        в
+        <span />
+        е
+        <span />
+        л
+        <span />
+        а
+        <span />
+         
+        <span />
+        э
+        <span />
+        т
+        <span />
+        у
+        <span />
+         
+        <span />
+        в
+        <span />
+        е
+        <span />
+        щ
+        <span />
+        ь
+        <span />
+        .
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Леонардо Ди Каприо
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Д
+        <span />
+        е
+        <span />
+        н
+        <span />
+        ь
+        <span />
+        г
+        <span />
+        и
+        <span />
+         
+        <span />
+        —
+        <span />
+         
+        <span />
+        с
+        <span />
+        т
+        <span />
+        р
+        <span />
+        а
+        <span />
+        н
+        <span />
+        н
+        <span />
+        а
+        <span />
+        я
+        <span />
+         
+        <span />
+        в
+        <span />
+        е
+        <span />
+        щ
+        <span />
+        ь
+        <span />
+        .
+        <span />
+         
+        <span />
+        Л
+        <span />
+        ю
+        <span />
+        д
+        <span />
+        и
+        <span />
+        ,
+        <span />
+         
+        <span />
+        к
+        <span />
+        о
+        <span />
+        т
+        <span />
+        о
+        <span />
+        р
+        <span />
+        ы
+        <span />
+        е
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+         
+        <span />
+        и
+        <span />
+        м
+        <span />
+        е
+        <span />
+        ю
+        <span />
+        т
+        <span />
+         
+        <span />
+        и
+        <span />
+        х
+        <span />
+        ,
+        <span />
+         
+        <span />
+        с
+        <span />
+        и
+        <span />
+        л
+        <span />
+        ь
+        <span />
+        н
+        <span />
+        о
+        <span />
+         
+        <span />
+        к
+        <span />
+         
+        <span />
+        н
+        <span />
+        и
+        <span />
+        м
+        <span />
+         
+        <span />
+        с
+        <span />
+        т
+        <span />
+        р
+        <span />
+        е
+        <span />
+        м
+        <span />
+        я
+        <span />
+        т
+        <span />
+        с
+        <span />
+        я
+        <span />
+        .
+        <span />
+         
+        <span />
+        Л
+        <span />
+        ю
+        <span />
+        д
+        <span />
+        и
+        <span />
+        ,
+        <span />
+         
+        <span />
+        к
+        <span />
+        о
+        <span />
+        т
+        <span />
+        о
+        <span />
+        р
+        <span />
+        ы
+        <span />
+        е
+        <span />
+         
+        <span />
+        и
+        <span />
+        х
+        <span />
+         
+        <span />
+        и
+        <span />
+        м
+        <span />
+        е
+        <span />
+        ю
+        <span />
+        т
+        <span />
+        ,
+        <span />
+         
+        <span />
+        и
+        <span />
+        м
+        <span />
+        е
+        <span />
+        ю
+        <span />
+        т
+        <span />
+         
+        <span />
+        т
+        <span />
+        а
+        <span />
+        к
+        <span />
+        ж
+        <span />
+        е
+        <span />
+         
+        <span />
+        м
+        <span />
+        н
+        <span />
+        о
+        <span />
+        г
+        <span />
+        о
+        <span />
+         
+        <span />
+        п
+        <span />
+        р
+        <span />
+        о
+        <span />
+        б
+        <span />
+        л
+        <span />
+        е
+        <span />
+        м
+        <span />
+        .
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Айртон Сенна
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Н
+        <span />
+        и
+        <span />
+        к
+        <span />
+        т
+        <span />
+        о
+        <span />
+         
+        <span />
+        и
+        <span />
+        з
+        <span />
+         
+        <span />
+        н
+        <span />
+        а
+        <span />
+        с
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+         
+        <span />
+        х
+        <span />
+        о
+        <span />
+        т
+        <span />
+        е
+        <span />
+        л
+        <span />
+         
+        <span />
+        б
+        <span />
+        ы
+        <span />
+        т
+        <span />
+        ь
+        <span />
+         
+        <span />
+        б
+        <span />
+        а
+        <span />
+        с
+        <span />
+        -
+        <span />
+        г
+        <span />
+        и
+        <span />
+        т
+        <span />
+        а
+        <span />
+        р
+        <span />
+        и
+        <span />
+        с
+        <span />
+        т
+        <span />
+        о
+        <span />
+        м
+        <span />
+        .
+        <span />
+         
+        <span />
+        В
+        <span />
+         
+        <span />
+        н
+        <span />
+        а
+        <span />
+        ш
+        <span />
+        е
+        <span />
+        м
+        <span />
+         
+        <span />
+        п
+        <span />
+        р
+        <span />
+        е
+        <span />
+        д
+        <span />
+        с
+        <span />
+        т
+        <span />
+        а
+        <span />
+        в
+        <span />
+        л
+        <span />
+        е
+        <span />
+        н
+        <span />
+        и
+        <span />
+        и
+        <span />
+         
+        <span />
+        э
+        <span />
+        т
+        <span />
+        о
+        <span />
+         
+        <span />
+        б
+        <span />
+        ы
+        <span />
+        л
+        <span />
+         
+        <span />
+        т
+        <span />
+        о
+        <span />
+        л
+        <span />
+        с
+        <span />
+        т
+        <span />
+        ы
+        <span />
+        й
+        <span />
+         
+        <span />
+        п
+        <span />
+        а
+        <span />
+        р
+        <span />
+        е
+        <span />
+        н
+        <span />
+        ь
+        <span />
+        ,
+        <span />
+         
+        <span />
+        к
+        <span />
+        о
+        <span />
+        т
+        <span />
+        о
+        <span />
+        р
+        <span />
+        ы
+        <span />
+        й
+        <span />
+         
+        <span />
+        и
+        <span />
+        г
+        <span />
+        р
+        <span />
+        а
+        <span />
+        л
+        <span />
+         
+        <span />
+        г
+        <span />
+        д
+        <span />
+        е
+        <span />
+        -
+        <span />
+        т
+        <span />
+        о
+        <span />
+         
+        <span />
+        с
+        <span />
+        з
+        <span />
+        а
+        <span />
+        д
+        <span />
+        и
+        <span />
+        .
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Пол Маккартни
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Я
+        <span />
+         
+        <span />
+        в
+        <span />
+        с
+        <span />
+        ё
+        <span />
+         
+        <span />
+        в
+        <span />
+        р
+        <span />
+        е
+        <span />
+        м
+        <span />
+        я
+        <span />
+         
+        <span />
+        ч
+        <span />
+        т
+        <span />
+        о
+        <span />
+        -
+        <span />
+        т
+        <span />
+        о
+        <span />
+         
+        <span />
+        п
+        <span />
+        и
+        <span />
+        ш
+        <span />
+        у
+        <span />
+        .
+        <span />
+         
+        <span />
+        П
+        <span />
+        о
+        <span />
+        т
+        <span />
+        о
+        <span />
+        м
+        <span />
+        у
+        <span />
+         
+        <span />
+        ч
+        <span />
+        т
+        <span />
+        о
+        <span />
+         
+        <span />
+        я
+        <span />
+         
+        <span />
+        п
+        <span />
+        о
+        <span />
+        м
+        <span />
+        е
+        <span />
+        ш
+        <span />
+        а
+        <span />
+        н
+        <span />
+         
+        <span />
+        н
+        <span />
+        а
+        <span />
+         
+        <span />
+        м
+        <span />
+        ы
+        <span />
+        с
+        <span />
+        л
+        <span />
+        и
+        <span />
+        ,
+        <span />
+         
+        <span />
+        ч
+        <span />
+        т
+        <span />
+        о
+        <span />
+         
+        <span />
+        м
+        <span />
+        ы
+        <span />
+         
+        <span />
+        д
+        <span />
+        о
+        <span />
+        л
+        <span />
+        ж
+        <span />
+        н
+        <span />
+        ы
+        <span />
+         
+        <span />
+        с
+        <span />
+        т
+        <span />
+        а
+        <span />
+        т
+        <span />
+        ь
+        <span />
+         
+        <span />
+        е
+        <span />
+        щ
+        <span />
+        ё
+        <span />
+         
+        <span />
+        л
+        <span />
+        у
+        <span />
+        ч
+        <span />
+        ш
+        <span />
+        е
+        <span />
+        .
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Крис Мартин
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        С
+        <span />
+         
+        <span />
+        т
+        <span />
+        е
+        <span />
+        х
+        <span />
+         
+        <span />
+        п
+        <span />
+        о
+        <span />
+        р
+        <span />
+         
+        <span />
+        п
+        <span />
+        р
+        <span />
+        о
+        <span />
+        ш
+        <span />
+        л
+        <span />
+        о
+        <span />
+         
+        <span />
+        8
+        <span />
+        0
+        <span />
+         
+        <span />
+        л
+        <span />
+        е
+        <span />
+        т
+        <span />
+         
+        <span />
+        и
+        <span />
+         
+        <span />
+        я
+        <span />
+         
+        <span />
+        п
+        <span />
+        о
+        <span />
+        -
+        <span />
+        п
+        <span />
+        р
+        <span />
+        е
+        <span />
+        ж
+        <span />
+        н
+        <span />
+        е
+        <span />
+        м
+        <span />
+        у
+        <span />
+         
+        <span />
+        з
+        <span />
+        а
+        <span />
+        д
+        <span />
+        а
+        <span />
+        ю
+        <span />
+         
+        <span />
+        с
+        <span />
+        е
+        <span />
+        б
+        <span />
+        е
+        <span />
+         
+        <span />
+        э
+        <span />
+        т
+        <span />
+        о
+        <span />
+        т
+        <span />
+         
+        <span />
+        ж
+        <span />
+        е
+        <span />
+         
+        <span />
+        в
+        <span />
+        о
+        <span />
+        п
+        <span />
+        р
+        <span />
+        о
+        <span />
+        с
+        <span />
+        .
+        <span />
+         
+        <span />
+        Ч
+        <span />
+        т
+        <span />
+        о
+        <span />
+         
+        <span />
+        ж
+        <span />
+        е
+        <span />
+         
+        <span />
+        т
+        <span />
+        а
+        <span />
+        к
+        <span />
+        о
+        <span />
+        е
+        <span />
+         
+        <span />
+        э
+        <span />
+        л
+        <span />
+        е
+        <span />
+        к
+        <span />
+        т
+        <span />
+        р
+        <span />
+        и
+        <span />
+        ч
+        <span />
+        е
+        <span />
+        с
+        <span />
+        т
+        <span />
+        в
+        <span />
+        о
+        <span />
+        ?
+        <span />
+        )
+        <span />
+        ,
+        <span />
+         
+        <span />
+        н
+        <span />
+        о
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+         
+        <span />
+        в
+        <span />
+         
+        <span />
+        с
+        <span />
+        о
+        <span />
+        с
+        <span />
+        т
+        <span />
+        о
+        <span />
+        я
+        <span />
+        н
+        <span />
+        и
+        <span />
+        и
+        <span />
+         
+        <span />
+        о
+        <span />
+        т
+        <span />
+        в
+        <span />
+        е
+        <span />
+        т
+        <span />
+        и
+        <span />
+        т
+        <span />
+        ь
+        <span />
+         
+        <span />
+        н
+        <span />
+        а
+        <span />
+         
+        <span />
+        н
+        <span />
+        е
+        <span />
+        г
+        <span />
+        о
+        <span />
+        .
+        <span />
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Никола Тесла
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`12.h.1 MyDirective > 12.h.1.5 text 'а' 7`] = `
+<div
+  class="quotes"
+>
+  <h3>
+    Введите текст для поиск по нему цитат
+  </h3>
+  <input
+    class="form-control form-control-lg"
+    placeholder="Жизнь"
+    type="text"
+  />
+  <div
+    class="quotes__container"
+  >
+    
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Настойчивость очень важна. Вы не должны сдаваться, если только не вынуждены сдаться.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Илон Маск
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Проблемы — это спрятанные решения.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Павел Дуров
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Если вы не желаете слышать критику, пожалуйста, не делайте ничего нового.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Джефф Безос
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Если вы предпринимаете только те действия, результат которых известен вам заранее, долго ваш бизнес не протянет.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Джефф Безос
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        В мире, который меняется очень быстро, единственная стратегия, которая гарантированно провальна — не рисковать
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Марк Цукерберг
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+         Если бы я мог прожить жизнь заново, я был бы сантехником.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Альберт Эйнштейн
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Ты не несешь ответственности за то, чего ждут от тебя другие люди. Если от тебя ждут слишком многого, то это их ошибка, а не твоя вина.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Ричард Фейнман
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Если вы ученый, квантовый физик и не можете в двух словах объяснить пятилетнему ребенку, чем вы занимаетесь, — вы шарлатан
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Ричард Фейнман
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Мне всегда нравилось преуспевать в том, что у меня никак не должно было получиться.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Ричард Фейнман
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style="display: none;"
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        В жизни нет ничего, чего стоило бы бояться, есть только то, что нужно понять.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Мария Кюри-Склодовская
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Мне кажется, каждый призван заниматься одним делом на Земле.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Жан-Поль Бельмондо
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Важно помнить: всякий раз, когда ты покупаешь что-то, ты на сто процентов поддерживаешь политику той компании, которая произвела эту вещь.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Леонардо Ди Каприо
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Деньги — странная вещь. Люди, которые не имеют их, сильно к ним стремятся. Люди, которые их имеют, имеют также много проблем.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Айртон Сенна
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Никто из нас не хотел быть бас-гитаристом. В нашем представлении это был толстый парень, который играл где-то сзади.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Пол Маккартни
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        Я всё время что-то пишу. Потому что я помешан на мысли, что мы должны стать ещё лучше.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Крис Мартин
+      </div>
+    </div>
+    <div
+      class="quotes__quote-block"
+      style=""
+    >
+      <div
+        class="quotes__quote-text"
+      >
+        <span />
+        С тех пор прошло 80 лет и я по-прежнему задаю себе этот же вопрос. Что же такое электричество?), но не в состоянии ответить на него.
+      </div>
+      <div
+        class="quotes__quote-author"
+      >
+         (c) Никола Тесла
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;

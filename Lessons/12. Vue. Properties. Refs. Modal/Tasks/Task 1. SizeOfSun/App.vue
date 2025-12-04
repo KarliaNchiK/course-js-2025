@@ -6,16 +6,25 @@
                 <img
                     ref="sun"
                     src="/Lessons/12. Vue. Properties. Refs. Modal/Tasks/Task 1. SizeOfSun/assets/sun.svg"
+                    :style="{ width: imageWidthInPx + 'px' }"
                     class="sun-container__the-sun"
-                    alt=""
                     @click="onReduceSunSize"
                 >
             </div>
         </div>
         <div class="sun-container__block">
-            <!-- Начало -->
-
-            <!-- Конец -->
+            <h3>
+                Год:
+            </h3>
+            <span>
+                {{ year }}
+            </span>
+            <h3>
+                Диаметр солнца:
+            </h3>
+            <span>
+                {{ diameter }} км
+            </span>
         </div>
     </div>
 </template>
@@ -24,7 +33,7 @@
 import { ref, shallowRef } from 'vue';
 
 export default {
-    name: 'TheSun',
+    name: 'App',
     setup() {
         const sun = shallowRef(null);
         const diameter = ref(1392700);
@@ -35,14 +44,18 @@ export default {
         const REDUCTION_FACTOR = 0.95;
 
         const onReduceSunSize = () => {
-            //Начало
-            //Конец
+            year.value += NUM_OF_ADDITIONS_YEARS;
+            diameter.value = Math.round(diameter.value * REDUCTION_FACTOR);
+            imageWidthInPx.value = Math.round(imageWidthInPx.value * REDUCTION_FACTOR);
         };
 
         return {
             sun,
             year,
             diameter,
+            imageWidthInPx,
+            NUM_OF_ADDITIONS_YEARS,
+            REDUCTION_FACTOR,
             onReduceSunSize,
         };
     },
@@ -60,7 +73,8 @@ export default {
 .sun-container {
     margin: 30px;
     color: #f6f6f6;
-    background: url('/Lessons/12. Vue. Properties. Refs. Modal/Tasks/Task 1. SizeOfSun/assets/sky.jpg') center center/cover no-repeat;
+    background: url('Lessons/12. Vue. Properties. Refs. Modal/Tasks/Task 1. SizeOfSun/assets/sky.jpg')
+    center center/cover no-repeat;
 }
 
 .sun-container__block {
