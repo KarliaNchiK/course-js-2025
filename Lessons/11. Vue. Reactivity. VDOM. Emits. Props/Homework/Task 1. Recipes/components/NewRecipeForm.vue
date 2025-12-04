@@ -19,9 +19,7 @@
             <label
                 class="form-label"
                 for="ingredients"
-            >
-              Ингредиенты
-            </label>
+            >Ингредиенты</label>
             <textarea
                 v-model="ingredients"
                 id="ingredients"
