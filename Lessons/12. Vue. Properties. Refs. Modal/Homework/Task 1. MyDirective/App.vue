@@ -17,7 +17,7 @@
                 class="quotes__quote-text"
                 v-replace="searchText"
                 >
-                "{{ quote.text }}"
+                {{ quote.text }}
               </div>
             <div class="quotes__quote-author">
               (c) {{ quote.author }}
@@ -34,10 +34,9 @@ import vReplace from './vReplace.js';
 export default {
     name: 'MyDirective',
     directives: {
-      'replace': vReplace
-    },
-
-    setup() {
+      replace: vReplace
+      },
+  setup() {
         const searchText = ref('');
 
         return {
