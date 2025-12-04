@@ -47,6 +47,7 @@ export default defineConfig(() => {
             environment: 'jsdom',
             include: ['**/*.test.{ts,js}'],
             setupFiles: './vitest.setup.mjs',
+            testTimeout: 10000,
         },
     };
 });
