@@ -1,25 +1,74 @@
 <template>
-    <!--Начало-->
-    <div>
-        <h3>
-            Мои рецепты
-        </h3>
-        <div class="card" />
+    <div class="recipe-container">
+        <h3>Мои рецепты</h3>
+
+        <div
+            v-for="recipe in recipes"
+            :key="recipe.id"
+            class="card"
+        >
+            <div class="card-body">
+                <div class="card-body__header">
+                    <h4>{{ recipe.name }}</h4>
+                    <VeganIcon />
+                    {{ recipe.isVegan ? 'Да' : 'Нет' }}
+                    <TimeIcon />
+                    {{ getCookTimeText(recipe.cookTime) }}
+                </div>
+                Ингредиенты: {{ recipe.ingredients }}
+                <button
+                    class="btn btn-light card-body__remove-button"
+                    @click="$emit('remove-recipe', recipe.id)"
+                >
+                    Удалить рецепт
+                </button>
+            </div>
+        </div>
+
+        <div
+            v-if="recipes.length === 0"
+            class="recipe-container__no-recipes"
+        >
+            Рецептов нет
+        </div>
     </div>
-<!--Конец-->
 </template>
 
 <script>
-// Начало
+import VeganIcon from '../icons/VeganIcon.vue';
+import TimeIcon from '../icons/TimeIcon.vue';
+
 export default {
     name: 'RecipesContainer',
     components: {
+        VeganIcon,
+        TimeIcon,
     },
     props: {
+        recipes: {
+            type: Array,
+            default: () => [],
+        },
+    },
+    methods: {
+        getCookTimeText(value) {
+            const times = {
+                1: '5 минут',
+                2: '10 минут',
+                3: '15 минут',
+                4: '20 минут',
+                5: '30 минут',
+                6: '40 минут',
+                7: '50 минут',
+                8: '1 час',
+                9: '1,5 часа',
+                10: '2 часа',
+                11: '2,5 часа',
+                12: '3 часа',
+                13: 'Бесконечность',
+            };
+            return times[value] || '5 минут';
+        },
     },
 };
-// Конец
 </script>
-
-<style>
-</style>
