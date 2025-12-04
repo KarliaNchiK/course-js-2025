@@ -1,15 +1,23 @@
 <template>
     <div class="recipes">
-        <!--Начало-->
-        <!--Конец-->
+        <NewRecipeForm @add-recipe="addRecipe" />
+        <RecipesContainer :recipes="recipes" @remove-recipe="removeRecipe" />
     </div>
 </template>
 
-<script>
-export default {
-    name: 'Recipes',
-    // Начало
-    // Конец
+<script setup>
+import { ref } from 'vue';
+import NewRecipeForm from './components/NewRecipeForm.vue';
+import RecipesContainer from './components/RecipesContainer.vue';
+
+const recipes = ref([]);
+
+const addRecipe = (newRecipe) => {
+    recipes.value.push(newRecipe);
+};
+
+const removeRecipe = (index) => {
+    recipes.value.splice(index, 1);
 };
 </script>
 
@@ -24,7 +32,7 @@ export default {
     border-radius: 15px;
 }
 
-.recipes > div {
+.recipes>div {
     width: 50%;
 }
 </style>
