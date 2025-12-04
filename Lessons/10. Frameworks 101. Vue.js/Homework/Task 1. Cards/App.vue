@@ -54,7 +54,6 @@
 export default {
     name: 'Cards',
 
-    // главное отличие: принимаем массив карточек извне
     props: {
         cards: {
             type: Array,
