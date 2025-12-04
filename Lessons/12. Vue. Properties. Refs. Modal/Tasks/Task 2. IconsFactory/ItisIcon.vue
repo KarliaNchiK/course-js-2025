@@ -1,6 +1,5 @@
 <template>
-    <!--Начало-->
-    <!--Конец-->
+  <!--Начало--><component :is="getIconComponent" /><!--Конец-->
 </template>
 
 <script>
@@ -22,8 +21,38 @@ import SurprisedIcon from './icons/SurprisedIcon.vue';
 import TiredIcon from './icons/TiredIcon.vue';
 
 export default {
-    name: 'ItisIcon',
-    // Начало
-    // Конец
+  name: 'ItisIcon',
+  // Начало
+  props: {
+    iconType: {
+      type: String,
+      required: true
+    }
+  },
+  computed: {
+    getIconComponent() {
+      const iconMap = {
+        'angry': AngryIcon,
+        'annoyed': AnnoyedIcon,
+        'embarrassed': EmbarrassedIcon,
+        'excited': ExcitedIcon,
+        'frustrated': FrustratedIcon,
+        'happy': HappyIcon,
+        'lonely': LonelyIcon,
+        'loved': LovedIcon,
+        'nervous': NervousIcon,
+        'neutral': NeutralIcon,
+        'sad': SadIcon,
+        'scared': ScaredIcon,
+        'sick': SickIcon,
+        'stressed': StressedIcon,
+        'surprised': SurprisedIcon,
+        'tired': TiredIcon
+      };
+
+      return iconMap[this.iconType] || HappyIcon;
+    }
+  }
+  // Конец
 };
 </script>
