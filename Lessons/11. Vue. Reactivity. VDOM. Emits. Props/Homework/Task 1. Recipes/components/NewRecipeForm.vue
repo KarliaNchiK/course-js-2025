@@ -1,54 +1,70 @@
 <template>
   <div class="recipe-form">
-
-    <h3>Создать новый рецепт</h3>
-
+    <h3>
+      Создать новый рецепт
+    </h3>
     <div class="recipe-form__block">
-      <label class="form-label">Название нового рецепта</label>
+      <label class="form-label">
+        Название нового рецепта
+      </label>
       <input
           type="text"
           class="form-control recipe-form__name"
-          v-model="name"
+          v-model="recipeName"
       >
-
-      <div class="recipe-form__block">
-        <label class="form-label">Ингридиенты</label>
-        <textarea class="form-control recipe-form__ingredients" v-model="ingredients"></textarea>
-      </div>
-
-      <div class="recipe-form__block">
-        <label class="form-label">Последовательность действий</label>
-        <textarea class="form-control recipe-form__recipe-text" v-model="instructions"></textarea>
-      </div>
-
-      <div class="recipe-form__block">
-        <label class="form-label">
-          Время приготовления
-        </label>
-        <select class="form-select recipe-form__cook-time" v-model="cookTime">
-          <option v-for="option in timeOptions" :key="option.value" :value="option.value">
-            {{option.text}}
-          </option>
-        </select>
-      </div>
-
-      <div class="recipe-form__block">
-        <input
-            type="checkbox"
-            class="form-check-input"
-            v-model="isVegan"
-        >
-        <label class="form-check-label">
-          Вегетарианское блюдо
-        </label>
-      </div>
-      <div class="recipe-form__block">
-        <button class="btn btn-dark recipe-form__add-button" @click="addRecipe">
-          Добавить рецепт
-        </button>
-      </div>
     </div>
-
+    <div class="recipe-form__block">
+      <label class="form-label">
+        Ингредиенты
+      </label>
+      <textarea
+          class="form-control recipe-form__ingredients"
+          v-model="ingredients"
+      />
+    </div>
+    <div class="recipe-form__block">
+      <label class="form-label">
+        Последовательность действий
+      </label>
+      <textarea
+          class="form-control recipe-form__recipe-text"
+          v-model="actions"
+      />
+    </div>
+    <div class="recipe-form__block">
+      <label class="form-label">
+        Время приготовления
+      </label>
+      <select
+          class="form-select recipe-form__cook-time"
+          v-model="time"
+      >
+        <option
+            v-for="option in timeOptions"
+            :key="option.value"
+            :value="option.value"
+            :textContent="option.text"
+        />
+      </select>
+    </div>
+    <div class="recipe-form__block">
+      <input
+          type="checkbox"
+          class="form-check-input"
+          v-model="isVegan"
+      >
+      <label class="form-check-label">
+        Вегетарианское блюдо
+      </label>
+    </div>
+    <div class="recipe-form__block">
+      <button
+          @click="addRecipe()"
+          class="btn btn-dark recipe-form__add-button"
+      >
+        Добавить рецепт
+      </button>
+    </div>
   </div>
 </template>
 
@@ -56,18 +72,11 @@
 export default {
   name: 'NewRecipeForm',
 
-  data() {
+  setup() {
     return {
-      name: '',
-      ingredients: '',
-      instructions: '',
-      cookTime: 1,
-      isVegan: false,
     };
   },
-
-  setup() {
-    // Опции для селекта "Время приготовления"
+  data() {
     const timeOptions = [
       { value: 1, text: '5 минут' },
       { value: 2, text: '10 минут' },
@@ -83,33 +92,35 @@ export default {
       { value: 12, text: '3 часа' },
       { value: 13, text: 'Бесконечность' },
     ];
-
     return {
       timeOptions,
+      recipeName: '',
+      ingredients: '',
+      actions: '',
+      time: 1,
+      isVegan: false,
     };
   },
   methods: {
     addRecipe() {
-      if (!this.name.trim() || !this.ingredients.trim() || !this.instructions.trim()) return;
-
-      const timeTexts = this.timeOptions.find(o => o.value === this.cookTime) ?.text || '5 минут';
-
-      this.$emit('add-recipe', {
-        name: this.name,
+      const newRecipe = {
+        recipeName: this.recipeName,
         ingredients: this.ingredients,
-        instructions: this.instructions,
-        cookTime: this.cookTime,
-        cookTimeText: timeTexts,
-        isVegan: this.isVegan
-      });
-
-      this.name ='';
-      this.ingredients='';
-      this.instructions='';
-      this.cookTime = 1;
+        actions: this.actions,
+        time: this.timeOptions.find(option => option.value === this.time).text,
+        isVegan: this.isVegan,
+      };
+      this.$emit('add-recipe', newRecipe);
+      this.clearFields();
+    },
+    clearFields() {
+      this.recipeName = '';
+      this.ingredients = '';
+      this.actions = '';
+      this.time = 1;
       this.isVegan = false;
-    }
-  }
+    },
+  },
 };
 </script>
 
