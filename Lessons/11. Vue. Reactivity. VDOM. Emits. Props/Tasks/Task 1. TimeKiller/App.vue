@@ -1,43 +1,48 @@
 <template>
     <div class="time-killer">
         <!--Начало-->
-      <button
-        @click="addBlock"
-        class="btn btn-warning">
-        Добавить время!
-      </button>
-      <div class="times-container">
-        <TimeElement
-            :blocks="blocks"
-            @remove-block="removeBlock"/>
-      </div>
+        <button
+            @click="addBlock"
+            class="btn btn-warning"
+        >
+            Добавить время!
+        </button>
+        <div
+            v-if="blocks.length > 0"
+            class="times-container"
+        >
+            <TimeElement
+                :blocks="blocks"
+                @remove-block="removeBlock"
+            />
+        </div>
         <!--Конец-->
     </div>
 </template>
 
 <script>
-import TimeElement from "./TimeElement.vue";
+import TimeElement from './TimeElement.vue';
 
 export default {
-  name: 'TimeKiller',
+    name: 'TimeKiller',
     // Начало
-  components: {TimeElement},
-  data() {
-    return {
-      blocks:[]
-    }
-  },
-  methods: {
-    addBlock() {
-      this.blocks.push({
-        timestamp: new Date()
-      })
+    components: { TimeElement },
+    data() {
+        return {
+            blocks: [],
+        };
     },
-    removeBlock(index) {
-      this.blocks.splice(index, 1)
-    }
+    methods: {
+        addBlock() {
+            this.blocks.push({
+                timestamp: new Date(),
+            });
+        },
+        removeBlock(index) {
+            this.blocks.splice(index, 1);
+        },
 
-  }
+    },
 
 };
 // Конец

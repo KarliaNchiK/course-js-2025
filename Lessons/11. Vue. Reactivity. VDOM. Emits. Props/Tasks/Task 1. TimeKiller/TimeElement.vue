@@ -1,30 +1,31 @@
 <template>
-  <div class="times-container__item"
-       v-for="(block, index) in blocks"
-       :key="index"
-       @mouseover="removeBlock(index)">
-    {{block.timestamp}}
-  </div>
-
+    <div
+        class="times-container__item"
+        v-for="(block, index) in blocks"
+        :key="index"
+        @mouseover="removeBlock(index)"
+    >
+        {{ block.timestamp }}
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'TimeElement',
-  emits: ["remove-block"],
-  props: {
-    blocks: {
-      type: Array,
-      required: true
-    }
-  },
-  methods: {
-    removeBlock(index) {
-      this.$emit("remove-block", index);
-    }
-  }
+    name: 'TimeElement',
+    props: {
+        blocks: {
+            type: Array,
+            required: true,
+        },
+    },
+    emits: ['remove-block'],
+    methods: {
+        removeBlock(index) {
+            this.$emit('remove-block', index);
+        },
+    },
 
-}
+};
 
 </script>
 
