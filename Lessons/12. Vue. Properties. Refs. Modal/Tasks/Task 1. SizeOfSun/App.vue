@@ -3,25 +3,21 @@
         <div class="sun-container__block sun-container__block--sun">
             <h3>Нажми на солнце</h3>
             <div class="sun-container__img">
-                <img
-                    ref="sun"
-                    src="/Lessons/12. Vue. Properties. Refs. Modal/Tasks/Task 1. SizeOfSun/assets/sun.svg"
-                    class="sun-container__the-sun"
-                    alt=""
-                    @click="onReduceSunSize"
-                >
+                <img ref="sun" src="/Lessons/12. Vue. Properties. Refs. Modal/Tasks/Task 1. SizeOfSun/assets/sun.svg"
+                    class="sun-container__the-sun" alt="солнце" @click="onReduceSunSize">
             </div>
         </div>
         <div class="sun-container__block">
-            <!-- Начало -->
-
-            <!-- Конец -->
+            <h3>Год:</h3>
+            <span>{{ year }}</span>
+            <h3>Диаметр солнца:</h3>
+            <span>{{ diameter }} км</span>
         </div>
     </div>
 </template>
 
 <script>
-import { ref, shallowRef } from 'vue';
+import { ref, shallowRef, nextTick } from 'vue';
 
 export default {
     name: 'TheSun',
@@ -35,8 +31,13 @@ export default {
         const REDUCTION_FACTOR = 0.95;
 
         const onReduceSunSize = () => {
-            //Начало
-            //Конец
+            year.value += NUM_OF_ADDITIONS_YEARS;
+            diameter.value = Math.round(diameter.value * REDUCTION_FACTOR);
+            imageWidthInPx.value = Math.round(imageWidthInPx.value * REDUCTION_FACTOR);
+
+            if (sun.value) {
+                sun.value.style.width = imageWidthInPx.value + 'px';
+            }
         };
 
         return {
@@ -77,11 +78,11 @@ export default {
 
 }
 
-.sun-container__block > h3 {
+.sun-container__block>h3 {
     margin-bottom: 15px;
 }
 
-.sun-container__block > span {
+.sun-container__block>span {
     font-size: 20px;
 }
 

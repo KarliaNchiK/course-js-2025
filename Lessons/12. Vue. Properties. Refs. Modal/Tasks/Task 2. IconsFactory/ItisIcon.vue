@@ -1,6 +1,5 @@
 <template>
-    <!--Начало-->
-    <!--Конец-->
+    <component :is="iconMap[iconType]" v-if="iconMap[iconType]" />
 </template>
 
 <script>
@@ -23,7 +22,35 @@ import TiredIcon from './icons/TiredIcon.vue';
 
 export default {
     name: 'ItisIcon',
-    // Начало
-    // Конец
+    props: {
+        iconType: {
+            type: String,
+            required: true
+        }
+    },
+    setup() {
+        const iconMap = {
+            angry: AngryIcon,
+            annoyed: AnnoyedIcon,
+            embarrassed: EmbarrassedIcon,
+            excited: ExcitedIcon,
+            frustrated: FrustratedIcon,
+            happy: HappyIcon,
+            lonely: LonelyIcon,
+            loved: LovedIcon,
+            nervous: NervousIcon,
+            neutral: NeutralIcon,
+            sad: SadIcon,
+            scared: ScaredIcon,
+            sick: SickIcon,
+            stressed: StressedIcon,
+            surprised: SurprisedIcon,
+            tired: TiredIcon,
+        };
+
+        return {
+            iconMap
+        };
+    }
 };
 </script>
