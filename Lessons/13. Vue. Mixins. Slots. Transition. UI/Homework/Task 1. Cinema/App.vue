@@ -2,19 +2,11 @@
     <div class="cinema">
         <h2>Режиссеры</h2>
         <div class="cinema__elements">
-            <DirectorCard
-                v-for="director in directors"
-                :key="director.id"
-                :director="director"
-            />
+            <DirectorCard v-for="director in directors" :key="director.id" :director="director" />
         </div>
         <h2>Фильмы</h2>
         <div class="cinema__elements">
-            <MovieCard
-                v-for="movie in movies"
-                :key="movie.id"
-                :movie="movie"
-            />
+            <MovieCard v-for="movie in movies" :key="movie.id" :movie="movie" />
         </div>
     </div>
 </template>
@@ -24,7 +16,7 @@ import DirectorCard from './components/DirectorCard.vue';
 import MovieCard from './components/MovieCard.vue';
 
 export default {
-    name: 'Cinema',
+    name: 'CinemaDOM',
     components: { DirectorCard, MovieCard },
     props: {
         directors: {
@@ -127,7 +119,7 @@ export default {
     background-color: #f4f4f4;
 }
 
-.cinema > h2 {
+.cinema>h2 {
     margin-bottom: 20px;
 }
 
