@@ -123,17 +123,17 @@ export default {
 
 <style>
 .cinema {
-    padding: 60px;
-    background-color: #f4f4f4;
+  padding: 60px;
+  background-color: #f4f4f4;
 }
 
 .cinema > h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .cinema__elements {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
 }
 </style>
