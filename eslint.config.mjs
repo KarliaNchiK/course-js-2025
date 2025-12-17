@@ -130,7 +130,7 @@ export default ts.config(
                 ignoreComments: false,
             }],
             'no-console': ['error', {
-                allow: ['warn', 'error'],
+                allow: ['warn', 'error', 'log'],
             }],
             '@stylistic/max-len': ['warn', {
                 code: 120,
