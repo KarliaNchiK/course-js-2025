@@ -7,15 +7,16 @@
                     ref="sun"
                     src="/Lessons/12. Vue. Properties. Refs. Modal/Tasks/Task 1. SizeOfSun/assets/sun.svg"
                     class="sun-container__the-sun"
-                    alt=""
                     @click="onReduceSunSize"
                 >
             </div>
         </div>
         <div class="sun-container__block">
-            <!-- Начало -->
+            <h3>Год:</h3>
+            <span>{{ year }}</span>
 
-            <!-- Конец -->
+            <h3>Диаметр солнца:</h3>
+            <span>{{ diameter }} км </span>
         </div>
     </div>
 </template>
@@ -29,13 +30,21 @@ export default {
         const sun = shallowRef(null);
         const diameter = ref(1392700);
         const year = ref(2021);
-        const imageWidthInPx = ref(450);
+        let imageWidthInPx = 450;
 
         const NUM_OF_ADDITIONS_YEARS = 500000;
         const REDUCTION_FACTOR = 0.95;
 
         const onReduceSunSize = () => {
             //Начало
+            year.value += NUM_OF_ADDITIONS_YEARS;
+
+            diameter.value = Math.round(diameter.value * REDUCTION_FACTOR);
+
+            imageWidthInPx = Math.round(imageWidthInPx * REDUCTION_FACTOR);
+            if (sun.value) {
+                sun.value.style.width = imageWidthInPx + 'px';
+            }
             //Конец
         };
 
@@ -52,43 +61,43 @@ export default {
 <style>
 .sun-container,
 .sun-container__block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sun-container {
-    margin: 30px;
-    color: #f6f6f6;
-    background: url('/Lessons/12. Vue. Properties. Refs. Modal/Tasks/Task 1. SizeOfSun/assets/sky.jpg') center center/cover no-repeat;
+  margin: 30px;
+  color: #f6f6f6;
+  background: url('/Lessons/12. Vue. Properties. Refs. Modal/Tasks/Task 1. SizeOfSun/assets/sky.jpg') center center/cover no-repeat;
 }
 
 .sun-container__block {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .sun-container__block--sun {
-    height: 500px;
+  height: 500px;
 }
 
 .sun-container__img {
-    height: 100%;
-    vertical-align: middle;
+  height: 100%;
+  vertical-align: middle;
 
 }
 
 .sun-container__block > h3 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .sun-container__block > span {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .sun-container__the-sun {
-    width: 450px;
-    height: 100%;
-    cursor: pointer;
-    transition: width 0.4s ease-in-out;
+  width: 450px;
+  height: 100%;
+  cursor: pointer;
+  transition: width 0.4s ease-in-out;
 }
 </style>
