@@ -7,21 +7,26 @@
                     ref="sun"
                     src="/Lessons/12. Vue. Properties. Refs. Modal/Tasks/Task 1. SizeOfSun/assets/sun.svg"
                     class="sun-container__the-sun"
-                    alt=""
                     @click="onReduceSunSize"
+                    :style="sunStyles"
                 >
             </div>
         </div>
         <div class="sun-container__block">
-            <!-- Начало -->
-
-            <!-- Конец -->
+            <h3>Год:</h3>
+            <span>
+                {{year}}
+            </span>
+            <h3>Диаметр солнца:</h3>
+            <span>
+                {{diameter}} км
+            </span>
         </div>
     </div>
 </template>
 
 <script>
-import { ref, shallowRef } from 'vue';
+import { ref, shallowRef, provide, computed } from 'vue';
 
 export default {
     name: 'TheSun',
@@ -35,15 +40,22 @@ export default {
         const REDUCTION_FACTOR = 0.95;
 
         const onReduceSunSize = () => {
-            //Начало
-            //Конец
+            year.value+= NUM_OF_ADDITIONS_YEARS;
+            diameter.value = Math.round(diameter.value*REDUCTION_FACTOR);
+            imageWidthInPx.value = Math.round(imageWidthInPx.value*REDUCTION_FACTOR);
         };
+
+        const sunStyles = computed(() => ({
+            width: `${imageWidthInPx.value}px`
+        }));
+
 
         return {
             sun,
             year,
             diameter,
             onReduceSunSize,
+            sunStyles
         };
     },
 };
@@ -74,7 +86,6 @@ export default {
 .sun-container__img {
     height: 100%;
     vertical-align: middle;
-
 }
 
 .sun-container__block > h3 {
@@ -84,11 +95,10 @@ export default {
 .sun-container__block > span {
     font-size: 20px;
 }
+.sun-container_the-sun{
 
-.sun-container__the-sun {
-    width: 450px;
-    height: 100%;
-    cursor: pointer;
-    transition: width 0.4s ease-in-out;
+    height: "100%";
+    cursor: "pointer";
+    transition: "width 0.4s ease-in-out";
 }
 </style>

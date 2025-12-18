@@ -8,24 +8,36 @@
             placeholder="Жизнь"
         />
         <div class="quotes__container">
-            <!--Начало-->
-            <!--Конец-->
+            <Quote
+                v-for="quote in quotes"
+                :key="quote.id"
+                :text="quote.text"
+                :author="quote.author"
+                :search-text="searchText"
+                v-show="getVisibility(quote.text)"
+            />
         </div>
     </div>
 </template>
 
 <script>
+import { ref } from 'vue';
+import Quote from './Quote.vue';
+
 export default {
     name: 'MyDirective',
+    components: {
+        Quote
+    },
     setup() {
         const searchText = ref('');
 
-        return {
-            getVisibility(text) {
-                return text.includes(searchText.value);
-            },
-            searchText,
-            quotes: ref([
+        const getVisibility = (text) => {
+            return searchText.value === '' || 
+                   text.toLowerCase().includes(searchText.value.toLowerCase());
+        };
+
+        const quotes = ref([
                 {
                     id: 1,
                     text: 'Настойчивость очень важна. Вы не должны сдаваться, если только не вынуждены сдаться.',
@@ -107,45 +119,13 @@ export default {
                     author: 'Никола Тесла',
                 },
 
-            ]),
+            ]);
+
+        return {
+            searchText,
+            getVisibility,
+            quotes
         };
     },
 };
 </script>
-
-<style>
-.quotes {
-    margin: 50px auto;
-    width: 700px;
-}
-
-.quotes h3 {
-    margin-bottom: 15px;
-}
-
-.quotes__container {
-    margin-top: 15px;
-    padding-top: 15px;
-}
-
-.quotes__quote-block {
-    margin-bottom: 15px;
-    padding: 10px;
-    box-shadow: 4px 4px 8px 2px rgba(34, 60, 80, 0.2);
-    border-radius: 6px;
-}
-
-.quotes__quote-text {
-    font-size: 20px;
-}
-
-.quotes__quote-author {
-    margin-top: 5px;
-    font-size: 16px;
-}
-
-.quotes__quote-text span {
-    color: #1783b7;
-    text-decoration: underline;
-}
-</style>

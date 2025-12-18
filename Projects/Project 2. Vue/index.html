@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent&Cent</title>
+    <link rel="stylesheet" type="text/css" href="css/forms.css">
+    <link rel="stylesheet" type="text/css" href="css/calendar.css">
+    <link rel="stylesheet" type="text/css" href="css/bookingPage.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/mainPage.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <link rel="stylesheet" type="text/css" href="css/productCards.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ruslan+Display&display=swap" rel="stylesheet"></head>
+<body>
+    <header>
+        <div class="authorization-link">
+        </div>
+        <div class="search-system">
+            <div class="search-system__header-row">
+                <div class="search-system__title">Rent&Cent</div>
+                <div class="search-system__input-field">
+                    <input type="text" placeholder="Что бы вы хотели арендовать?" class="search-system__input-field__input-space" id="searchInput">
+                    <button class="search-system__input-field__button" id="searchButton">Поиск</button>
+                </div>
+            </div>
+            <div class="search-system__category-section">
+                <div class="category-card" id="transport">
+                    <div class="category-content">
+                        <button class="search-system__category-section-button">Транспорт</button>
+                        <div class="category-image">
+                            <img src="images/car.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-content" id="electronic">
+                        <button class="search-system__category-section-button">Электроника</button>
+                        <div class="category-image">
+                            <img src="images/camera.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-content" id="sport">
+                        <button class="search-system__category-section-button">Спорт</button>
+                        <div class="category-image">
+                            <img src="images/skate.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-content" id="house">
+                        <button class="search-system__category-section-button">Дом</button>
+                        <div class="category-image">
+                            <img src="images/washing_machine.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-content" id="repair">
+                        <button class="search-system__category-section-button">Ремонт</button>
+                        <div class="category-image">
+                            <img src="images/home.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="booking-overlay">
+            <div class="product-info-container hidden" id="productInfoContainer">
+                <span class="close-button" id="closeButton">×</span>
+                <h2 class="product-info-container__title"></h2>
+                <p class="product-info-container__description"></p>
+                <p class="product-info-container__price"></p>
+                <div class="calendar-content">
+                    <div class="current-week" id="currentWeek">Неделя</div>
+
+                    <div class="calendar-container">
+                        <button class="nav-button" id="prevWeek">←</button>
+
+                        <div class="calendar" id="calendar">
+                            <!-- Календарь будет генерироваться JavaScript -->
+                        </div>
+
+                        <button class="nav-button" id="nextWeek">→</button>
+                    </div>
+
+                    <div class="controls">
+                        <button class="book-button" id="bookButton" disabled>Забронировать выбранные слоты</button>
+                        <div class="selected-slots-info" id="selectedInfo">Выберите слоты для бронирования</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="page-content">
+        </div>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
